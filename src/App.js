@@ -1,8 +1,11 @@
+import React from "react";
+import { ReactDOM } from "react";
+import Home from "./components/pages/Home";
 
 function App() {
   return (
     <div className="App">
-hello
+<Home/>
     </div>
   );
 }
