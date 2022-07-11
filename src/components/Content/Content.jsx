@@ -120,7 +120,7 @@ export default function Content() {
 
   return (
     <div>
-      <div className="card-group flex-wrap">{productsContainer}</div>
+      <div className="card-group flex-wrap m-2">{productsContainer}</div>
     </div>
   );
 }
