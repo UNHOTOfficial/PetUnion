@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 export default function Footer() {
@@ -10,35 +11,29 @@ export default function Footer() {
 
   return (
     <div className="container border-top">
-      <footer className="py-5">
+      <footer className="pt-5">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
             <h5>With PetUnion</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Blog
-                </a>
+                <Link className="nav-link p-0 text-muted Fitem" to='/Blog'>Blog</Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  About
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/About'>About</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Contact
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Contact'>Contact</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Job Offers
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Jobs'>Job Offers</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Cooperation
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Cooperation'>Cooperation</Link>
+
               </li>
             </ul>
           </div>
@@ -47,29 +42,23 @@ export default function Footer() {
             <h5>Customers</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Refund
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Refund'>Refund</Link>
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Guarantee
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Grantee'>Grantee</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Complication
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Complication'>Complication</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Privacy Policy
-                </a>
+                <Link className="nav-link p-0 text-muted Fitem" to='/Privacy-Policy'>Privacy Policy</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Usage Conditions
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Usage-Conditions'>Usage Conditions</Link>
+
               </li>
             </ul>
           </div>
@@ -78,29 +67,24 @@ export default function Footer() {
             <h5>Help!</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  FAQs
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/FAQs'>FAQs</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Support
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Support'>Support</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  How To...
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/How-To'>How To...</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Help Center
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Help-Center'>Help Center</Link>
+
               </li>
               <li className="nav-item mb-2">
-                <a href="#" className="nav-link p-0 text-muted Fitem">
-                  Report A Bug
-                </a>
+              <Link className="nav-link p-0 text-muted Fitem" to='/Report-A-Bug'>Report A Bug</Link>
+
               </li>
             </ul>
           </div>
@@ -131,13 +115,16 @@ export default function Footer() {
           <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
-              <a className="link-dark" href="#"></a>
+              <a className="link-dark" href="#"><i class="bi bi-instagram Fitem"></i></a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#"></a>
+              <a className="link-dark" href="#"><i class="bi bi-linkedin Fitem"></i></a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#"></a>
+              <a className="link-dark" href="#"><i class="bi bi-telegram Fitem"></i></a>
+            </li>
+            <li className="ms-3">
+              <a className="link-dark" href="#"><i class="bi bi-twitter Fitem"></i></a>
             </li>
           </ul>
         </div>

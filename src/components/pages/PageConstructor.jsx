@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import FAQs from "./FAQs";
-import Content from "../Content/Content";
+import AboutContent from "../Content/AboutContent";
+import FAQsContent from "../Content/FAQsContent";
+import HomeContent from "../Content/HomeContent";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import About from "./About";
 
 export default function PageConstructor() {
   return (
@@ -12,10 +12,9 @@ export default function PageConstructor() {
 <BrowserRouter>
       <Header />
         <Routes>
-          <Route exact path="/" element={<Content/>}></Route>
-          <Route exact path="/FAQs" element={<FAQs />}></Route>
-          <Route exact path="/About" element={<About />}></Route>
-
+          <Route exact path="/" element={<HomeContent/>}></Route>
+          <Route exact path="/FAQs" element={<FAQsContent />}></Route>
+          <Route exact path="/About" element={<AboutContent />}></Route>
         </Routes>
       <Footer />
 </BrowserRouter>
