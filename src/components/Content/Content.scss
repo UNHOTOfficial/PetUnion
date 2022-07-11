@@ -1,0 +1,25 @@
+.card-img-top {
+  width: 90% !important;
+}
+.ProductCard:hover {
+  box-shadow: inset 0 0 0.5rem #ffc107;
+  transition: all 300ms;
+}
+@media only screen and (min-width: 1008px) {
+  .card {
+    width: 20rem;
+    flex: 1 0 20% !important;
+  }
+}
+@media only screen and (max-width: 1007px) {
+  .card {
+    width: 20rem;
+    flex: 1 0 30% !important;
+  }
+}
+@media only screen and (max-width: 640px) {
+  .card {
+    width: 20rem;
+    flex: 1 0 100% !important;
+  }
+}
