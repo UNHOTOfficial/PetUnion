@@ -27,7 +27,7 @@ export default function Header() {
                     <ul className="navbar-nav">
                       <li className="nav-item dropdown">
                         <a
-                          className="nav-link dropdown-toggle"
+                          className="nav-link dropdown-toggle Hitem"
                           href="#"
                           id="navbarDarkDropdownMenuLink"
                           role="button"
@@ -41,19 +41,16 @@ export default function Header() {
                           aria-labelledby="navbarDarkDropdownMenuLink"
                         >
                           <li>
-                            <a className="dropdown-item" href="#">
-                              Action
-                            </a>
+                          <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
+
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#">
-                              Another action
-                            </a>
+                          <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
+
                           </li>
                           <li>
-                            <a className="dropdown-item" href="#">
-                              Something else here
-                            </a>
+                            <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
+
                           </li>
                         </ul>
                       </li>
@@ -63,20 +60,20 @@ export default function Header() {
               </nav>
             </li>
             <li>
-              <a href="#" className="nav-link px-2 text-white Hitem">
+              <Link className="nav-link px-2 text-white Hitem" to={"/"}>
                 <i className="bi bi-house"></i>Home
-              </a>
+              </Link>
             </li>
             <li>
-               <a href="/FAQs" className="nav-link px-2 text-white Hitem">
+              <Link className="nav-link px-2 text-white Hitem" to={"/FAQs"}>
                 <i className="bi bi-question-circle"></i>FAQs
-              </a>
+              </Link>
             </li>
 
             <li>
-              <a href="#" className="nav-link px-2 text-white Hitem">
+              <Link className="nav-link px-2 text-white Hitem" to={"/About"}>
                 <i className="bi bi-info-circle"></i>About
-              </a>
+              </Link>
             </li>
           </ul>
           <form
@@ -101,6 +98,6 @@ export default function Header() {
           </div>
         </div>
       </div>
-          </header>
+    </header>
   );
 }
