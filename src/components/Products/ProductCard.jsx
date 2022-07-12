@@ -21,7 +21,7 @@ export default function Product(props) {
                   <h5>{props.price - props.discount}$</h5>
                   <h6 className="mx-1 text-secondary"><s>{props.price}$</s></h6>
                 </div>
-                <span className="badge badge-pill bg-danger">
+                <span className="badge rounded-pill text-bg-danger">
                   {Math.round(
                     100 - ((props.price - props.discount) * 100) / props.price
                   )}

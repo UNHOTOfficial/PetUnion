@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom";
+import './HotDealsProduct.scss'
 
 export default function HotDealsProduct(props) {
 
@@ -36,6 +37,18 @@ export default function HotDealsProduct(props) {
             )}
           </div>
         </div>
+
+        <div className='progress HotDealsProgress'>
+  <div className='progress-bar progress-bar-striped progress-bar-animated bg-warning'
+       role='progressbar'
+       aria-valuenow={70}
+       aria-valuemin={0}
+       aria-valuemax={10}
+       style={{width: '70%'}}>
+    <span className='sr-only'>70% Complete</span>
+  </div>
+</div>
+
       </div>
       </Link>
     </React.Fragment>

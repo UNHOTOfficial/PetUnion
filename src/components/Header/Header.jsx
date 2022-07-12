@@ -98,6 +98,7 @@ export default function Header() {
             <button type="button" className="btn btn-warning">
               Sign-up
             </button>
+            <button type="button" class="btn btn-outline-warning rounded-circle ms-2 HCartButton"><i class="bi bi-cart m-0"></i></button>
           </div>
         </div>
       </div>
