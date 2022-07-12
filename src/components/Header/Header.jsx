@@ -4,7 +4,7 @@ import "./Header.scss";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link, Route, Router, Routes } from "react-router-dom";
-import FAQs from "../Content/FAQs";
+import FAQs from "../Content/FAQs/FAQs";
 
 export default function Header() {
   return (
