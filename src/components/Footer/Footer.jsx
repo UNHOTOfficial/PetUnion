@@ -17,23 +17,32 @@ export default function Footer() {
             <h5>With PetUnion</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-                <Link className="nav-link p-0 text-muted Fitem" to='/Blog'>Blog</Link>
+                <Link className="nav-link p-0 text-muted Fitem" to="/blog">
+                  Blog
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/About'>About</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/about">
+                  About
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Contact'>Contact</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/contact">
+                  Contact
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Jobs'>Job Offers</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/jobs">
+                  Job Offers
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Cooperation'>Cooperation</Link>
-
+                <Link
+                  className="nav-link p-0 text-muted Fitem"
+                  to="/cooperation"
+                >
+                  Cooperation
+                </Link>
               </li>
             </ul>
           </div>
@@ -42,23 +51,35 @@ export default function Footer() {
             <h5>Customers</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Refund'>Refund</Link>
+                <Link className="nav-link p-0 text-muted Fitem" to="/refund">
+                  Refund
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Grantee'>Grantee</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/guarantee">
+                  Guarantee
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Complication'>Complication</Link>
-
+                <Link
+                  className="nav-link p-0 text-muted Fitem"
+                  to="/complication"
+                >
+                  Complication
+                </Link>
               </li>
               <li className="nav-item mb-2">
-                <Link className="nav-link p-0 text-muted Fitem" to='/Privacy-Policy'>Privacy Policy</Link>
-
+                <Link
+                  className="nav-link p-0 text-muted Fitem"
+                  to="/privacy-Policy"
+                >
+                  Privacy Policy
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Usage-Conditions'>Usage Conditions</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/terms">
+                  Terms Of Use
+                </Link>
               </li>
             </ul>
           </div>
@@ -67,24 +88,29 @@ export default function Footer() {
             <h5>Help!</h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/FAQs'>FAQs</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/FAQs">
+                  FAQs
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Support'>Support</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/support">
+                  Support
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/How-To'>How To...</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/howto">
+                  How To...
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Help-Center'>Help Center</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/help">
+                  Help Center
+                </Link>
               </li>
               <li className="nav-item mb-2">
-              <Link className="nav-link p-0 text-muted Fitem" to='/Report-A-Bug'>Report A Bug</Link>
-
+                <Link className="nav-link p-0 text-muted Fitem" to="/reportbug">
+                  Report A Bug
+                </Link>
               </li>
             </ul>
           </div>
@@ -115,16 +141,24 @@ export default function Footer() {
           <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
-              <a className="link-dark" href="#"><i class="bi bi-instagram Fitem"></i></a>
+              <a className="link-dark" href="#">
+                <i class="bi bi-instagram Fitem"></i>
+              </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#"><i class="bi bi-linkedin Fitem"></i></a>
+              <a className="link-dark" href="#">
+                <i class="bi bi-linkedin Fitem"></i>
+              </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#"><i class="bi bi-telegram Fitem"></i></a>
+              <a className="link-dark" href="#">
+                <i class="bi bi-telegram Fitem"></i>
+              </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#"><i class="bi bi-twitter Fitem"></i></a>
+              <a className="link-dark" href="#">
+                <i class="bi bi-twitter Fitem"></i>
+              </a>
             </li>
           </ul>
         </div>

@@ -4,7 +4,7 @@ import "./Header.scss";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link, Route, Router, Routes } from "react-router-dom";
-import FAQsContent from "../Content/FAQsContent";
+import FAQs from "../Content/FAQs";
 
 export default function Header() {
   return (
@@ -41,16 +41,19 @@ export default function Header() {
                           aria-labelledby="navbarDarkDropdownMenuLink"
                         >
                           <li>
-                          <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
-
+                            <Link className="dropdown-item Hitem" to={"/#"}>
+                              <i className="bi bi-info-circle"></i>About
+                            </Link>
                           </li>
                           <li>
-                          <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
-
+                            <Link className="dropdown-item Hitem" to={"/#"}>
+                              <i className="bi bi-info-circle"></i>About
+                            </Link>
                           </li>
                           <li>
-                            <Link className="dropdown-item Hitem" to={'/#'}><i className="bi bi-info-circle"></i>About</Link>
-
+                            <Link className="dropdown-item Hitem" to={"/#"}>
+                              <i className="bi bi-info-circle"></i>About
+                            </Link>
                           </li>
                         </ul>
                       </li>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import "./HomeContent.scss";
+import "./Home.scss";
 import PetBed from "./imgs/Pet-Bed.jpg";
 import PetFood from "./imgs/Pet-Food.jpg";
 import PetMineral from "./imgs/Pet-Mineral.jpg";
@@ -9,6 +9,7 @@ import PetToy from "./imgs/Pet-Toy.png";
 import PetShampoo from "./imgs/Pet-Shampoo.jpg";
 
 export default function Content() {
+  
   const products = [
     {
       name: "Pet Bed",
@@ -103,7 +104,7 @@ export default function Content() {
   ];
 
   const productsContainer = products.map((item) => (
-    <Link className="card ProductCard ProductItem" to={`/Products/${item.productId}`}>
+    <Link className="card ProductCard ProductItem" to={`/Product/${item.productId}`}>
       <img
         src={item.img}
         className="card-img-top mx-auto mt-4"
