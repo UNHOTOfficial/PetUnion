@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes, useParams } from "react-router-dom";
 import About from "../Content/About";
 import FAQs from "../Content/FAQs";
 import Home from "../Content/Home";
@@ -18,6 +18,8 @@ import Support from "../Content/Support";
 import HowTo from "../Content/HowTo";
 import HelpCenter from "../Content/HelpCenter";
 import ReportABug from "../Content/ReportABug";
+import ProductContainer from "../Products/ProductContainer";
+import ProductDetail from "../Products/ProductDetail";
 
 export default function PageConstructor() {
   return (
@@ -41,6 +43,9 @@ export default function PageConstructor() {
           <Route exact path="/howto" element={<HowTo />}></Route>
           <Route exact path="/help" element={<HelpCenter />}></Route>
           <Route exact path="/reportbug" element={<ReportABug />}></Route>
+
+          {/* <Route exact path={"/Product/:ProductID"} element={<ProductDetail />}></Route> */}
+
         </Routes>
         <Footer />
       </BrowserRouter>
