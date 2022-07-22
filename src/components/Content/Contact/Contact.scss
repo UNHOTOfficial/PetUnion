@@ -1,0 +1,22 @@
+textarea{
+    resize: none;
+    height: 10rem;
+}
+input:focus, textarea:focus{
+        border-color: #ffc107 !important;
+        box-shadow: 0 0 0 0.25rem rgb(255 193 7 / 25%) !important;
+    }
+
+.flag{
+    width: 2.5rem;
+}
+.pin{
+    width: 1.5rem;
+}
+h6:hover{
+color: initial;
+}
+.Contact-Form-Signin-Link{
+    color: #0d6efd !important;
+    text-decoration: underline !important;
+}

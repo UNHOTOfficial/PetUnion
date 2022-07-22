@@ -9,7 +9,7 @@ export default function HotDealsProduct(props) {
          <Link className="card ProductCard ProductItem m-3 HotDealProductCard" to={`/Product/${props.ProductId}`}>
       <img
         src={props.img}
-        className="card-img-top mx-auto mt3- HotDealProductCard"
+        className="card-img-top mx-auto mt-3 HotDealProductCard"
         alt={props.name}
       ></img>
       <div className="card-body">
@@ -39,13 +39,12 @@ export default function HotDealsProduct(props) {
         </div>
 
         <div className='progress HotDealsProgress'>
-  <div className='progress-bar progress-bar-striped progress-bar-animated bg-warning'
+  <div className='progress-bar bg-warning'
        role='progressbar'
        aria-valuenow={70}
        aria-valuemin={0}
        aria-valuemax={10}
        style={{width: '70%'}}>
-    <span className='sr-only'>70% Complete</span>
   </div>
 </div>
 

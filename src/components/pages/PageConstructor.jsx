@@ -6,7 +6,7 @@ import Home from "../Content/Home";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Blog from "../Content/Blog";
-import Contact from "../Content/Contact";
+import Contact from "../Content/Contact/Contact";
 import Jobs from "../Content/Jobs";
 import Cooperation from "../Content/Cooperation";
 import Refund from "../Content/Refund";
