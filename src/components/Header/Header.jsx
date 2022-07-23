@@ -3,8 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./Header.scss";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Link, Route, Router, Routes } from "react-router-dom";
-import FAQs from "../Content/FAQs/FAQs";
+import { Link } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -91,14 +90,22 @@ export default function Header() {
             ></input>
           </form>
 
-          <div className="text-end">
+          <div className="text-end d-flex">
             <button type="button" className="btn btn-outline-light me-2">
               Login
             </button>
             <button type="button" className="btn btn-warning">
               Sign-up
             </button>
-            <button type="button" class="btn btn-outline-warning rounded-circle ms-2 HCartButton"><i class="bi bi-cart m-0"></i></button>
+            <button
+              type="button"
+              className="btn btn-outline-warning rounded-circle ms-2 HCartButton"
+            >
+              <i className="bi bi-cart m-0"></i>
+            </button>
+            <div className="form-check form-switch ms-5 mt-1">
+  <input className="form-check-input header-darkmode-switch-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"></input>
+</div>
           </div>
         </div>
       </div>

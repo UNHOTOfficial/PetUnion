@@ -26,10 +26,10 @@ export default function FeaturesContainer() {
   ];
 
   return (
-    <div class="container FeaturesContainer">
-      <div class="row FeaturesRow">
+    <div className="container FeaturesContainer">
+      <div className="row FeaturesRow">
         {Features.map((feature) => (
-          <Feature src={feature.src} name={feature.name} title={feature.title} text={feature.text}/>
+          <Feature key={feature.name} src={feature.src} name={feature.name} title={feature.title} text={feature.text}/>
         ))}
       </div>
     </div>

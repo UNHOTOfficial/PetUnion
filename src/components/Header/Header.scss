@@ -1,5 +1,12 @@
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
 i{
     margin-right: 0.3rem;
+}
+
+.Hitem{
+    color: inherit !important;
 }
 
 .Hitem:hover{
@@ -13,4 +20,18 @@ i{
 
 .HCartButton{
     margin-right: -2.5rem;
+}
+
+.header-darkmode-switch-input{
+    background-image: url('https://cdn-icons-png.flaticon.com/512/4792/4792303.png') !important;
+    height: 1.5rem !important;
+    width: 2.8rem !important;
+    background-color: transparent;
+    border: 0.1rem solid $warning;
+    transition: all 0.3s !important;
+}
+.header-darkmode-switch-input:checked{
+    background-color: transparent;
+    border-color: #ffc107;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/3594/3594375.png') !important;
 }

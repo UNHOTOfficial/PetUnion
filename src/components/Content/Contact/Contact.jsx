@@ -125,7 +125,7 @@ export default function Contact() {
         <div className="col-md-7 col-lg-8 border m-3 mb-0 p-4 rounded">
           <div className="d-flex justify-content-between flex-column mb-2">
             <div className="d-flex justify-content-between">
-              <h4 class="mb-3">Contact Form</h4>
+              <h4 className="mb-3">Contact Form</h4>
               <p className="text-capitalize text-secondary mb-1">
                 have an account?
                 <a className="ms-2 Contact-Form-Signin-Link" href="#NaN">
@@ -135,73 +135,73 @@ export default function Contact() {
             </div>
           </div>
           <form className="needs-validation" action="">
-            <div class="row g-3">
-              <div class="col-sm-6">
-                <label for="firstName" class="form-label">
+            <div className="row g-3">
+              <div className="col-sm-6">
+                <label for="firstName" className="form-label">
                   First name
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="firstName"
                   placeholder=""
                   value=""
                   required="true"
                 ></input>
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Valid first name is required.
                 </div>
               </div>
 
-              <div class="col-sm-6">
-                <label for="lastName" class="form-label">
+              <div className="col-sm-6">
+                <label for="lastName" className="form-label">
                   Last name
                 </label>
                 <input
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="lastName"
                   placeholder=""
                   value=""
                   required="true"
                 ></input>
-                <div class="invalid-feedback">Valid last name is required.</div>
+                <div className="invalid-feedback">Valid last name is required.</div>
               </div>
 
-              <div class="col-12">
-                <label for="email" class="form-label">
+              <div className="col-12">
+                <label for="email" className="form-label">
                   Email
                 </label>
                 <input
                   type="email"
-                  class="form-control"
+                  className="form-control"
                   id="email"
                   placeholder="you@example.com"
                   required="true"
                 ></input>
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Please enter a valid email address so we can reach you.
                 </div>
               </div>
 
-              <div class="col-12">
-                <label for="email" class="form-label">
+              <div className="col-12">
+                <label for="email" className="form-label">
                   Message
                 </label>
                 <textarea
                   type="text"
-                  class="form-control"
+                  className="form-control"
                   id="text"
                   placeholder="Your Message"
                 ></textarea>
-                <div class="invalid-feedback">
+                <div className="invalid-feedback">
                   Please enter a valid email address so we can reach you.
                 </div>
               </div>
 
               <hr className="mt-4 mb-2"></hr>
               <div className="d-flex justify-content-evenly">
-                <button class="w-25 btn btn-warning btn-lg" type="submit">
+                <button className="w-25 btn btn-warning btn-lg" type="submit">
                   Submit
                 </button>
               </div>

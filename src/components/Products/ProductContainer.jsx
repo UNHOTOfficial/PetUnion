@@ -49,7 +49,7 @@ export default function ProductContainer() {
           productId: "3838973",
         },
         {
-          name: "Pet toy",
+          name: "Pet Toy",
           img: PetToy,
           desc: "FUN FOR ALL BIG OR SMALL Wobble Wag Giggle Ball is great for dogs of all ages and sizes! The 4 clutch pockets on the toy make it easy for your dog to pick up during playtime!",
           price: "8",
@@ -67,7 +67,7 @@ export default function ProductContainer() {
           productId: "2574128",
         },
         {
-          name: "Pet toy",
+          name: "Catnip",
           img: PetFood,
           desc: "good.",
           price: "31",
@@ -76,7 +76,7 @@ export default function ProductContainer() {
           productId: "2574128",
         },
         {
-          name: "Pet toy",
+          name: "Cat Brush",
           img: PetFood,
           desc: "good.",
           price: "31",
@@ -85,7 +85,7 @@ export default function ProductContainer() {
           productId: "2574128",
         },
         {
-          name: "Pet toy",
+          name: "Cat Toothbrush",
           img: PetFood,
           desc: "good.",
           price: "31",
@@ -94,7 +94,7 @@ export default function ProductContainer() {
           productId: "2574128",
         },
         {
-          name: "Pet toy",
+          name: "Cat Toothpaste",
           img: PetFood,
           desc: "good.",
           price: "31",
@@ -109,7 +109,7 @@ export default function ProductContainer() {
 <div className="card-group flex-wrap m-2">
     {
         products.map(product=>
-            <ProductCard ProductId={product.productId} img={product.img} name={product.name} desc={product.desc} price={product.price} hasDiscount={product.hasDiscount} discount={product.discount}/>
+            <ProductCard key={product.name} ProductId={product.productId} img={product.img} name={product.name} desc={product.desc} price={product.price} hasDiscount={product.hasDiscount} discount={product.discount}/>
             )
     }
 </div>  )

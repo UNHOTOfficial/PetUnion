@@ -119,16 +119,10 @@ export default function Footer() {
             <form>
               <h5>Subscribe to our newsletter</h5>
               <p>Monthly digest of what's new and exciting from us.</p>
-              <div className="d-flex flex-column flex-sm-row w-100 gap-2">
-                <label htmlFor="newsletter1" className="visually-hidden">
-                  Email address
-                </label>
-                <input
-                  id="newsletter1"
-                  type="text"
-                  className="form-control"
-                  placeholder="Email address"
-                ></input>
+              <div className="mb-3">
+                <div>
+    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+  </div>
                 <button className="btn btn-primary" type="button">
                   Subscribe
                 </button>
@@ -142,22 +136,22 @@ export default function Footer() {
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
               <a className="link-dark" href="#">
-                <i class="bi bi-instagram Fitem"></i>
+                <i className="bi bi-instagram Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
               <a className="link-dark" href="#">
-                <i class="bi bi-linkedin Fitem"></i>
+                <i className="bi bi-linkedin Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
               <a className="link-dark" href="#">
-                <i class="bi bi-telegram Fitem"></i>
+                <i className="bi bi-telegram Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
               <a className="link-dark" href="#">
-                <i class="bi bi-twitter Fitem"></i>
+                <i className="bi bi-twitter Fitem"></i>
               </a>
             </li>
           </ul>

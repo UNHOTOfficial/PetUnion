@@ -43,10 +43,10 @@ export default function () {
 
   return (
     <React.Fragment>
-      <div class="container bg-dark mt-3 mb-3 text-white rounded-4 HotDealsContainer">
-        <div class="row HotDealsRow">
+      <div className="container bg-dark mt-3 mb-3 text-white rounded-4 HotDealsContainer">
+        <div className="row HotDealsRow">
           {products.map((product) => (
-            <div class="col-lg HotDealsItem">
+            <div className="col-lg HotDealsItem">
 <HotDealsProduct ProductId={product.productId} img={product.img} name={product.name} hasDiscount={product.hasDiscount} discount={product.discount} price={product.price}/>
             </div>
           ))}
