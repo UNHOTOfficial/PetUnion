@@ -1,5 +1,8 @@
-Fix Categories in navbar. ✅
-Add sign in and sign up pages. ✅
+Fix Categories in navbar. ✅ -C
+Add sign in and sign up pages. ✅ -C
+Change class to className. ✅ -C
+Add Dark Mode Toggle. ✅ -C
+Create 404 Page. ✅
 Fix Hot deals menu to scroll horizontally.
 Make products pages by ids.
 Create remaining pages.
@@ -10,6 +13,5 @@ Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Add Dark Mode.
-Change class to className. ✅
 Fix Console Bugs.
-Add Dark Mode Toggle. ✅
+Work on Dark Mode In "darkmode" Branch.
