@@ -101,7 +101,7 @@ export default function HotDeals() {
       event.preventDefault();
 
       scrollHotDeals.scrollBy({
-        left: event.deltaY < 0 ? -30 : 30,
+        left: event.deltaY < 0 ? -100 : 100,
       });
     });
   };
@@ -113,22 +113,22 @@ export default function HotDeals() {
     let startX;
     let scrollLeft;
 
-    dragHotDeals.addEventListener('mousedown', (e)=>{
+    dragHotDeals.addEventListener("mousedown", (e) => {
       isDown = true;
-      dragHotDeals.classList.add('active')
+      dragHotDeals.classList.add("active");
       startX = e.pageX - dragHotDeals.offsetLeft;
       scrollLeft = dragHotDeals.scrollLeft;
     });
-    dragHotDeals.addEventListener('mouseleave', () => {
+    dragHotDeals.addEventListener("mouseleave", () => {
       isDown = false;
-      dragHotDeals.classList.remove('active');
+      dragHotDeals.classList.remove("active");
     });
-    dragHotDeals.addEventListener('mouseup', () => {
+    dragHotDeals.addEventListener("mouseup", () => {
       isDown = false;
-      dragHotDeals.classList.remove('active');
+      dragHotDeals.classList.remove("active");
     });
-    dragHotDeals.addEventListener('mousemove', (e) => {
-      if(!isDown) return;
+    dragHotDeals.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - dragHotDeals.offsetLeft;
       const walk = (x - startX) * 3; //scroll-fast
@@ -136,49 +136,62 @@ export default function HotDeals() {
     });
   };
 
-  const scrollArrowLeft = () =>{
-const arrowLeft = document.querySelector('.HotDeals-arrow-left');
-const HotDealsRow = document.querySelector('.HotDealsRow');
-arrowLeft.addEventListener('click', (event)=>{
-  event.preventDefault();
-  HotDealsRow.scrollBy({
-    left: event.deltaY = -305,
-  });
-})};
-
-const scrollArrowRight = () =>{
-  const arrowRight = document.querySelector('.HotDeals-arrow-right');
-  const HotDealsRow = document.querySelector('.HotDealsRow');
-  arrowRight.addEventListener('click', (event)=>{
-    event.preventDefault();
-    HotDealsRow.scrollBy({
-      left: event.deltaY = 305,
+  const scrollArrowLeft = () => {
+    const arrowLeft = document.querySelector(".HotDeals-arrow-left");
+    const HotDealsRow = document.querySelector(".HotDealsRow");
+    arrowLeft.addEventListener("click", (event) => {
+      event.preventDefault();
+      HotDealsRow.scrollBy({
+        left: (event.deltaY = -305),
+      });
     });
-  })};
+  };
+
+  const scrollArrowRight = () => {
+    const arrowRight = document.querySelector(".HotDeals-arrow-right");
+    const HotDealsRow = document.querySelector(".HotDealsRow");
+    arrowRight.addEventListener("click", (event) => {
+      event.preventDefault();
+      HotDealsRow.scrollBy({
+        left: (event.deltaY = 305),
+      });
+    });
+  };
+
   return (
     <React.Fragment>
       <div className="container bg-dark mt-3 mb-3 text-white rounded-4 HotDealsContainer overflow-auto">
+        {/* <div className="d-flex justify-content-between"> */}
+{/* <img className="HotDeals-img" alt="Coupon" src={require('./Imgs/coupon.png')}></img> //wasn't good enough */} 
         <h3 className="text-center mt-3 text-warning">Hot Deals</h3>
+{/* <img className="HotDeals-img" alt="Discount" src={require('./Imgs/discount.png')}></img> //wasn't good enough */}
+        {/* </div> */}
         <div className="d-flex align-items-center">
-
-        <div className="me-2" onClick={scrollArrowLeft}><i class="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left"></i></div>
-        <div className="row flex-nowrap HotDealsRow" onWheel={scrollHtoDeals} onMouseDown={dragHotDeals}>
-          {products.map((product) => (
-            <div className="col-lg p-0 HotDealsItem">
-              <HotDealsProduct
-                ProductId={product.productId}
-                img={product.img}
-                name={product.name}
-                hasDiscount={product.hasDiscount}
-                discount={product.discount}
-                price={product.price}
-              />
-            </div>
-          ))}
+          <div className="me-2" onClick={scrollArrowLeft}>
+            <i class="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left"></i>
+          </div>
+          <div
+            className="row flex-nowrap HotDealsRow"
+            onWheel={scrollHtoDeals}
+            onMouseDown={dragHotDeals}
+          >
+            {products.map((product) => (
+              <div className="col-lg p-0 HotDealsItem">
+                <HotDealsProduct
+                  ProductId={product.productId}
+                  img={product.img}
+                  name={product.name}
+                  hasDiscount={product.hasDiscount}
+                  discount={product.discount}
+                  price={product.price}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="ms-4" onClick={scrollArrowRight}>
+            <i class="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right"></i>
+          </div>
         </div>
-        <div className="ms-4" onClick={scrollArrowRight}><i class="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right"></i></div>
-        </div>
-
       </div>
     </React.Fragment>
   );

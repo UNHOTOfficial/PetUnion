@@ -3,7 +3,7 @@ Add sign in and sign up pages. ✅ -C
 Change class to className. ✅ -C
 Add Dark Mode Toggle. ✅ -C
 Create 404 Page. ✅ -C
-Fix Hot deals menu to scroll horizontally. ✅
+Fix Hot deals menu to scroll horizontally. ✅ -C
 Make products pages by ids.
 Create remaining pages.
 Add social media links. 
@@ -15,3 +15,5 @@ Make contact "Make An Appointment" button functional.
 Add Dark Mode.
 Fix Console Bugs.
 Work on Dark Mode In "darkmode" Branch.
+Fix Hot Deals Menu Drag.
+Fix Products Add To Cart Button
