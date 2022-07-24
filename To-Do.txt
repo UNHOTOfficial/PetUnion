@@ -2,8 +2,8 @@ Fix Categories in navbar. ✅ -C
 Add sign in and sign up pages. ✅ -C
 Change class to className. ✅ -C
 Add Dark Mode Toggle. ✅ -C
-Create 404 Page. ✅
-Fix Hot deals menu to scroll horizontally.
+Create 404 Page. ✅ -C
+Fix Hot deals menu to scroll horizontally. ✅
 Make products pages by ids.
 Create remaining pages.
 Add social media links. 

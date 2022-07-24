@@ -6,7 +6,7 @@ export default function HotDealsProduct(props) {
 
   return (
     <React.Fragment>
-         <Link className="card ProductCard ProductItem m-3 HotDealProductCard" to={`/Product/${props.ProductId}`}>
+         <Link className="card ProductCard ProductItem m-3 ms-2 me-2 HotDealProductCard" to={`/Product/${props.ProductId}`}>
       <img
         src={props.img}
         className="card-img-top mx-auto mt-3 HotDealProductCard"

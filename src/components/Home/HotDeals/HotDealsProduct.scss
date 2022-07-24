@@ -1,12 +1,41 @@
 .HotDealsRow{
-    white-space: nowrap;
-    overflow-x: auto;
+    white-space: nowrap; //have no effect
+    overflow-x: auto ; //have no effect
+    scroll-behavior: smooth;
+}
+.HotDealProductCard{
+    width: 18rem !important;
 }
 .HotDealsItem{
-    display: inline-block;
-    float: none;
-
+    display: inline-block; //have no effect
 }
 .HotDealsProgress{
     height: 0.5rem;
 }
+img {
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;
+  }
+  a{
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none;  
+  }
+  .HotDeals-arrow-left, .HotDeals-arrow-right{
+    cursor: pointer;;
+  }
+  ::-webkit-scrollbar{
+    height: 0.2rem;
+  }
+  ::-webkit-scrollbar-track{
+    background-color: transparent;
+    border-radius: 1rem;
+  }
+  ::-webkit-scrollbar-thumb{
+    background-color: #ffc107;
+  }
