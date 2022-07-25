@@ -1,8 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-
 export default function Product(props) {
+
+ 
   return (
     <Link className="card ProductCard ProductItem" to={`/Product/${props.ProductId}`}>
       <img
@@ -35,7 +36,7 @@ export default function Product(props) {
               </div>
             )}
           </div>
-          <a href="#" className="btn btn-warning btn-sm">
+          <a href="#" className="btn btn-warning btn-sm d-none Product-addtocart"> {/*display = none*/}
             <i className="bi bi-cart"></i>Add To Cart{" "}
           </a>
         </div>

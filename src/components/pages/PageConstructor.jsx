@@ -19,10 +19,10 @@ import HowTo from "../Content/HowTo";
 import HelpCenter from "../Content/HelpCenter";
 import ReportABug from "../Content/ReportABug";
 import Page404 from "./Page404";
-
+import '../dark.scss'
 export default function PageConstructor() {
   return (
-    <div>
+    <React.Fragment>
       <BrowserRouter>
         <Header />
         <Routes>
@@ -49,6 +49,6 @@ export default function PageConstructor() {
         </Routes>
         <Footer />
       </BrowserRouter>
-    </div>
+    </React.Fragment>
   );
 }

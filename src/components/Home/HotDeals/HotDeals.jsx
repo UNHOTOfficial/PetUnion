@@ -1,5 +1,6 @@
 import React from "react";
 import HotDealsProduct from "./HotDealsProduct";
+import '../../dark.scss'
 
 export default function HotDeals() {
   const products = [
@@ -163,7 +164,7 @@ export default function HotDeals() {
       <div className="container bg-dark mt-3 mb-3 text-white rounded-4 HotDealsContainer overflow-auto">
         {/* <div className="d-flex justify-content-between"> */}
 {/* <img className="HotDeals-img" alt="Coupon" src={require('./Imgs/coupon.png')}></img> //wasn't good enough */} 
-        <h3 className="text-center mt-3 text-warning">Hot Deals</h3>
+        <h3 className="text-center mt-3">Hot Deals</h3>
 {/* <img className="HotDeals-img" alt="Discount" src={require('./Imgs/discount.png')}></img> //wasn't good enough */}
         {/* </div> */}
         <div className="d-flex align-items-center">

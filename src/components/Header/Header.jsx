@@ -4,10 +4,17 @@ import "./Header.scss";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
+import '../dark.scss'
 
 export default function Header() {
+  const toggleDarkmode = () => {
+    const darkmodeToggle = document.querySelector(
+      ".header-darkmode-switch-input"
+    );
+    document.body.classList.toggle("dark");
+  };
   return (
-    <header className="p-3 bg-dark text-white">
+    <header className="p-3 bg-dark text-white header">
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
@@ -92,20 +99,23 @@ export default function Header() {
 
           <div className="text-end d-flex">
             <button type="button" className="btn btn-outline-light me-2">
-              Login
-            </button>
-            <button type="button" className="btn btn-warning">
-              Sign-up
+              Sign up / Sign In
             </button>
             <button
               type="button"
-              className="btn btn-outline-warning rounded-circle ms-2 HCartButton"
+              className="btn btn-outline-light ms-2 HCartButton"
             >
               <i className="bi bi-cart m-0"></i>
             </button>
             <div className="form-check form-switch ms-5 mt-1">
-  <input className="form-check-input header-darkmode-switch-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"></input>
-</div>
+              <input
+                onClick={toggleDarkmode}
+                className="form-check-input header-darkmode-switch-input"
+                type="checkbox"
+                role="switch"
+                id="darkmodeToggle"
+              ></input>
+            </div>
           </div>
         </div>
       </div>

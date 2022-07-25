@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './HotDealsProduct.scss'
+import '../../dark.scss'
 
 export default function HotDealsProduct(props) {
 
@@ -13,13 +14,13 @@ export default function HotDealsProduct(props) {
         alt={props.name}
       ></img>
       <div className="card-body">
-        <h5 className="card-title text-dark">{props.name}</h5>
+        <h5 className="card-title">{props.name}</h5>
         <div className="d-flex flex-column">
           <div className="d-flex w-100 align-items-baseline justify-content-between">
             {props.hasDiscount === true ? (
               <React.Fragment>
                 <div className="d-flex flex-column">
-                  <h5 className='text-dark'>{props.price - props.discount}$</h5>
+                  <h5 className=''>{props.price - props.discount}$</h5>
                   <h6 className="mx-1 text-secondary"><s>{props.price}$</s></h6>
                 </div>
                 <span className="badge badge-pill bg-danger">

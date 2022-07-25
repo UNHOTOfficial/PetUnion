@@ -10,7 +10,7 @@ export default function Footer() {
   };
 
   return (
-    <div className="container border-top">
+    <div className="container border-top footer w-100">
       <footer className="pt-5">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
@@ -131,7 +131,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top pb-0">
           <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">
