@@ -14,7 +14,7 @@ export default function Footer() {
       <footer className="pt-5">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
-            <h5>With PetUnion</h5>
+            <h5><strong>With PetUnion</strong></h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link className="nav-link p-0 text-muted Fitem" to="/blog">
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
 
           <div className="col-6 col-md-2 mb-3">
-            <h5>Customers</h5>
+            <h5><strong>Customers</strong></h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link className="nav-link p-0 text-muted Fitem" to="/refund">
@@ -85,7 +85,7 @@ export default function Footer() {
           </div>
 
           <div className="col-6 col-md-2 mb-3">
-            <h5>Help!</h5>
+            <h5><strong>Help!</strong></h5>
             <ul className="nav flex-column">
               <li className="nav-item mb-2">
                 <Link className="nav-link p-0 text-muted Fitem" to="/FAQs">
@@ -117,13 +117,13 @@ export default function Footer() {
 
           <div className="col-md-5 offset-md-1 mb-3">
             <form>
-              <h5>Subscribe to our newsletter</h5>
+              <h5><strong>Subscribe to our newsletter</strong></h5>
               <p>Monthly digest of what's new and exciting from us.</p>
               <div className="mb-3">
                 <div>
     <input type="email" placeholder="Email Address" className="form-control w-50 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
   </div>
-                <button className="btn btn-primary" type="button">
+                <button className="btn btn-warning" type="button">
                   Subscribe
                 </button>
               </div>
@@ -131,7 +131,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top pb-0">
+        <div className="d-flex flex-column flex-sm-row justify-content-between p-2 fs-6 my-4 border-top pb-0">
           <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3">

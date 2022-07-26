@@ -19,6 +19,7 @@ import HowTo from "../Content/HowTo";
 import HelpCenter from "../Content/HelpCenter";
 import ReportABug from "../Content/ReportABug";
 import Page404 from "./Page404";
+import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 export default function PageConstructor() {
   return (
@@ -42,6 +43,7 @@ export default function PageConstructor() {
           <Route exact path="/howto" element={<HowTo />}></Route>
           <Route exact path="/help" element={<HelpCenter />}></Route>
           <Route exact path="/reportbug" element={<ReportABug />}></Route>
+          <Route exact path="/Account" element={<Account/>}></Route>
           <Route path="*" element={<Page404 />}></Route>
           
           {/* <Route exact path={"/Product/:ProductID"} element={<ProductDetail />}></Route> */}

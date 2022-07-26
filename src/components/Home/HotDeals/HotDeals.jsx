@@ -103,6 +103,7 @@ export default function HotDeals() {
 
       scrollHotDeals.scrollBy({
         left: event.deltaY < 0 ? -100 : 100,
+        behavior: "auto"
       });
     });
   };
@@ -116,23 +117,20 @@ export default function HotDeals() {
 
     dragHotDeals.addEventListener("mousedown", (e) => {
       isDown = true;
-      dragHotDeals.classList.add("active");
       startX = e.pageX - dragHotDeals.offsetLeft;
       scrollLeft = dragHotDeals.scrollLeft;
     });
     dragHotDeals.addEventListener("mouseleave", () => {
       isDown = false;
-      dragHotDeals.classList.remove("active");
     });
     dragHotDeals.addEventListener("mouseup", () => {
       isDown = false;
-      dragHotDeals.classList.remove("active");
     });
     dragHotDeals.addEventListener("mousemove", (e) => {
       if (!isDown) return;
       e.preventDefault();
       const x = e.pageX - dragHotDeals.offsetLeft;
-      const walk = (x - startX) * 3; //scroll-fast
+      const walk = (x - startX) *3; //scroll-fast
       dragHotDeals.scrollLeft = scrollLeft - walk;
     });
   };

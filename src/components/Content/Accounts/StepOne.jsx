@@ -1,0 +1,95 @@
+import React from "react";
+import "./Account.scss";
+import { Link } from "react-router-dom";
+import "../../dark.scss";
+import { useState } from "react";
+
+export default function StepOne(props) {
+
+  const [inputType, setInputType] = useState('');
+
+
+const nextStep = props.nextStep;
+
+  const nextButtonHandler = () => {
+const patterns={
+  email: '^[^\s@]+@[^\s@]+\.[^\s@]+$',
+  phone: '^[0][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]'
+}
+
+
+    const accountFirstInput = document.querySelector(".Account-firstInput");
+    const accountInvalidLabelEmpty = document.querySelector(
+      ".Account-input-invalid-empty"
+    );
+
+    if (accountFirstInput.value === "") {
+      accountFirstInput.classList.add("is-invalid");
+      accountInvalidLabelEmpty.classList.remove("d-none");
+    }else
+    if (accountFirstInput.value.match(patterns.email)) {
+      setInputType(inputType = 'email')
+      nextStep()
+    }
+  };
+
+  return (
+    <div className="d-flex justify-content-center mt-5 mb-5">
+              <div>back</div>
+
+        <div className="text-center w-25 border rounded p-5">
+          <main className="form-signin w-100 m-auto">
+            <div>
+              <div className="d-flex flex-column align-items-center">
+                <img
+                  className="mb-4 Account-Logo"
+                  src={require("../imgs/Logo/Logo-Black.png")}
+                  alt=""
+                  width={72}
+                  height={57}
+                />
+                <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
+              </div>
+              <div class="mb-4 mt-4 d-flex flex-column align-items-start">
+                <input
+                  type="text"
+                  class="form-control Account-firstInput"
+                  id=""
+                  placeholder="Email Or Phone Number"
+                  required
+                ></input>
+                <small>
+                  <label className="text-capitalize text-danger ms-2 d-none Account-input-invalid-empty">
+                    please fill the input.
+                  </label>
+                </small>{" "}
+              </div>
+              <div className="checkbox mb-3">
+                <p className="text-capitalize text-muted">
+                  <small>
+                    please fill out field to begin your fascinating journey, or continue if you already started!
+                  </small>
+                </p>
+               
+              </div>
+              <button
+                onClick={nextButtonHandler}
+                className="w-100 btn btn-lg btn-warning account-next-button"
+                type="submit"
+              >
+                Next!
+              </button>
+              <small>
+                <p className="mt-4 mb-0 text-muted">
+                  Need Help?
+                  <Link className="ms-1 Link" to={"/help"}>
+                    Help Center
+                  </Link>
+                </p>
+              </small>
+            </div>
+          </main>
+        </div>
+      </div>
+      );
+}

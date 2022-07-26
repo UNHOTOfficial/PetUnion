@@ -4,7 +4,7 @@ import "./Header.scss";
 import "bootstrap/dist/js/bootstrap.bundle.js";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
-import '../dark.scss'
+import "../dark.scss";
 
 export default function Header() {
   const toggleDarkmode = () => {
@@ -13,8 +13,17 @@ export default function Header() {
     );
     document.body.classList.toggle("dark");
   };
+
+
   return (
     <header className="p-3 bg-dark text-white header">
+      <Link to={'/'}>
+      <img
+        className="Logo ms-2"
+        alt="Logo"
+        src= {require('../Content/imgs/Logo/Logo.png')}
+        ></img>
+        </Link>
       <div className="container">
         <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
           <a
@@ -98,9 +107,11 @@ export default function Header() {
           </form>
 
           <div className="text-end d-flex">
-            <button type="button" className="btn btn-outline-light me-2">
-              Sign up / Sign In
-            </button>
+            <Link to="/Account">
+              <button type="button" className="btn btn-outline-light me-2">
+                Sign up / Sign In
+              </button>
+            </Link>
             <button
               type="button"
               className="btn btn-outline-light ms-2 HCartButton"
