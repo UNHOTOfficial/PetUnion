@@ -12,7 +12,7 @@ const handleFormData = props.handleFormData;
   return (
 <div className="d-flex justify-content-center mt-5 mb-5">
       <div className="w-25 border rounded">
-        <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i class="bi bi-arrow-left m-1"></i>Back</div>
+        <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i className="bi bi-arrow-left m-1"></i>Back</div>
         <main className="form-signin text-center w-100 m-auto p-5">
           <div>
             <div className="d-flex flex-column align-items-center">
@@ -25,10 +25,10 @@ const handleFormData = props.handleFormData;
               />
               <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
             </div>
-            <div class="mb-4 mt-4 d-flex flex-column align-items-start">
+            <div className="mb-4 mt-4 d-flex flex-column align-items-start">
               <input
                 type="text"
-                class="form-control Account-firstInput"
+                className="form-control Account-firstInput"
                 id=""
                 placeholder="Password"
                 required

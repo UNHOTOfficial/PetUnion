@@ -11,7 +11,7 @@ export default function HotDeals() {
       price: "50",
       hasDiscount: true,
       discount: "10",
-      productId: "2574128",
+      productId: "25734128",
     },
     {
       name: "Pet Food",
@@ -20,7 +20,7 @@ export default function HotDeals() {
       price: "23",
       hasDiscount: true,
       discount: "5",
-      productId: "8889419",
+      productId: "88829419",
     },
     {
       name: "Pet Mineral",
@@ -29,7 +29,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "6737787",
     },
     {
       name: "Pet Mineral",
@@ -38,7 +38,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "6734787",
     },
     {
       name: "Pet Mineral",
@@ -47,7 +47,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "6737687",
     },
     {
       name: "Pet Mineral",
@@ -56,7 +56,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "6735787",
     },
     {
       name: "Pet Mineral",
@@ -65,7 +65,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "67354787",
     },
     {
       name: "Pet Mineral",
@@ -74,7 +74,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "68767",
     },
     {
       name: "Pet Mineral",
@@ -83,7 +83,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "6786876",
     },
     {
       name: "Pet Mineral",
@@ -92,7 +92,7 @@ export default function HotDeals() {
       price: "12",
       hasDiscount: true,
       discount: "3",
-      productId: "673787",
+      productId: "68763638",
     },
   ];
 
@@ -159,7 +159,7 @@ export default function HotDeals() {
 
   return (
     <React.Fragment>
-      <div className="container bg-dark mt-3 mb-3 text-white rounded-4 HotDealsContainer overflow-auto">
+      <div className="container bg-dark mt-3 mb-3 text-white rounded-5 HotDealsContainer overflow-auto">
         {/* <div className="d-flex justify-content-between"> */}
 {/* <img className="HotDeals-img" alt="Coupon" src={require('./Imgs/coupon.png')}></img> //wasn't good enough */} 
         <h3 className="text-center mt-3">Hot Deals</h3>
@@ -167,7 +167,7 @@ export default function HotDeals() {
         {/* </div> */}
         <div className="d-flex align-items-center">
           <div className="me-2" onClick={scrollArrowLeft}>
-            <i class="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left"></i>
+            <i className="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left"></i>
           </div>
           <div
             className="row flex-nowrap HotDealsRow"
@@ -175,7 +175,7 @@ export default function HotDeals() {
             onMouseDown={dragHotDeals}
           >
             {products.map((product) => (
-              <div className="col-lg p-0 HotDealsItem">
+              <div key={product.productId} className="col-lg p-0 HotDealsItem">
                 <HotDealsProduct
                   ProductId={product.productId}
                   img={product.img}
@@ -188,7 +188,7 @@ export default function HotDeals() {
             ))}
           </div>
           <div className="ms-4" onClick={scrollArrowRight}>
-            <i class="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right"></i>
+            <i className="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right"></i>
           </div>
         </div>
       </div>

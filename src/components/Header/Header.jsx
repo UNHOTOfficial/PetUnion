@@ -14,12 +14,21 @@ export default function Header() {
     document.body.classList.toggle("dark");
   };
 
+  const searchEnter = ()=>{
+    document.querySelector('.Hsearch').addEventListener('keypress', (e)=>{
+      if (e.key === 'Enter') {
+        e.preventDefault();
+//code Here
+      }
+    });
+  }
+
 
   return (
     <header className="p-3 bg-dark text-white header">
       <Link to={'/'}>
       <img
-        className="Logo ms-2"
+        className="Logo ms-2 navbar-brand"
         alt="Logo"
         src= {require('../Content/imgs/Logo/Logo.png')}
         ></img>
@@ -33,7 +42,7 @@ export default function Header() {
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 align-items-center">
             <li>
-              <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+              <nav className="navbar navbar-expand-lg">
                 <div className="container-fluid">
                   <div
                     className="collapse navbar-collapse"
@@ -99,6 +108,7 @@ export default function Header() {
             role="search"
           >
             <input
+            onFocus={searchEnter}
               type="search"
               className="form-control form-control-dark text-white bg-dark Hsearch"
               placeholder="Search..."
@@ -116,7 +126,7 @@ export default function Header() {
               type="button"
               className="btn btn-outline-light ms-2 HCartButton"
             >
-              <i className="bi bi-cart m-0"></i>
+              <i className="bi bi-cart me-2"></i>Cart
             </button>
             <div className="form-check form-switch ms-5 mt-1">
               <input

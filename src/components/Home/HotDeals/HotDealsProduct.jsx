@@ -40,7 +40,7 @@ export default function HotDealsProduct(props) {
         </div>
 
         <div className='progress HotDealsProgress'>
-  <div className='progress-bar bg-warning'
+  <div className='progress-bar bg-warning HotDeals-progress-bar'
        role='progressbar'
        aria-valuenow={70}
        aria-valuemin={0}

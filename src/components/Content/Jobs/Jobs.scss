@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'san-francisco-bold';
+    src: url(../../SFNSDisplay-Bold.otf);
+}
+
+.jobs-container-left{
+    background-color: #352b21 !important;
+    color: #f5a52c;
+    font-family: 'san-francisco-bold', Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+    
+}
+.jobs-container-right{
+    background-color: #f5a52c;
+    color: #352b21;
+}
+.jobs-container-right-p{
+    color: #352b21 !important;
+}
+.jobs-menu{
+    background-color: #353535;
+    height: fit-content;
+}
+.jobs-right-filter{
+    background-color: #353535;
+}
+.job-card{
+    background-color: #353535;
+    height: 15rem;
+}
+.job-card{
+    flex: 45%;
+}
+.jobs-right-filter{
+    width: 23%;
+    height: 20rem;
+}
+.jobs-pagination{
+    background-color: #353535;
+}
+.jobs-container-right-icon{
+    width: 10rem;
+    height: auto;
+}
+.jobs-search{
+    background-color: #353535;
+}
+.jobs-search:focus{
+    background-color: #353535;
+}
+.job-card-img{
+    width: 2rem;
+    height: 2rem;
+}
+.job-card-Icon{
+    width: 1rem;
+    height: 1rem;
+}
+.job-card:hover{
+    box-shadow: 0 0 01rem #000;
+    transition: all 0.3s;
+}

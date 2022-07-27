@@ -50,10 +50,10 @@ const patterns={
                 />
                 <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
               </div>
-              <div class="mb-4 mt-4 d-flex flex-column align-items-start">
+              <div className="mb-4 mt-4 d-flex flex-column align-items-start">
                 <input
                   type="text"
-                  class="form-control Account-firstInput"
+                  className="form-control Account-firstInput"
                   id=""
                   placeholder="Email Or Phone Number"
                   required

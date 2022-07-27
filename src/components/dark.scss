@@ -2,116 +2,123 @@
 @import "../../node_modules//bootstrap/scss/variables";
 @import "../../node_modules//bootstrap/scss/mixins";
 
-
-
 @font-face {
-    font-family: 'san-francisco';
-    src: url(./SFNSText-Regular.otf);
+  font-family: "san-francisco";
+  src: url(./SFNSText-Regular.otf);
 }
 
-body{
-  font-family: 'san-francisco';
-  .App{
-transition: all 0.3s;
+body {
+  font-family: "san-francisco", Helvetica, sans-serif;
+  .App {
+    transition: all 0.3s;
   }
 }
 
 .dark {
-    $enable-gradients: true;
-    
-    $background: #000;
-    $text: #fff !important;
-    $text-secondary: rgba(235, 235, 245, 0.6);
-    $background-secondary: #1c1c1e;
-    $input: rgba(118, 118, 128, 0.6);
-    $divider: rgba(84, 84, 88, 0.65);
-    $material: #1D1D1D;
-    $link: #147EFB;
+  $enable-gradients: true;
 
-    /* redefine theme colors for dark theme */
-    $blue: #0d6efd;
-    $indigo: #6610f2;
-    $purple: #6f42c1;
-    $pink: #d63384;
-    $red: #ff3b30;
-    $orange: #fd7e14;
-    $yellow: rgb(255,214,10);
-    $green: #198754;
-    $teal: #20c997;
-    $cyan: #0dcaf0;
-    $success: rgb(49,209,88);
+  $background: #000;
+  $text: #fff !important;
+  $text-secondary: rgba(235, 235, 245, 0.6);
+  $background-secondary: #1c1c1e;
+  $input: rgba(118, 118, 128, 0.6);
+  $divider: rgba(84, 84, 88, 0.65);
+  $material: #1d1d1d;
+  $link: #147efb;
 
-    $theme-colors: (
-        "primary": $primary,
-        "secondary": $secondary,
-      "success": $success,
-      "info": $info,
-      "warning": $yellow,
-      "danger": $danger,
-      "light": $light,
-      "dark": $dark,
-      "muted": $text-secondary,
-      );
-      
-      $input-focus-bg: $input;
-      
-    
-    .App{
-      transition: all 0.5s;
-            background-color: $background;
-           color: $text;
-          font-family: 'san-francisco';
-        a{
-            color: $text;
-          }
-          .nav-link:hover{
-            opacity: 0.5;
-          }
-          .card{
-              background-color: $background-secondary;
-              color: $text;
-              border: 0.6px solid $divider;
-          }
-          input, textarea{
-              background-color: $input;
-              border: none;
-              color: $text
-          }
-          input::placeholder, textarea::placeholder{
-              color: $text;
-          }
-          hr{
-              color: $divider;
-          }
-          p{
-              color: $text-secondary;
-          }
-          .header{
-              background-color: $material !important;
-              backdrop-filter: blur(94%);
-              
-          }
-          .footer{
-            background-color: $material !important;
-            backdrop-filter: blur(50px);
-            border-top: $divider;
-            max-width: 100%;
-            padding-left: 5rem;
-            padding-right: 5rem;
-          }
-          h6:hover{
-            color: inherit;
-          }
-          .Product-addtocart{
-            color: #000 !important;
-          }
-.Account-Logo{
-  filter: invert(100%)
-}
-.Link{
-  color: $link !important;
-}
-      }
+  /* redefine theme colors for dark theme */
+  $blue: #0d6efd;
+  $indigo: #6610f2;
+  $purple: #6f42c1;
+  $pink: #d63384;
+  $red: #ff3b30;
+  $orange: #fd7e14;
+  $yellow: rgb(255, 214, 10);
+  $green: #198754;
+  $teal: #20c997;
+  $cyan: #0dcaf0;
+  $success: rgb(49, 209, 88);
 
-      @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+  $theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $yellow,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "muted": $text-secondary,
+  );
+
+  $input-focus-bg: $input;
+
+  .App {
+    transition: all 0.5s;
+    background-color: $background;
+    color: $text;
+    font-family: "san-francisco", Helvetica, sans-serif;
+    a {
+      color: $text;
     }
+    .nav-link:hover {
+      opacity: 0.5;
+    }
+    .card {
+      background-color: $background-secondary;
+      color: $text;
+      border: 0.6px solid $divider;
+    }
+    input,
+    textarea {
+      background-color: $input;
+      border: none;
+      color: $text;
+    }
+    input::placeholder,
+    textarea::placeholder {
+      color: $text;
+    }
+    hr {
+      color: $divider;
+    }
+    p {
+      color: $text-secondary;
+    }
+    .header {
+      background-color: $material !important;
+      backdrop-filter: blur(94%);
+    }
+    .footer {
+      background-color: $material !important;
+      backdrop-filter: blur(50px);
+      border-top: $divider;
+      max-width: 100%;
+      padding-left: 5rem;
+      padding-right: 5rem;
+    }
+    h6:hover {
+      color: inherit;
+    }
+    .Product-addtocart {
+      color: #000 !important;
+    }
+    .Account-Logo {
+      filter: invert(100%);
+    }
+    .Link {
+      color: $link !important;
+    }
+    .navbar-expand-lg {
+      background: transparent;
+    }
+
+    .job-card:hover{
+      box-shadow: 0 0 0.5rem #fff;
+      transition: all 0.3s;
+  }
+  
+  }
+
+  @import "../../node_modules/bootstrap/scss/bootstrap.scss";
+}

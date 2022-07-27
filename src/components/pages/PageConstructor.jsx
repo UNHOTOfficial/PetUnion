@@ -7,7 +7,6 @@ import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Blog from "../Content/Blog";
 import Contact from "../Content/Contact/Contact";
-import Jobs from "../Content/Jobs";
 import Cooperation from "../Content/Cooperation";
 import Refund from "../Content/Refund";
 import Guarantee from "../Content/Guarantee";
@@ -21,6 +20,7 @@ import ReportABug from "../Content/ReportABug";
 import Page404 from "./Page404";
 import Account from "../Content/Accounts/Account"
 import '../dark.scss'
+import JobsContainer from "../Content/Jobs/JobsContainer";
 export default function PageConstructor() {
   return (
     <React.Fragment>
@@ -32,7 +32,7 @@ export default function PageConstructor() {
           <Route exact path="/about" element={<About />}></Route>
           <Route exact path="/blog" element={<Blog />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/jobs" element={<Jobs />}></Route>
+          <Route exact path="/jobs" element={<JobsContainer />}></Route>
           <Route exact path="/cooperation" element={<Cooperation />}></Route>
           <Route exact path="/refund" element={<Refund />}></Route>
           <Route exact path="/guarantee" element={<Guarantee />}></Route>

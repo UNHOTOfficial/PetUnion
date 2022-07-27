@@ -134,23 +134,23 @@ export default function Footer() {
         <div className="d-flex flex-column flex-sm-row justify-content-between p-2 fs-6 my-4 border-top pb-0">
           <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
-            <li className="ms-3">
+            <li className="ms-3 instagram">
               <a className="link-dark" href="#">
                 <i className="bi bi-instagram Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark linkedin" href="#">
                 <i className="bi bi-linkedin Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark telegram" href="#">
                 <i className="bi bi-telegram Fitem"></i>
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark" href="#">
+              <a className="link-dark twitter" href="#">
                 <i className="bi bi-twitter Fitem"></i>
               </a>
             </li>

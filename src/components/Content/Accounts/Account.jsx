@@ -43,10 +43,18 @@ export default function Account() {
         }
         else if (!accountFirstInput.value.match(patterns.email || patterns.phone)) {
           accountFirstInput.classList.add("is-invalid");
+          document.querySelector('.Account-input-invalid-empty').classList.add('d-none')
 document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-none')
         }
       };
 
+      const nextEnter = ()=>{
+        document.querySelector('.Account-firstInput').addEventListener('keypress',(e)=>{
+          if (e.key === "Enter") {
+            document.querySelector('.account-next-button').click();
+          }
+        })
+      }
 
 
   switch (step) {
@@ -66,10 +74,11 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
                 />
                 <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
               </div>
-              <div class="mb-3 mt-4 d-flex flex-column align-items-start">
+              <div className="mb-3 mt-4 d-flex flex-column align-items-start">
                 <input
+                onFocus={nextEnter}
                   type="text"
-                  class="form-control Account-firstInput"
+                  className="form-control Account-firstInput"
                   id=""
                   placeholder="Email Or Phone Number"
                   required

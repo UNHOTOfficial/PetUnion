@@ -19,7 +19,7 @@ const startTimer = ()=>{
   return (
     <div className="d-flex justify-content-center mt-5 mb-5">
     <div className="w-25 border rounded">
-              <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i class="bi bi-arrow-left m-1"></i>Back</div>
+              <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i className="bi bi-arrow-left m-1"></i>Back</div>
       <main className="form-signin text-center w-100 m-auto p-5">
         <div>
           <div className="d-flex flex-column align-items-center">
@@ -32,9 +32,9 @@ const startTimer = ()=>{
             />
             <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
           </div>
-          <div class="mb-2 mt-4 d-flex flex-column align-items-start">
+          <div className="mb-2 mt-4 d-flex flex-column align-items-start">
             <div className='input-group flex-row'>
-            <input ondelk onKeyUp={nextInputOtp} className='form-control text-center account-otp' id='0' type='text' inputMode='numeric' pattern='[0-9]' maxLength={1}></input>
+            <input onKeyUp={nextInputOtp} className='form-control text-center account-otp' id='0' type='text' inputMode='numeric' pattern='[0-9]' maxLength={1}></input>
             <input onKeyUp={nextInputOtp} className='form-control text-center account-otp' id='1' type='text' inputMode='numeric' pattern='[0-9]' maxLength={1}></input>
             <input onKeyUp={nextInputOtp} className='form-control text-center account-otp' id='2' type='text' inputMode='numeric' pattern='[0-9]' maxLength={1}></input>
             <input onKeyUp={nextInputOtp} className='form-control text-center account-otp' id='3' type='text' inputMode='numeric' pattern='[0-9]' maxLength={1}></input>

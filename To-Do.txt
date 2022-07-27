@@ -6,6 +6,9 @@ Create 404 Page. ✅ -C
 Fix Hot deals menu to scroll horizontally. ✅ -C
 Work on Dark Mode In "darkmode" Branch. ✅ -C
 Fix Products Add To Cart Button (Removed) ✅ -C
+Add Dark Mode. ✅ -C
+Fix Console Bugs. ✅
+
 Make products pages by ids.
 Create remaining pages.
 Add social media links. 
@@ -14,6 +17,4 @@ Add FAQs collapses.
 Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
-Add Dark Mode.
-Fix Console Bugs.
 Fix Hot Deals Menu Drag.
