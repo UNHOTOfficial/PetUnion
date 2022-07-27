@@ -137,7 +137,7 @@ export default function Contact() {
           <form className="needs-validation" action="">
             <div className="row g-3">
               <div className="col-sm-6">
-                <label for="firstName" className="form-label">
+                <label htmlFor="firstName" className="form-label">
                   First name
                 </label>
                 <input
@@ -154,7 +154,7 @@ export default function Contact() {
               </div>
 
               <div className="col-sm-6">
-                <label for="lastName" className="form-label">
+                <label htmlFor="lastName" className="form-label">
                   Last name
                 </label>
                 <input
@@ -169,7 +169,7 @@ export default function Contact() {
               </div>
 
               <div className="col-12">
-                <label for="email" className="form-label">
+                <label htmlFor="email" className="form-label">
                   Email
                 </label>
                 <input
@@ -185,7 +185,7 @@ export default function Contact() {
               </div>
 
               <div className="col-12">
-                <label for="email" className="form-label">
+                <label htmlFor="email" className="form-label">
                   Message
                 </label>
                 <textarea

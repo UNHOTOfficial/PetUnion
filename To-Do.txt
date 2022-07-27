@@ -7,6 +7,7 @@ Fix Hot deals menu to scroll horizontally. ✅ -C
 Work on Dark Mode In "darkmode" Branch. ✅ -C
 Fix Products Add To Cart Button (Removed) ✅ -C
 Add Dark Mode. ✅ -C
+Make Job Page. ✅ -C
 Fix Console Bugs. ✅
 
 Make products pages by ids.
@@ -18,3 +19,15 @@ Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Fix Hot Deals Menu Drag.
+Make Blog Page.
+Make About Page.
+Make Cooperation Page.
+Make Refund Page.
+Make Guarantee Page.
+Make Complication Page.
+Make PrivacyPolicy Page.
+Make TermsOfUse Page.
+Make Support Page.
+Make HowTo Page.
+Make HelpCenter Page.
+Make ReportABug Page.

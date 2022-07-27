@@ -24,12 +24,10 @@ i {
   background-image: url("https://cdn-icons-png.flaticon.com/512/4792/4792303.png") !important;
   height: 1.5rem !important;
   width: 2.8rem !important;
-  background-color: transparent;
   border: 0.1rem solid #ffc107;
   transition: all 0.3s !important;
 }
 .header-darkmode-switch-input:checked {
-  background-color: transparent;
   border-color: #ffc107;
   background-image: url("https://cdn-icons-png.flaticon.com/512/3594/3594375.png") !important;
 }

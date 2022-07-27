@@ -7,7 +7,7 @@ export default function Jobs(props) {
     <Link className="rounded-5 job-card p-4 pt-0 pb-0 m-1 d-flex flex-column justify-content-evenly" to={`/Jobs/${props.id}`}>
       <div className="jobs-card-tags w-50 mt-2 d-flex justify-content-start pt-3">
         {props.tags.map((tag) => (
-          tag === "New" ? <div className="badge rounded-pill text-bg-warning me-1">{tag}</div> : <div className="badge rounded-pill text-bg-secondary me-1">{tag}</div>
+          tag === "New" ? <div key={tag} className="badge rounded-pill text-bg-warning me-1">{tag}</div> : <div key={tag} className="badge rounded-pill text-bg-secondary me-1">{tag}</div>
         ))}
       </div>
       <div className="d-flex align-items-center mt-2">

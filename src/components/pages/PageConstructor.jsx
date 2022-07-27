@@ -21,6 +21,7 @@ import Page404 from "./Page404";
 import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
+
 export default function PageConstructor() {
   return (
     <React.Fragment>

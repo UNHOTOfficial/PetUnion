@@ -127,6 +127,7 @@ id: '56842352'
 
             <div className="d-flex flex-wrap mt-3 jobs-cards-container">
               {jobs.map((job) => (
+                <React.Fragment key={job.id}>
                 <Jobs
                   title={job.title}
                   details={job.details}
@@ -135,7 +136,8 @@ id: '56842352'
                   icon={job.icon}
                   location={job.location}
                   id={job.id}
-                />
+                  />
+                  </React.Fragment>
               ))}
             </div>
 
@@ -143,7 +145,7 @@ id: '56842352'
               <div className="w-75">
                 <div className="d-flex justify-content-center text-light w-100 justify-content-evenly jobs-pagination-items">
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
-                    <i class="bi bi-arrow-left-short"></i> Previous
+                    <i className="bi bi-arrow-left-short"></i> Previous
                   </p>
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
                     1
@@ -158,7 +160,7 @@ id: '56842352'
                     4
                   </p>
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-warning">
-                    Next<i class="bi bi-arrow-right-short"></i>
+                    Next<i className="bi bi-arrow-right-short"></i>
                   </p>
                 </div>
               </div>
@@ -166,55 +168,55 @@ id: '56842352'
           </div>
           <div className="rounded-4 p-2 d-flex flex-column justify-content-between jobs-right-filter">
             <h5 className="text-warning">
-              <i class="bi bi-funnel-fill"></i> Filters
+              <i className="bi bi-funnel-fill"></i> Filters
             </h5>
             <div className=" dropdown jobs-right-filter-dropdown-category">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                className="btn btn-secondary dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Dropdown button
               </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
+              <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
-                  <a class="dropdown-item active" href="#">
+                  <a className="dropdown-item active" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider"></hr>
+                  <hr className="dropdown-divider"></hr>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Separated link
                   </a>
                 </li>
               </ul>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
@@ -222,95 +224,95 @@ id: '56842352'
             </div>
             <div className=" dropdown jobs-right-filter-dropdown-location">
               <button
-                class="btn btn-secondary dropdown-toggle"
+                className="btn btn-secondary dropdown-toggle"
                 type="button"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
                 Dropdown button
               </button>
-              <ul class="dropdown-menu dropdown-menu-dark">
+              <ul className="dropdown-menu dropdown-menu-dark">
                 <li>
-                  <a class="dropdown-item active" href="#">
+                  <a className="dropdown-item active" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
                 <li>
-                  <hr class="dropdown-divider"></hr>
+                  <hr className="dropdown-divider"></hr>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Separated link
                   </a>
                 </li>
               </ul>
-              <ul class="dropdown-menu">
+              <ul className="dropdown-menu">
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Another action
                   </a>
                 </li>
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a className="dropdown-item" href="#">
                     Something else here
                   </a>
                 </li>
               </ul>
             </div>
             <div className=" jobs-right-filter-checkboxes">
-              <div class="form-check">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   value=""
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  class="form-check-label text-light"
-                  for="flexCheckDefault"
+                  className="form-check-label text-light"
+                  htmlFor="flexCheckDefault"
                 >
                   Default checkbox
                 </label>
               </div>
-              <div class="form-check">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   value=""
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  class="form-check-label  text-light"
-                  for="flexCheckDefault"
+                  className="form-check-label  text-light"
+                  htmlFor="flexCheckDefault"
                 >
                   Default checkbox
                 </label>
               </div>
-              <div class="form-check">
+              <div className="form-check">
                 <input
-                  class="form-check-input"
+                  className="form-check-input"
                   type="checkbox"
                   value=""
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  class="form-check-label  text-light"
-                  for="flexCheckDefault"
+                  className="form-check-label  text-light"
+                  htmlFor="flexCheckDefault"
                 >
                   Default checkbox
                 </label>
