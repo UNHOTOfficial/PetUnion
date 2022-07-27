@@ -128,7 +128,7 @@ export default function Contact() {
               <h4 className="mb-3">Contact Form</h4>
               <p className="text-capitalize text-secondary mb-1">
                 have an account?
-                <a className="ms-2 Contact-Form-Signin-Link" href="#NaN">
+                <a className="ms-2 text-link Contact-Form-Signin-Link" href="#NaN">
                   Sign In
                 </a>
               </p>
@@ -225,7 +225,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <a href="#Locations-Container">
+      <a className="text-muted" href="#Locations-Container">
         <div className="d-flex justify-content-center">
           <p className="me-2 fs-5 mt-1">Physical Locations</p>
           <i className="bi bi-arrow-down-circle fs-3"></i>
@@ -266,7 +266,7 @@ export default function Contact() {
           <button className="btn btn-warning text-capitalize mt-4">
             make an appointment
           </button>
-          <a className="mt-2" href="#map">
+          <a className="mt-2 text-muted" href="#map">
             <div className="d-flex justify-content-center">
               <p className="me-2 fs-5 mt-1">Map</p>
               <i className="bi bi-arrow-down-circle fs-3"></i>
@@ -275,7 +275,7 @@ export default function Contact() {
         </div>
       </div>
 
-      <a href="#map">
+      <a  className="text-muted" href="#map">
         <div className="d-flex justify-content-center">
           <p className="me-2 fs-5 mt-1">Map</p>
           <i className="bi bi-arrow-down-circle fs-3"></i>

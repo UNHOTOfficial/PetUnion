@@ -12,7 +12,7 @@ const handleFormData = props.handleFormData;
   return (
 <div className="d-flex justify-content-center mt-5 mb-5">
       <div className="w-25 border rounded">
-        <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i className="bi bi-arrow-left m-1"></i>Back</div>
+        <div  style={{cursor: 'pointer'}}  onClick={prevStep} className='text-left ms-2 mt-1 text-link'><i className="bi bi-arrow-left m-1"></i>Back</div>
         <main className="form-signin text-center w-100 m-auto p-5">
           <div>
             <div className="d-flex flex-column align-items-center">
@@ -53,7 +53,7 @@ const handleFormData = props.handleFormData;
             <small>
               <p className="mt-4 mb-0 text-muted">
                 Need Help?
-                <Link className="ms-1 Link" to={"/help"}>
+                <Link className="ms-1" to={"/help"}>
                   Help Center
                 </Link>
               </p>
@@ -62,8 +62,8 @@ const handleFormData = props.handleFormData;
               <p className="text-capitalize text-muted">
                 <small>
                   by creating an account, you accept{" "}
-                  <Link className='Link' to="/privacy-policy">privacy policy</Link> and{" "}
-                  <Link className='Link' to="/terms">terms of use</Link>.
+                  <Link className='' to="/privacy-policy">privacy policy</Link> and{" "}
+                  <Link className='' to="/terms">terms of use</Link>.
                 </small>
               </p>
             </div>

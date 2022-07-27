@@ -35,8 +35,6 @@ const patterns={
 
   return (
     <div className="d-flex justify-content-center mt-5 mb-5">
-              <div>back</div>
-
         <div className="text-center w-25 border rounded p-5">
           <main className="form-signin w-100 m-auto">
             <div>
@@ -82,7 +80,7 @@ const patterns={
               <small>
                 <p className="mt-4 mb-0 text-muted">
                   Need Help?
-                  <Link className="ms-1 Link" to={"/help"}>
+                  <Link className="ms-1" to={"/help"}>
                     Help Center
                   </Link>
                 </p>

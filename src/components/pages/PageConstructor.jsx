@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
-import About from "../Content/About";
+import About from "../Content/About/About";
 import FAQs from "../Content/FAQs/FAQs";
 import Home from "../Content/Home";
 import Footer from "../Footer/Footer";
@@ -21,6 +21,7 @@ import Page404 from "./Page404";
 import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
+import './Global.scss';
 
 export default function PageConstructor() {
   return (

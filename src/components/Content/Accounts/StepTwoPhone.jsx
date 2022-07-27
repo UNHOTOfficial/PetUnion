@@ -19,7 +19,7 @@ const startTimer = ()=>{
   return (
     <div className="d-flex justify-content-center mt-5 mb-5">
     <div className="w-25 border rounded">
-              <div onClick={prevStep} className='text-left ms-2 Link mt-1'><i className="bi bi-arrow-left m-1"></i>Back</div>
+              <div style={{cursor: 'pointer'}} onClick={prevStep} className='text-left ms-2 mt-1 text-link'><i className="bi bi-arrow-left m-1"></i>Back</div>
       <main className="form-signin text-center w-100 m-auto p-5">
         <div>
           <div className="d-flex flex-column align-items-center">
@@ -57,7 +57,7 @@ const startTimer = ()=>{
                 Next Code In: {<p className='counter'></p>}
               </small>
             </p>
-              <small className='Link ms-1 account-otp-resend'>Resend</small>
+              <small  style={{cursor: 'pointer'}}  className='ms-1 account-otp-resend text-link'>Resend</small>
             </div>
           </div>
           <button
@@ -70,7 +70,7 @@ const startTimer = ()=>{
           <small>
             <p className="mt-4 mb-0 text-muted">
               Need Help?
-              <Link className="ms-1 Link" to={"/help"}>
+              <Link className="ms-1" to={"/help"}>
                 Help Center
               </Link>
             </p>

@@ -9,7 +9,9 @@ Fix Products Add To Cart Button (Removed) ✅ -C
 Add Dark Mode. ✅ -C
 Make Job Page. ✅ -C
 Fix Console Bugs. ✅
+Make About Page. ✅
 
+Make Dark Mode Color Scheme.
 Make products pages by ids.
 Create remaining pages.
 Add social media links. 
@@ -20,7 +22,6 @@ Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Fix Hot Deals Menu Drag.
 Make Blog Page.
-Make About Page.
 Make Cooperation Page.
 Make Refund Page.
 Make Guarantee Page.

@@ -112,7 +112,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
               <small>
                 <p className="mt-4 mb-0 text-muted">
                   Need Help?
-                  <Link className="ms-1 Link" to={"/help"}>
+                  <Link className="ms-1" to={"/help"}>
                     Help Center
                   </Link>
                 </p>
