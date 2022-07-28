@@ -7,10 +7,10 @@ export default function HotDealsProduct(props) {
 
   return (
     <React.Fragment>
-         <Link className="card ProductCard ProductItem m-3 ms-2 me-2 user-select-none HotDealProductCard rounded-5" to={`/Product/${props.ProductId}`}>
+         <Link className="card ProductCard ProductItem m-3 ms-2 me-2 user-select-none HotDealProductCard rounded-5  bg-background-secondary border-divider text-dark" to={`/Product/${props.ProductId}`} style={{width:"18rem",color:"inherit",textDecoration:"none"}}>
       <img
         src={props.img}
-        className="card-img-top mx-auto mt-3 HotDealProductCard"
+        className="card-img-top mx-auto mt-3 HotDealProductCard" style={{"width":"10rem","height":"10rem","objectFit":"contain"}}
         alt={props.name}
       ></img>
       <div className="card-body">
@@ -39,7 +39,7 @@ export default function HotDealsProduct(props) {
           </div>
         </div>
 
-        <div className='progress HotDealsProgress'>
+        <div className='progress HotDealsProgress' style={{height:"0.4rem"}}>
   <div className='progress-bar bg-warning HotDeals-progress-bar'
        role='progressbar'
        aria-valuenow={70}

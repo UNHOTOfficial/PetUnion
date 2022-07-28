@@ -69,10 +69,10 @@ id: '56842352'
       <div className="container mb-3 mt-3">
         <div className="jobs-container-left d-flex rounded-5 p-2 justify-content-between">
           <div className="d-flex flex-column p-4 justify-content-between">
-            <h4 className="text-capitalize">
+            <h2 className="text-capitalize">
               find your dream job in our business.
-            </h4>
-            <p className="text-capitalize text-light jobs-container-left-p">
+            </h2>
+            <p className="text-capitalize text-dark jobs-container-left-p">
               with the help of out company, success is not far.
               <br /> peek the page for your desired job.
             </p>
@@ -85,12 +85,12 @@ id: '56842352'
               you can choose from a wide range from programming to logistics!
             </h4>
             <div className="d-flex justify-content-around align-items-center">
-              <p className="text-capitalize jobs-container-right-p">
+              <p className="text-capitalize jobs-container-right-p text-dark">
                 browse available jobs from below menu
                 <br /> and apply for the one suits best for you!
               </p>
               <img
-                className="jobs-container-right-icon"
+                className="jobs-container-right-icon" style={{"width":"10rem","height":"auto"}}
                 alt="Icon"
                 src={require("./imgs/perspective_matte.png")}
               ></img>
@@ -101,7 +101,7 @@ id: '56842352'
           <div className="d-flex flex-column w-75">
             <div className=" jobs-menu-filter">
               <div className="rounded-5 p-4 jobs-menu">
-                <h5 className="text-light">Jobs</h5>
+                <h5 className="text-dark">Jobs</h5>
                 <div className="d-flex w-50 justify-content-around jobs-menu-items">
                   <Link to={"/"} className="text-warning text-capitalize">
                     All Jobs
@@ -143,20 +143,20 @@ id: '56842352'
 
             <div className="jobs-pagination rounded-5 mt-2 d-flex justify-content-center">
               <div className="w-75">
-                <div className="d-flex justify-content-center text-light w-100 justify-content-evenly jobs-pagination-items">
-                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
+                <div className="d-flex justify-content-center text-dark w-100 justify-content-evenly jobs-pagination-items">
+                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
                     <i className="bi bi-arrow-left-short"></i> Previous
                   </p>
-                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
+                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
                     1
                   </p>
-                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
+                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
                     2
                   </p>
-                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
+                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
                     3
                   </p>
-                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-light">
+                  <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
                     4
                   </p>
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-warning">
@@ -166,7 +166,7 @@ id: '56842352'
               </div>
             </div>
           </div>
-          <div className="rounded-4 p-2 d-flex flex-column justify-content-between jobs-right-filter">
+          <div className="rounded-4 p-2 d-flex flex-column justify-content-between jobs-right-filter" style={{"width":"23%","height":"20rem"}}>
             <h5 className="text-warning">
               <i className="bi bi-funnel-fill"></i> Filters
             </h5>
@@ -283,7 +283,7 @@ id: '56842352'
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  className="form-check-label text-light"
+                  className="form-check-label text-dark"
                   htmlFor="flexCheckDefault"
                 >
                   Default checkbox
@@ -297,7 +297,7 @@ id: '56842352'
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  className="form-check-label  text-light"
+                  className="form-check-label  text-dark"
                   htmlFor="flexCheckDefault"
                 >
                   Default checkbox
@@ -311,7 +311,7 @@ id: '56842352'
                   id="flexCheckDefault"
                 ></input>
                 <label
-                  className="form-check-label  text-light"
+                  className="form-check-label  text-dark"
                   htmlFor="flexCheckDefault"
                 >
                   Default checkbox

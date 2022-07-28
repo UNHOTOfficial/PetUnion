@@ -25,10 +25,11 @@ export default function Header() {
 
 
   return (
-    <header className="p-3 bg-dark text-white header">
+    <header className="p-3 bg-dark text-white bg-material header">
       <Link to={'/'}>
       <img
-        className="Logo ms-2 navbar-brand"
+        className="Logo ms-2 navbar-brand float-left"
+        style={{width:"3rem", float:'left'}}
         alt="Logo"
         src= {require('../Content/imgs/Logo/Logo.png')}
         ></img>
@@ -41,8 +42,8 @@ export default function Header() {
           ></a>
 
           <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 align-items-center">
-            <li>
-              <nav className="navbar navbar-expand-lg">
+            <li className="bg-transparent">
+              <nav className="navbar navbar-expand-lg bg-transparent">
                 <div className="container-fluid">
                   <div
                     className="collapse navbar-collapse"
@@ -110,7 +111,7 @@ export default function Header() {
             <input
             onFocus={searchEnter}
               type="search"
-              className="form-control form-control-dark text-white bg-dark Hsearch"
+              className="form-control form-control-dark text-white bg-input border-0 Hsearch"
               placeholder="Search..."
               aria-label="Search"
             ></input>

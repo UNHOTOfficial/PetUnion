@@ -159,7 +159,7 @@ export default function HotDeals() {
 
   return (
     <React.Fragment>
-      <div className="container bg-dark mt-3 mb-3 text-white rounded-5 HotDealsContainer overflow-auto">
+      <div className="container bg-background-secondary mt-3 mb-3 text-daek rounded-5 HotDealsContainer overflow-auto">
         {/* <div className="d-flex justify-content-between"> */}
 {/* <img className="HotDeals-img" alt="Coupon" src={require('./Imgs/coupon.png')}></img> //wasn't good enough */} 
         <h3 className="text-center mt-3">Hot Deals</h3>
@@ -167,10 +167,11 @@ export default function HotDeals() {
         {/* </div> */}
         <div className="d-flex align-items-center">
           <div className="me-2" onClick={scrollArrowLeft}>
-            <i className="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left"></i>
+            <i className="bi bi-arrow-left-circle-fill fs-3 text-warning HotDeals-arrow-left" style={{cursor:"pointer"}}></i>
           </div>
           <div
             className="row flex-nowrap HotDealsRow"
+            style={{overflow:"hidden", scrollBehavior:"smooth"}}
             onWheel={scrollHtoDeals}
             onMouseDown={dragHotDeals}
           >
@@ -188,7 +189,7 @@ export default function HotDeals() {
             ))}
           </div>
           <div className="ms-4" onClick={scrollArrowRight}>
-            <i className="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right"></i>
+            <i className="bi bi-arrow-right-circle-fill fs-3 text-warning HotDeals-arrow-right" style={{cursor:"pointer"}}></i>
           </div>
         </div>
       </div>

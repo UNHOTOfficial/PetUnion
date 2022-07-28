@@ -40,7 +40,7 @@ const patterns={
             <div>
               <div className="d-flex flex-column align-items-center">
                 <img
-                  className="mb-4 Account-Logo"
+                  className="mb-4 Account-Logo" style={{"width":"6rem","height":"auto"}}
                   src={require("../imgs/Logo/Logo-Black.png")}
                   alt=""
                   width={72}

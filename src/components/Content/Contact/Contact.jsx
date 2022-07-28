@@ -142,10 +142,10 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control bg-input border-0 text-dark"
                   id="firstName"
                   placeholder=""
-                  value=""
+                  
                   required="true"
                 ></input>
                 <div className="invalid-feedback">
@@ -159,10 +159,9 @@ export default function Contact() {
                 </label>
                 <input
                   type="text"
-                  className="form-control"
+                  className="form-control bg-input border-0 text-dark"
                   id="lastName"
                   placeholder=""
-                  value=""
                   required="true"
                 ></input>
                 <div className="invalid-feedback">Valid last name is required.</div>
@@ -174,7 +173,7 @@ export default function Contact() {
                 </label>
                 <input
                   type="email"
-                  className="form-control"
+                  className="form-control bg-input border-0 text-dark"
                   id="email"
                   placeholder="you@example.com"
                   required="true"
@@ -188,9 +187,9 @@ export default function Contact() {
                 <label htmlFor="email" className="form-label">
                   Message
                 </label>
-                <textarea
+                <textarea style={{height:"10rem", resize:"none"}}
                   type="text"
-                  className="form-control"
+                  className="form-control bg-input border-0 text-dark"
                   id="text"
                   placeholder="Your Message"
                 ></textarea>
@@ -237,13 +236,13 @@ export default function Contact() {
           {offices.map((office) => (
             <div className="border-top border-bottom p-3">
               <div className="d-flex flex-row align-items-center">
-                <img className="flag" src={office.src} alt={office.title} />
+                <img className="flag" style={{width:"2.5rem"}} src={office.src} alt={office.title} />
                 <h6 className="mb-0 ms-2">{office.title}</h6>
               </div>
               <div>
                 {office.address.map((address) => (
                   <div className="d-flex mt-1">
-                    <img className="pin" src={require("./Imgs/pin.png")}></img>
+                    <img className="pin" src={require("./Imgs/pin.png")} style={{width:"1.5rem"}}></img>
                     <h6 className="mb-0 ">{address}</h6>
                   </div>
                 ))}

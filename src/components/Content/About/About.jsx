@@ -1,5 +1,4 @@
 import React from "react";
-import "./About.scss";
 
 export default function AboutContent() {
   return (
@@ -22,6 +21,7 @@ export default function AboutContent() {
 
               <img
                 className="about-icon"
+                style={{ width: "15rem", height: "15rem" }}
                 alt="Company"
                 src={require("./imgs/company.png")}
               ></img>
@@ -36,6 +36,7 @@ export default function AboutContent() {
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/product.png")}
                     alt="Product"
                   ></img>
@@ -50,6 +51,7 @@ export default function AboutContent() {
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/blogger.png")}
                     alt="Usesr"
                   ></img>
@@ -65,6 +67,7 @@ export default function AboutContent() {
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/global-shipping.png")}
                     alt="Shipping"
                   ></img>
@@ -80,6 +83,7 @@ export default function AboutContent() {
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/dog.png")}
                     alt="Happy"
                   ></img>
@@ -95,136 +99,170 @@ export default function AboutContent() {
           </div>
 
           <div className="d-flex flex-column align-items-center bg-light mt-3">
-            <h2 className="text-dark">Hear Our Story</h2>
+            <h2 className="text-dark mb-5 mt-3">Hear Our Story</h2>
             <div className="bg-light d-flex justify-content-around mb-5">
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/boots.png")}
                 alt="Heart"
               ></img>
-              <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">we first started in the USA!</h2>
-              <p className="text-dark text-capitalize fs-5">our story begins in the united states of america. a creative developer and his compute for sure started coding pet union on 2022. two weeks later, home page was made. that looked cool, he continued making other pages and part as time was going on.</p>
+              <div className="d-flex flex-column w-50 justify-content-evenly">
+                <h2 className="text-dark text-capitalize">
+                  we first started in the USA!
+                </h2>
+                <p className="text-dark text-capitalize fs-5">
+                  our story begins in the united states of america. a creative
+                  developer and his compute for sure started coding pet union on
+                  2022. two weeks later, home page was made. that looked cool,
+                  he continued making other pages and part as time was going on.
+                </p>
               </div>
             </div>
 
             <div className="bg-light d-flex justify-content-around mt-5">
-            <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">where did the first order sent?</h2>
-              <p className="text-dark text-capitalize fs-5">the very fist order was sent to the new york! someone bought some food for his dog. the order was sent in 2020.</p>
+              <div className="d-flex flex-column w-50  justify-content-evenly">
+                <h2 className="text-dark text-capitalize">
+                  where did the first order sent?
+                </h2>
+                <p className="text-dark text-capitalize fs-5">
+                  the very fist order was sent to the new york! someone bought
+                  some food for his dog. the order was sent in 2020.
+                </p>
               </div>
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/fast-delivery.png")}
                 alt="Heart"
               ></img>
-
             </div>
 
             <div className="bg-light d-flex justify-content-around mb-5 mt-5">
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/teamwork.png")}
                 alt="Heart"
               ></img>
-              <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">Team!</h2>
-              <p className="text-dark text-capitalize fs-5">two is a team right? so we can call oet union a team developing business when that creative developer first invited his friend to the business. he worked as social media administrator.</p>
+              <div className="d-flex flex-column w-50  justify-content-evenly">
+                <h2 className="text-dark text-capitalize">Team!</h2>
+                <p className="text-dark text-capitalize fs-5">
+                  two is a team right? so we can call oet union a team
+                  developing business when that creative developer first invited
+                  his friend to the business. he worked as social media
+                  administrator.
+                </p>
               </div>
             </div>
 
             <div className="bg-light d-flex justify-content-around mt-5">
-            <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">first office!</h2>
-              <p className="text-dark text-capitalize fs-5">our first office was established short after we reached the 1000th order. it was somewhere near central park. at that time its rent was so hard for us to pay.</p>
+              <div className="d-flex flex-column w-50   justify-content-evenly">
+                <h2 className="text-dark text-capitalize">first office!</h2>
+                <p className="text-dark text-capitalize fs-5">
+                  our first office was established short after we reached the
+                  1000th order. it was somewhere near central park. at that time
+                  its rent was so hard for us to pay.
+                </p>
               </div>
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/office-desk.png")}
                 alt="Office"
               ></img>
-
             </div>
 
             <div className="bg-light d-flex justify-content-around mb-5 mt-5">
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/canada (1).png")}
                 alt="Heart"
               ></img>
-              <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">exporting pet union!</h2>
-              <p className="text-dark text-capitalize fs-5">right after we reached our 30000th order, we exported pet union. how? im here to say! we established a branch at toronto, canada. might ask why canada? actually we got two neighbors. canada and mexico.</p>
+              <div className="d-flex flex-column w-50  justify-content-evenly">
+                <h2 className="text-dark text-capitalize">
+                  exporting pet union!
+                </h2>
+                <p className="text-dark text-capitalize fs-5">
+                  right after we reached our 30000th order, we exported pet
+                  union. how? im here to say! we established a branch at
+                  toronto, canada. might ask why canada? actually we got two
+                  neighbors. canada and mexico.
+                </p>
               </div>
             </div>
 
             <div className="bg-light d-flex justify-content-around mt-5">
-            <div className="d-flex flex-column w-50">
-              <h2 className="text-dark text-capitalize">20th location!</h2>
-              <p className="text-dark text-capitalize fs-5">moving too fast we established our 20th location 2 weeks ago. we really needed a vacation to a somewhere hot, like us. we moved to melbourne, australia. it's not over yet. soon we come to your country too!</p>
+              <div className="d-flex flex-column w-50  justify-content-evenly">
+                <h2 className="text-dark text-capitalize">20th location!</h2>
+                <p className="text-dark text-capitalize fs-5">
+                  moving too fast we established our 20th location 2 weeks ago.
+                  we really needed a vacation to a somewhere hot, like us. we
+                  moved to melbourne, australia. it's not over yet. soon we come
+                  to your country too!
+                </p>
               </div>
               <img
                 className="about-story-img"
+                style={{ width: "15rem" }}
                 src={require("./imgs/lunar-tour.png")}
                 alt="Office"
               ></img>
-
             </div>
-
           </div>
 
           <div className="d-flex flex-column align-items-center bg-light mt-3 flex-wrap">
             <div className="text-capitalize text-dark">
-              <h2>our achievements</h2>
+              <h2 className="mt-3">our achievements</h2>
             </div>
             <div className="d-flex w-100 justify-content-evenly">
               <div className="d-flex p-4 justify-content-between text-dark">
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/trophy.png")}
                     alt="trophy1"
                   ></img>
                   <strong>Fast-Developing Company</strong>
-                  
                 </div>
               </div>
               <div className="d-flex p-4 justify-content-between text-dark">
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/trophy (1).png")}
                     alt="trophy2"
                   ></img>
                   <strong>Best Customer-Care Service</strong>
-                  
                 </div>
               </div>
               <div className="d-flex p-4 justify-content-between text-dark">
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/one.png")}
                     alt="one"
                   ></img>
                   <strong>Bese Ui/Ux Site</strong>
-                
                 </div>
               </div>
               <div className="d-flex p-4 justify-content-between text-dark">
                 <div className="d-flex flex-column align-items-center">
                   <img
                     className="about-statics-icon"
+                    style={{ width: "5rem", height: "5rem" }}
                     src={require("./imgs/oscar.png")}
                     alt="oscar"
                   ></img>
                   <strong>Maybe One Day...</strong>
-              
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>

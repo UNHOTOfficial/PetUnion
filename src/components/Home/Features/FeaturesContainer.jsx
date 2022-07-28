@@ -1,5 +1,4 @@
 import React from "react";
-import "./Features.scss"
 import Feature from './Feature'
 export default function FeaturesContainer() {
   const Features = [
@@ -26,7 +25,7 @@ export default function FeaturesContainer() {
   ];
 
   return (
-    <div className="container FeaturesContainer">
+    <div className="container FeaturesContainer" style={{height: "16rem"}}>
       <div className="row FeaturesRow">
         {Features.map((feature) => (
           <Feature key={feature.name} src={feature.src} name={feature.name} title={feature.title} text={feature.text}/>

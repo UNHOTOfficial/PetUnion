@@ -1,5 +1,4 @@
 import React from "react";
-import "./FAQs.scss";
 import { Link } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 export default function FAQsContent() {
@@ -8,7 +7,7 @@ export default function FAQsContent() {
       <div className="container text-center">
         <h2>Got A Question?</h2>
         <h6>Search, Or Choose From Categories Below.</h6>
-        <div className="input-group mb-3 mx-auto mt-3 FAQsSearch">
+        <div className="input-group mb-3 mx-auto mt-3 FAQsSearch" style={{width:'30rem'}}>
           <input
             type="text"
             className="form-control"

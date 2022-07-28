@@ -10,8 +10,8 @@ export default function Footer() {
   };
 
   return (
-    <div className="container border-top footer w-100">
-      <footer className="pt-5">
+    <div className="border-top footer w-100 bg-material border-top border-divider ps-5 pe-5">
+      <footer className="pt-5 ps-3 pe-3">
         <div className="row">
           <div className="col-6 col-md-2 mb-3">
             <h5><strong>With PetUnion</strong></h5>
@@ -118,10 +118,10 @@ export default function Footer() {
           <div className="col-md-5 offset-md-1 mb-3">
             <form>
               <h5><strong>Subscribe to our newsletter</strong></h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <p className="text-secondary">Monthly digest of what's new and exciting from us.</p>
               <div className="mb-3">
                 <div>
-    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2 bg-input border-0" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
   </div>
                 <button className="btn btn-warning" type="button">
                   Subscribe
@@ -132,7 +132,7 @@ export default function Footer() {
         </div>
 
         <div className="d-flex flex-column flex-sm-row justify-content-between p-2 fs-6 my-4 border-top pb-0">
-          <p>© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
+          <p className="text-secondary">© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3 instagram">
               <a className="link-dark" href="#">
@@ -140,7 +140,7 @@ export default function Footer() {
               </a>
             </li>
             <li className="ms-3">
-              <a className="link-dark linkedin" href="#">
+              <a className="link-dark" href="#">
                 <i className="bi bi-linkedin Fitem"></i>
               </a>
             </li>

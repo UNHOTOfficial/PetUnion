@@ -32,7 +32,11 @@ body {
   $body-bg: $background;
 
   $input-focus-color: $text;
+  $input-placeholder-color: $text-muted;
 
+  $hr-color: $divider;
+
+  
   $blue: #0d6efd;
   $indigo: #6610f2;
   $purple: #6f42c1;
@@ -45,7 +49,7 @@ body {
   $cyan: #0dcaf0;
 
   $primary: $blue;
-  $secondary: $gray-600;
+  $secondary: $text-secondary;
   $success: $green;
   $info: $cyan;
   $warning: $yellow;
@@ -78,6 +82,8 @@ body {
     "link": $link,
     "background-secondary": $background-secondary,
     "material": $material,
+    'input': $input,
+    'divider': $divider,
   );
 
   /* redefine theme color variables */
@@ -99,53 +105,10 @@ body {
   .App {
     transition: all 0.5s;
     font-family: "san-francisco", Helvetica, sans-serif;
-    .nav-link:hover {
-      opacity: 0.5;
-    }
-    .card {
-      background-color: $background-secondary;
-      color: $text;
-      border: 0.6px solid $divider;
-    }
-    input,
-    textarea {
-      background-color: $input;
-      border: none;
-      color: $text;
-    }
-    input::placeholder,
-    textarea::placeholder {
-      color: $text;
-    }
-    hr {
-      color: $divider;
-    }
-    p {
-      color: $text-secondary;
-    }
-    .header {
-      background-color: $material !important;
-      backdrop-filter: blur(94%);
-    }
-    .footer {
-      background-color: $material !important;
-      backdrop-filter: blur(50px);
-      border-top: $divider;
-      max-width: 100%;
-      padding-left: 5rem;
-      padding-right: 5rem;
-    }
-    h6:hover {
-      color: inherit;
-    }
+
     .Account-Logo {
       filter: invert(100%);
     }
-
-    .navbar-expand-lg {
-      background: transparent;
-    }
-
     .job-card:hover {
       box-shadow: 0 0 0.5rem #fff;
       transition: all 0.3s;

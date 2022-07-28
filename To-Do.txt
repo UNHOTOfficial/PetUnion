@@ -8,8 +8,8 @@ Work on Dark Mode In "darkmode" Branch. ✅ -C
 Fix Products Add To Cart Button (Removed) ✅ -C
 Add Dark Mode. ✅ -C
 Make Job Page. ✅ -C
-Fix Console Bugs. ✅
-Make About Page. ✅
+Fix Console Bugs. ✅ -C
+Make About Page. ✅ -C
 
 Make Dark Mode Color Scheme.
 Make products pages by ids.

@@ -24,7 +24,7 @@ const startTimer = ()=>{
         <div>
           <div className="d-flex flex-column align-items-center">
             <img
-              className="mb-4 Account-Logo"
+              className="mb-4 Account-Logo" style={{"width":"6rem","height":"auto"}}
               src={require("../imgs/Logo/Logo-Black.png")}
               alt=""
               width={72}
@@ -57,7 +57,7 @@ const startTimer = ()=>{
                 Next Code In: {<p className='counter'></p>}
               </small>
             </p>
-              <small  style={{cursor: 'pointer'}}  className='ms-1 account-otp-resend text-link'>Resend</small>
+              <small  style={{cursor: 'pointer',"marginTop":"0.18rem","height":"fit-content"}}  className='ms-1 account-otp-resend text-link'>Resend</small>
             </div>
           </div>
           <button
