@@ -10,6 +10,7 @@ Add Dark Mode. ✅ -C
 Make Job Page. ✅ -C
 Fix Console Bugs. ✅ -C
 Make About Page. ✅ -C
+Make Blog Page. ✅ -C
 
 Make Dark Mode Color Scheme.
 Make products pages by ids.
@@ -21,7 +22,7 @@ Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Fix Hot Deals Menu Drag.
-Make Blog Page.
+Work On Blog Page.
 Make Cooperation Page.
 Make Refund Page.
 Make Guarantee Page.

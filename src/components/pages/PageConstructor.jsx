@@ -5,7 +5,6 @@ import FAQs from "../Content/FAQs/FAQs";
 import Home from "../Content/Home";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
-import Blog from "../Content/Blog";
 import Contact from "../Content/Contact/Contact";
 import Cooperation from "../Content/Cooperation";
 import Refund from "../Content/Refund";
@@ -22,6 +21,7 @@ import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
 import './Global.scss';
+import BlogContainer from "../Content/Blog/BlogContainer";
 
 export default function PageConstructor() {
   return (
@@ -32,7 +32,7 @@ export default function PageConstructor() {
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/FAQs" element={<FAQs />}></Route>
           <Route exact path="/about" element={<About />}></Route>
-          <Route exact path="/blog" element={<Blog />}></Route>
+          <Route exact path="/blog" element={<BlogContainer />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
           <Route exact path="/jobs" element={<JobsContainer />}></Route>
           <Route exact path="/cooperation" element={<Cooperation />}></Route>
