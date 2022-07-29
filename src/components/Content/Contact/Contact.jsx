@@ -122,7 +122,7 @@ export default function Contact() {
   return (
     <div className="">
       <div className="d-flex align-items-center mt-2 mb-3">
-        <div className="col-md-7 col-lg-8 border m-3 mb-0 p-4 rounded">
+        <div className="bg-light col-md-7 col-lg-8 border m-3 mb-0 p-4 rounded">
           <div className="d-flex justify-content-between flex-column mb-2">
             <div className="d-flex justify-content-between">
               <h4 className="mb-3">Contact Form</h4>
@@ -232,7 +232,7 @@ export default function Contact() {
       </a>
 
       <div className="d-flex align-items-start" id="Locations-Container">
-        <div className="col-md-7 col-lg-8 border m-3 rounded">
+        <div className="bg-light col-md-7 col-lg-8 border m-3 rounded">
           {offices.map((office) => (
             <div className="border-top border-bottom p-3">
               <div className="d-flex flex-row align-items-center">

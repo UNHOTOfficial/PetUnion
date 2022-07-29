@@ -6,7 +6,7 @@ import Home from "../Content/Home";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Contact from "../Content/Contact/Contact";
-import Cooperation from "../Content/Cooperation";
+import Cooperation from "../Content/Cooperation/CooperationContainer";
 import Refund from "../Content/Refund";
 import Guarantee from "../Content/Guarantee";
 import Complication from "../Content/Complication";
