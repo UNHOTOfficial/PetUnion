@@ -28,8 +28,8 @@ export default function Header() {
     <header className="p-3 bg-dark text-white bg-material header">
       <Link to={'/'}>
       <img
-        className="Logo ms-2 navbar-brand float-left"
-        style={{width:"3rem", float:'left'}}
+        className="Logo ms-2 navbar-brand float-left mt-2"
+        style={{width:"4.5rem", float:'left'}}
         alt="Logo"
         src= {require('../Content/imgs/Logo/Logo.png')}
         ></img>

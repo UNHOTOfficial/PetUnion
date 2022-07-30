@@ -33,3 +33,4 @@ Make Support Page.
 Make HowTo Page.
 Make HelpCenter Page.
 Make ReportABug Page.
+Work On Blog Header And Footer.

@@ -29,7 +29,7 @@ export default function BlogContainer() {
               <h5 className="me-2">Shop</h5>
             </div>
           </div>
-          <h1 className="">Petunion</h1>
+          <h1>ShopUnion</h1>
           <div className="d-flex align-items-center">
             <button className="btn btn-outline-dark me-2">
               Sign Up | Sign In

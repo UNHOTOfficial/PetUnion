@@ -84,7 +84,7 @@ export default function AboutContent() {
                   <img
                     className="about-statics-icon"
                     style={{ width: "5rem", height: "5rem" }}
-                    src={require("./imgs/dog.png")}
+                    src={require("./imgs/rating.png")}
                     alt="Happy"
                   ></img>
                   <strong>500.000 Positive Feedbacks</strong>
