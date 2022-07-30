@@ -32,7 +32,7 @@ body {
   $body-bg: $background;
 
   $input-focus-color: $text;
-  $input-placeholder-color: $text-muted;
+  $input-placeholder-color: $text;
 
   $hr-color: $divider;
 
@@ -84,6 +84,7 @@ body {
     "material": $material,
     'input': $input,
     'divider': $divider,
+    'text': $text,
   );
 
   /* redefine theme color variables */

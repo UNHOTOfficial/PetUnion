@@ -61,7 +61,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
     case 1:
       return (
        <div className="d-flex justify-content-center mt-5 mb-5">
-        <div className="text-center w-25 border rounded p-5">
+        <div className="text-center w-25 border rounded-3 p-5 bg-light">
           <main className="form-signin w-100 m-auto">
             <div>
               <div className="d-flex flex-column align-items-center">
@@ -78,7 +78,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
                 <input
                 onFocus={nextEnter}
                   type="text"
-                  className="form-control Account-firstInput"
+                  className="form-control Account-firstInput bg-input text-dark"
                   id=""
                   placeholder="Email Or Phone Number"
                   required

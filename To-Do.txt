@@ -11,11 +11,11 @@ Make Job Page. ✅ -C
 Fix Console Bugs. ✅ -C
 Make About Page. ✅ -C
 Make Blog Page. ✅ -C
-Make Cooperation Page. ✅
-Work On Blog Page. ✅
-Make Refund Page. ✅
-Make Guarantee Page. ✅
-Make Complication Page. ✅
+Make Cooperation Page. ✅ -C
+Work On Blog Page. ✅ -C
+Make Refund Page. ✅ -C
+Make Guarantee Page. ✅ -C
+Make Complication Page. ✅ -C
 
 * Change From PetUnion To Online Shop.
 Make Dark Mode Color Scheme.

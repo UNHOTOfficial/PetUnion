@@ -52,7 +52,7 @@ export default function Header() {
                     <ul className="navbar-nav">
                       <li className="nav-item dropdown">
                         <a
-                          className="nav-link dropdown-toggle Hitem"
+                          className="nav-link dropdown-toggle Hitem text-text"
                           href="#"
                           id="navbarDarkDropdownMenuLink"
                           role="button"
@@ -88,18 +88,18 @@ export default function Header() {
               </nav>
             </li>
             <li>
-              <Link className="nav-link px-2 text-white Hitem" to={"/"}>
+              <Link className="nav-link px-2 text-text Hitem" to={"/"}>
                 <i className="bi bi-house"></i>Home
               </Link>
             </li>
             <li>
-              <Link className="nav-link px-2 text-white Hitem" to={"/FAQs"}>
+              <Link className="nav-link px-2 text-text Hitem" to={"/FAQs"}>
                 <i className="bi bi-question-circle"></i>FAQs
               </Link>
             </li>
 
             <li>
-              <Link className="nav-link px-2 text-white Hitem" to={"/About"}>
+              <Link className="nav-link px-2 text-text Hitem" to={"/About"}>
                 <i className="bi bi-info-circle"></i>About
               </Link>
             </li>
@@ -119,13 +119,13 @@ export default function Header() {
 
           <div className="text-end d-flex">
             <Link to="/Account">
-              <button type="button" className="btn btn-outline-light me-2">
+              <button type="button" className="btn btn-outline-text me-2">
                 Sign up / Sign In
               </button>
             </Link>
             <button
               type="button"
-              className="btn btn-outline-light ms-2 HCartButton"
+              className="btn btn-outline-text ms-2 HCartButton"
             >
               <i className="bi bi-cart me-2"></i>Cart
             </button>
