@@ -16,6 +16,9 @@ Work On Blog Page. ✅ -C
 Make Refund Page. ✅ -C
 Make Guarantee Page. ✅ -C
 Make Complication Page. ✅ -C
+Make HelpCenter Page. ✅
+Make Support Page. ✅
+Make PrivacyPolicy Page. ✅
 
 * Change From PetUnion To Online Shop.
 Make Dark Mode Color Scheme.
@@ -27,10 +30,7 @@ Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Fix Hot Deals Menu Drag.
-Make PrivacyPolicy Page.
 Make TermsOfUse Page.
-Make Support Page.
 Make HowTo Page.
-Make HelpCenter Page.
 Make ReportABug Page.
 Work On Blog Header And Footer.

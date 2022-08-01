@@ -10,18 +10,20 @@ import Cooperation from "../Content/Cooperation/CooperationContainer";
 import Refund from "../Content/Refund/RefundContainer";
 import Guarantee from "../Content/Guarantee/GuaranteeContainer";
 import Complication from "../Content/Complication/ComplicationContainer";
-import PrivacyPolicy from "../Content/PrivacyPolicy";
+import PrivacyPolicy from "../Content/PrivacyPolicy/PrivacyPolicy";
 import TermsOfUse from "../Content/TermsOfUse";
-import Support from "../Content/Support";
+import Support from "../Content/Support/Support";
 import HowTo from "../Content/HowTo";
-import HelpCenter from "../Content/HelpCenter";
+import HelpCenter from "../Content/HelpCenter/HelpCenter";
 import ReportABug from "../Content/ReportABug";
 import Page404 from "./Page404";
 import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
-import './Global.scss';
 import BlogContainer from "../Content/Blog/BlogContainer";
+
+
+import UserAgreement from '../Content/PrivacyPolicy/Content/UserAgreement';
 
 export default function PageConstructor() {
   return (
@@ -48,6 +50,9 @@ export default function PageConstructor() {
           <Route exact path="/Account" element={<Account/>}></Route>
           <Route path="*" element={<Page404 />}></Route>
           
+
+          {/* legal */}
+          <Route exact path='legal/agreement' element={<UserAgreement/>}></Route>
           {/* <Route exact path={"/Product/:ProductID"} element={<ProductDetail />}></Route> */}
 
         </Routes>

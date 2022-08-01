@@ -24,8 +24,8 @@ export default function Cards(props) {
             </div>
           <p className="text-secondary m-0">{props.paragraph}</p>
           <div className="d-flex align-items-center justify-content-between text-muted">
-            <p className="d-flex text-capitalize m-0"><i class="bi bi-clock"></i>{props.time}</p>
-            <p className="d-flex text-capitalize m-0"><i class="bi bi-pin"></i>{props.location}</p>
+            <p className="d-flex text-capitalize m-0"><i className="bi bi-clock"></i>{props.time}</p>
+            <p className="d-flex text-capitalize m-0"><i className="bi bi-pin"></i>{props.location}</p>
           </div>
       </div>
   );

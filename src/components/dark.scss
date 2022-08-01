@@ -8,14 +8,14 @@
 }
 
 body {
-  font-family: "san-francisco", Helvetica, sans-serif;
+  font-family: "san-francisco", Helvetica, sans-serif !important;
   .App {
     transition: all 0.3s;
   }
 }
 
 .dark {
-  $enable-gradients: true;
+  $enable-gradients: false; //Gradients
 
   $link-decoration: none;
 
@@ -104,8 +104,10 @@ body {
   $input-focus-bg: $input;
 
   .App {
-    transition: all 0.5s;
-    font-family: "san-francisco", Helvetica, sans-serif;
+    body{
+      transition: all 0.5s;
+      font-family: "san-francisco", Helvetica, sans-serif;
+    }
 
     .Account-Logo {
       filter: invert(100%);
