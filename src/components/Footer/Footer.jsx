@@ -121,7 +121,7 @@ export default function Footer() {
               <p className="text-secondary">Monthly digest of what's new and exciting from us.</p>
               <div className="mb-3">
                 <div>
-    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2 bg-input border-0" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2 bg-input" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
   </div>
                 <button className="btn btn-warning" type="button">
                   Subscribe

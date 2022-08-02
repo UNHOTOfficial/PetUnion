@@ -11,11 +11,11 @@ import Refund from "../Content/Refund/RefundContainer";
 import Guarantee from "../Content/Guarantee/GuaranteeContainer";
 import Complication from "../Content/Complication/ComplicationContainer";
 import PrivacyPolicy from "../Content/PrivacyPolicy/PrivacyPolicy";
-import TermsOfUse from "../Content/TermsOfUse";
+import TermsOfUse from "../Content/TermsOfUse/TermsOfUse";
 import Support from "../Content/Support/Support";
-import HowTo from "../Content/HowTo";
+import HowTo from "../Content/HowTo/HowTo";
 import HelpCenter from "../Content/HelpCenter/HelpCenter";
-import ReportABug from "../Content/ReportABug";
+import ReportABug from "../Content/ReportABug/ReportABug";
 import Page404 from "./Page404";
 import Account from "../Content/Accounts/Account"
 import '../dark.scss'

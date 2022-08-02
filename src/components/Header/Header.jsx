@@ -56,8 +56,10 @@ export default function Header() {
             </li>
           </ul>
         <div className="d-flex align-items-center w-25 justify-content-evenly">
-        <button className="btn btn-outline-dark">Sign In</button>
+          <div className="d-flex">
+        <button className="btn btn-outline-dark me-2">Sign In</button>
         <button className="btn btn-warning">Get Started</button>
+          </div>
         <button className="btn btn-outline-dark"><i class="bi bi-cart m-0"></i></button>
         <div className="form-check form-switch">
               <input

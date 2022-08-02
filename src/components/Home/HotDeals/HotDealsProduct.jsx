@@ -23,12 +23,15 @@ export default function HotDealsProduct(props) {
                   <h5 className=''>{props.price - props.discount}$</h5>
                   <h6 className="mx-1 text-secondary"><s>{props.price}$</s></h6>
                 </div>
+                <div className='d-flex flex-column'>
                 <span className="badge badge-pill bg-danger">
                   {Math.round(
                     100 - ((props.price - props.discount) * 100) / props.price
-                  )}
+                    )}
                   %
                 </span>
+                <small className='fw-bold text-danger'>OFFER</small>
+                    </div>
               </React.Fragment>
             ) : (
               <div className="d-flex flex-column">
