@@ -10,6 +10,7 @@ i {
   transition: all 0.3s !important;
 }
 .header-darkmode-switch-input:checked {
+  background-color: #fff !important;
   border-color: #ffc107;
   background-image: url("https://cdn-icons-png.flaticon.com/512/3594/3594375.png") !important;
 }

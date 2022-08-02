@@ -116,6 +116,9 @@ body {
       box-shadow: 0 0 0.5rem #fff;
       transition: all 0.3s;
     }
+    .Header-logo{
+      filter: invert(100%)
+    }
   }
 
   @import "../../node_modules/bootstrap/scss/bootstrap.scss";

@@ -1,12 +1,9 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "./Header.scss";
-import "bootstrap/dist/js/bootstrap.bundle.js";
-import "bootstrap-icons/font/bootstrap-icons.css";
 import { Link } from "react-router-dom";
-import "../dark.scss";
+import "./Header.scss"
 
 export default function Header() {
+
   const toggleDarkmode = () => {
     const darkmodeToggle = document.querySelector(
       ".header-darkmode-switch-input"
@@ -14,133 +11,65 @@ export default function Header() {
     document.body.classList.toggle("dark");
   };
 
-  const searchEnter = ()=>{
-    document.querySelector('.Hsearch').addEventListener('keypress', (e)=>{
-      if (e.key === 'Enter') {
-        e.preventDefault();
-//code Here
-      }
-    });
-  }
-
-
   return (
-    <header className="p-3 bg-dark text-white bg-material header">
-      <Link to={'/'}>
-      <img
-        className="Logo ms-2 navbar-brand float-left mt-2"
-        style={{width:"4.5rem", float:'left'}}
-        alt="Logo"
-        src= {require('../Content/imgs/Logo/Logo.png')}
-        ></img>
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <Link to={"/"} class="navbar-brand">
+          <img className="Header-logo"
+            src={require("../Content/imgs/Logo/Logo-Black.png")}
+            style={{ width: "5rem" }}
+          ></img>
         </Link>
-      <div className="container">
-        <div className="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <a
-            href="/"
-            className="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none"
-          ></a>
-
-          <ul className="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0 align-items-center">
-            <li className="bg-transparent">
-              <nav className="navbar navbar-expand-lg bg-transparent">
-                <div className="container-fluid">
-                  <div
-                    className="collapse navbar-collapse"
-                    id="navbarNavDarkDropdown"
-                  >
-                    <ul className="navbar-nav">
-                      <li className="nav-item dropdown">
-                        <a
-                          className="nav-link dropdown-toggle Hitem text-text"
-                          href="#"
-                          id="navbarDarkDropdownMenuLink"
-                          role="button"
-                          data-bs-toggle="dropdown"
-                          aria-expanded="false"
-                        >
-                          <i className="bi bi-list"></i>Categories
-                        </a>
-                        <ul
-                          className="dropdown-menu dropdown-menu-dark"
-                          aria-labelledby="navbarDarkDropdownMenuLink"
-                        >
-                          <li>
-                            <Link className="dropdown-item Hitem" to={"/#"}>
-                              <i className="bi bi-info-circle"></i>About
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className="dropdown-item Hitem" to={"/#"}>
-                              <i className="bi bi-info-circle"></i>About
-                            </Link>
-                          </li>
-                          <li>
-                            <Link className="dropdown-item Hitem" to={"/#"}>
-                              <i className="bi bi-info-circle"></i>About
-                            </Link>
-                          </li>
-                        </ul>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-              </nav>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+          <ul class="navbar-nav mb-2 mb-lg-0 w-75">
+            <li class="nav-item">
+              <a class="nav-link active text-dark" aria-current="page" href="#">
+                Home
+              </a>
             </li>
-            <li>
-              <Link className="nav-link px-2 text-text Hitem" to={"/"}>
-                <i className="bi bi-house"></i>Home
-              </Link>
+            <li class="nav-item">
+              <a class="nav-link text-dark" href="#">
+                Link
+              </a>
             </li>
-            <li>
-              <Link className="nav-link px-2 text-text Hitem" to={"/FAQs"}>
-                <i className="bi bi-question-circle"></i>FAQs
-              </Link>
-            </li>
-
-            <li>
-              <Link className="nav-link px-2 text-text Hitem" to={"/About"}>
-                <i className="bi bi-info-circle"></i>About
-              </Link>
-            </li>
-          </ul>
-          <form
-            className="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3"
-            role="search"
-          >
+            <li className="nav-items w-75 mx-auto">
+          <form class="d-flex" role="search">
             <input
-            onFocus={searchEnter}
+              class="form-control rounded-start border-end-0 rounded-0 bg-input"
               type="search"
-              className="form-control form-control-dark text-white bg-input border-0 Hsearch"
-              placeholder="Search..."
+              placeholder="Search"
               aria-label="Search"
             ></input>
+          <button type="submit" class="btn btn-warning border-start-0 rounded-end rounded-0" id="basic-addon1"><i class="bi bi-search m-0"></i></button>
           </form>
-
-          <div className="text-end d-flex">
-            <Link to="/Account">
-              <button type="button" className="btn btn-outline-text me-2">
-                Sign up / Sign In
-              </button>
-            </Link>
-            <button
-              type="button"
-              className="btn btn-outline-text ms-2 HCartButton"
-            >
-              <i className="bi bi-cart me-2"></i>Cart
-            </button>
-            <div className="form-check form-switch ms-5 mt-1">
+            </li>
+          </ul>
+        <div className="d-flex align-items-center w-25 justify-content-evenly">
+        <button className="btn btn-outline-dark">Sign In</button>
+        <button className="btn btn-warning">Get Started</button>
+        <button className="btn btn-outline-dark"><i class="bi bi-cart m-0"></i></button>
+        <div className="form-check form-switch">
               <input
                 onClick={toggleDarkmode}
                 className="form-check-input header-darkmode-switch-input"
                 type="checkbox"
                 role="switch"
                 id="darkmodeToggle"
-              ></input>
+              ></input></div>
             </div>
-          </div>
         </div>
-      </div>
-    </header>
+              </div>
+    </nav>
   );
 }

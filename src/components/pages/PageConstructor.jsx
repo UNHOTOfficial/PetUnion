@@ -21,6 +21,7 @@ import Account from "../Content/Accounts/Account"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
 import BlogContainer from "../Content/Blog/BlogContainer";
+import HeaderSecondary from "../Header/HeaderSecondary";
 
 
 import UserAgreement from '../Content/PrivacyPolicy/Content/UserAgreement';
@@ -30,6 +31,7 @@ export default function PageConstructor() {
     <React.Fragment>
       <BrowserRouter>
         <Header />
+        <HeaderSecondary/>
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/FAQs" element={<FAQs />}></Route>
