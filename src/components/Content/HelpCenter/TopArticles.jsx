@@ -44,7 +44,7 @@ export default function TopArticles() {
       <h1>Top Articles</h1>
       <div className="row align-items-center">
         {topArticles.map((topArticle) => (
-          <div className="col-6 text-dark">
+          <div key={topArticle.title} className="col-6 text-dark">
             <p className="fw-bold text-warning m-0">{topArticle.category}</p>
             <h3 className="text-capitalize">{topArticle.title}</h3>
             <p className="text-muted text-capitalize">{topArticle.paragraph}</p>

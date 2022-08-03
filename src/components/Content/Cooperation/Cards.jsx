@@ -7,9 +7,9 @@ export default function Cards(props) {
         <div className="d-flex w-50 justify-content-evenly">
           {props.tags.map((tag) =>
             tag === "New" ? (
-              <span className="badge text-bg-warning">{tag}</span>
+              <span key={tag} className="badge text-bg-warning">{tag}</span>
             ) : (
-              <span className="badge text-bg-secondary">{tag}</span>
+              <span key={tag} className="badge text-bg-secondary">{tag}</span>
             )
           )}
         </div>

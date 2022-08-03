@@ -35,17 +35,17 @@ export default function UserAgreement() {
       </small>
       </div>
         <ul className="col-3 list-group border rounded-2 bg-light" style={{height:"fit-content"}}>
-        <li class="list-group-item border-0 text-link bg-light">Agreements</li>
-        <li class="list-group-item border-0 text-link bg-light">Eligibility</li>
-        <li class="list-group-item border-0 text-link bg-light">Services</li>
-        <li class="list-group-item border-0 text-link bg-light">Account Setup</li>
-        <li class="list-group-item border-0 text-link bg-light">Suspension, Termination, and Cancellation</li>
-        <li class="list-group-item border-0 text-link bg-light">Liability</li>
-        <li class="list-group-item border-0 text-link bg-light">Site Availability and Accuracy</li>
-        <li class="list-group-item border-0 text-link bg-light">Customer Feedback, Queries, Complaints, and Dispute Resolution</li>
-        <li class="list-group-item border-0 text-link bg-light">Data Protection</li>
-        <li class="list-group-item border-0 text-link bg-light">Security</li>
-        <li class="list-group-item border-0 text-link bg-light">General</li>
+        <li className="list-group-item border-0 text-link bg-light">Agreements</li>
+        <li className="list-group-item border-0 text-link bg-light">Eligibility</li>
+        <li className="list-group-item border-0 text-link bg-light">Services</li>
+        <li className="list-group-item border-0 text-link bg-light">Account Setup</li>
+        <li className="list-group-item border-0 text-link bg-light">Suspension, Termination, and Cancellation</li>
+        <li className="list-group-item border-0 text-link bg-light">Liability</li>
+        <li className="list-group-item border-0 text-link bg-light">Site Availability and Accuracy</li>
+        <li className="list-group-item border-0 text-link bg-light">Customer Feedback, Queries, Complaints, and Dispute Resolution</li>
+        <li className="list-group-item border-0 text-link bg-light">Data Protection</li>
+        <li className="list-group-item border-0 text-link bg-light">Security</li>
+        <li className="list-group-item border-0 text-link bg-light">General</li>
         </ul>
       </div>
     </div>

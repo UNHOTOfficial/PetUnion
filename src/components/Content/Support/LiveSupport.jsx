@@ -13,53 +13,53 @@ export default function LiveSupport() {
         <h3 className="fw-bold">Live Support</h3>
       </div>
       <div className="row">
-      <div class="col-6">
-        <label for="exampleFormControlInput1" class="form-label">
+      <div className="col-6">
+        <label for="exampleFormControlInput1" className="form-label">
           First Name
         </label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="exampleFormControlInput1"
           placeholder="John"
         ></input>
       </div>
-      <div class="col-6">
-        <label for="exampleFormControlInput1" class="form-label">
+      <div className="col-6">
+        <label for="exampleFormControlInput1" className="form-label">
           Last Name
         </label>
         <input
           type="text"
-          class="form-control"
+          className="form-control"
           id="exampleFormControlInput1"
           placeholder="Doe"
         ></input>
       </div>
       </div>
-      <div class="">
-        <label for="exampleFormControlInput1" class="form-label">
+      <div className="">
+        <label for="exampleFormControlInput1" className="form-label">
           Email address
         </label>
         <input
           type="email"
-          class="form-control"
+          className="form-control"
           id="exampleFormControlInput1"
           placeholder="name@example.com"
         ></input>
       </div>
-      <select class="form-select mt-3" aria-label="Default select example">
+      <select className="form-select mt-3" aria-label="Default select example">
   <option selected>Select Support Section</option>
   <option value="1">Account</option>
   <option value="2">Orders</option>
   <option value="3">Payment</option>
   <option value="4">Features</option>
 </select>
-      <div class="mb-3 mt-3">
-        <label for="exampleFormControlTextarea1" class="form-label">
+      <div className="mb-3 mt-3">
+        <label for="exampleFormControlTextarea1" className="form-label">
           Support Case
         </label>
         <textarea style={{resize:"none", height:"8rem"}}
-          class="form-control"
+          className="form-control"
           id="exampleFormControlTextarea1"
           rows="3"
         ></textarea>

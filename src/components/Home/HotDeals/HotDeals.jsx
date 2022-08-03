@@ -159,7 +159,7 @@ export default function HotDeals() {
 
   return (
     <React.Fragment>
-      <div className="container bg-background-secondary mt-3 mb-3 text-daek rounded-5 HotDealsContainer overflow-auto">
+      <div className="container bg-light mt-3 mb-3 text-dark rounded-5 HotDealsContainer overflow-auto">
         {/* <div className="d-flex justify-content-between"> */}
 {/* <img className="HotDeals-img" alt="Coupon" src={require('./Imgs/coupon.png')}></img> //wasn't good enough */} 
         <h3 className="text-center mt-3">Hot Deals</h3>

@@ -22,8 +22,13 @@ Make PrivacyPolicy Page. ✅
 Make ReportABug Page. ✅
 Make HowTo Page. ✅
 Make TermsOfUse Page. ✅
+* Change From PetUnion To Online Shop. ✅
+Fix Hot Deals Menu Drag. ✅
 
-* Change From PetUnion To Online Shop.
+Add More Tiles To Home.
+Fix Header Links.
+Fix Categories Menu.
+
 Make Dark Mode Color Scheme.
 Make products pages by ids.
 Add social media links. 
@@ -32,5 +37,4 @@ Add FAQs collapses.
 Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
-Fix Hot Deals Menu Drag.
 Work On Blog Header And Footer.

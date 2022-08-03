@@ -40,7 +40,7 @@ export default function Articles() {
    <h1>Articles</h1>
     <div className="row mt-3">
       {articles.map((article) => (
-        <div className="col-6">
+        <div key={article.title} className="col-6">
           <small className="fw-bold text-warning text-capitalize">
             {article.tag}
           </small>

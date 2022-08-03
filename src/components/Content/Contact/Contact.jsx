@@ -234,7 +234,7 @@ export default function Contact() {
       <div className="d-flex align-items-start" id="Locations-Container">
         <div className="bg-light col-md-7 col-lg-8 border m-3 rounded">
           {offices.map((office) => (
-            <div className="border-top border-bottom p-3">
+            <div key={office.title} className="border-top border-bottom p-3">
               <div className="d-flex flex-row align-items-center">
                 <img className="flag" style={{width:"2.5rem"}} src={office.src} alt={office.title} />
                 <h6 className="mb-0 ms-2">{office.title}</h6>

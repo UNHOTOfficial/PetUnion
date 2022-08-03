@@ -75,6 +75,8 @@ export default function CooperationContainer() {
           <SearachBar/>
           <div className="rounded-5 row justify-content-evenly mt-3 me-2">
             {cards.map((card) => (
+              <React.Fragment key={card.title}>
+
               <Cards
                 img={card.img}
                 title={card.title}
@@ -82,7 +84,8 @@ export default function CooperationContainer() {
                 time={card.time}
                 location={card.location}
                 tags={card.tags}
-              />
+                />
+                </React.Fragment>
             ))}
           </div>
         <Pagination/>

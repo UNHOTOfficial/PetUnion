@@ -115,6 +115,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -122,6 +123,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -129,6 +131,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -136,6 +139,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -143,6 +147,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -150,6 +155,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -157,6 +163,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -164,6 +171,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -171,6 +179,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
     {
       img: require("./imgs/red-footed-tortoise-chelonoidis-carbonarius.jpg"),
@@ -178,6 +187,7 @@ export default function Blog(props) {
         "Some quick example text to build on the card title and make up the bulk of the card's content.",
       author: "John Doe",
       time: "July 28, 2022",
+      key: Math.random(),
     },
   ];
   const posts = [
@@ -305,19 +315,21 @@ export default function Blog(props) {
 <div className="bg-light rounded-4 text-dark p-4">
 <h3>Editors Picks</h3>
 <div className="d-flex align-items-center justify-content-between">
-<i onClick={scrollArrowLeft} class="bi bi-arrow-left-circle-fill fs-2 editors-picks-left-arrow" style={{cursor:"pointer"}}></i>
+<i onClick={scrollArrowLeft} className="bi bi-arrow-left-circle-fill fs-2 editors-picks-left-arrow" style={{cursor:"pointer"}}></i>
             <div onWheel={scrollEditorPicks}
             onMouseDown={dragEditorPicks} className="d-flex overflow-hidden editor-picks-row" style={{width:"85rem", scrollBehavior:"smooth"}}> 
               {editorPicks.map((editorPick) => (
+                <React.Fragment key={editorPick.key}>
                 <EditorPicks
                 img={editorPick.img}
                 paragraph={editorPick.paragraph}
                 author={editorPick.author}
                 time={editorPick.time}
                 />
+                </React.Fragment>
                 ))}
                 </div>
-                <i onClick={scrollArrowRight} class="bi bi-arrow-right-circle-fill fs-2 ms-3 editors-picks-right-arrow" style={{cursor:"pointer"}}></i>
+                <i onClick={scrollArrowRight} className="bi bi-arrow-right-circle-fill fs-2 ms-3 editors-picks-right-arrow" style={{cursor:"pointer"}}></i>
             </div>
                 </div>
 
@@ -326,7 +338,7 @@ export default function Blog(props) {
         <h5 className="p-3 text-dark">Posts</h5>
         <div className="row">
           {posts.map((post) => (
-        <div className=" col-3">
+        <div key={post.heading} className=" col-3">
             <Post
             img={post.img}
             heading={post.heading}
