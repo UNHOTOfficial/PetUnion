@@ -8,10 +8,67 @@ import Post from "./Post";
 
 export default function Blog(props) {
 
-  const hideHeaderFooter = ()=>{
-    document.querySelector('.header').classList.add('d-none')
-    document.querySelector('.footer').classList.add('d-none')
-  }
+  const scrollEditorPicks = () => {
+    const scrollHotDeals = document.getElementsByClassName("editor-picks-row")[0];
+    scrollHotDeals.addEventListener("wheel", (event) => {
+      event.preventDefault();
+
+      scrollHotDeals.scrollBy({
+        left: event.deltaY < 0 ? -100 : 100,
+        behavior: "auto"
+      });
+    });
+  };
+
+  const dragEditorPicks = () => {
+    const dragHotDeals = document.getElementsByClassName("editor-picks-row")[0];
+
+    let isDown = false;
+    let startX;
+    let scrollLeft;
+
+    dragHotDeals.addEventListener("mousedown", (e) => {
+      isDown = true;
+      startX = e.pageX - dragHotDeals.offsetLeft;
+      scrollLeft = dragHotDeals.scrollLeft;
+    });
+    dragHotDeals.addEventListener("mouseleave", () => {
+      isDown = false;
+    });
+    dragHotDeals.addEventListener("mouseup", () => {
+      isDown = false;
+    });
+    dragHotDeals.addEventListener("mousemove", (e) => {
+      if (!isDown) return;
+      e.preventDefault();
+      const x = e.pageX - dragHotDeals.offsetLeft;
+      const walk = (x - startX) *3; //scroll-fast
+      dragHotDeals.scrollLeft = scrollLeft - walk;
+    });
+  };
+
+  const scrollArrowLeft = () => {
+    const arrowLeft = document.querySelector(".editors-picks-left-arrow");
+    const editorPicksRow = document.querySelector(".editor-picks-row");
+    arrowLeft.addEventListener("click", (event) => {
+      event.preventDefault();
+      editorPicksRow.scrollBy({
+        left: (event.deltaY = -325),
+      });
+    });
+  };
+
+  const scrollArrowRight = () => {
+    const arrowRight = document.querySelector(".editors-picks-right-arrow");
+    const HotDealsRow = document.querySelector(".editor-picks-row");
+    arrowRight.addEventListener("click", (event) => {
+      event.preventDefault();
+      HotDealsRow.scrollBy({
+        left: (event.deltaY = 325),
+      });
+    });
+  };
+  
   
   const featureds = [
     {
@@ -191,7 +248,7 @@ export default function Blog(props) {
   ];
 
   return (
-    <div onLoad={hideHeaderFooter} className="px-3">
+    <div className="px-3">
       <div className="container row justify-content-evenly mt-4 mx-auto">
         <div className="col-4 border-end">
           <Link to={"/"} className="text-dark">
@@ -245,45 +302,41 @@ export default function Blog(props) {
         </div>
       </div>
 
-      <div className="d-flex flex-nowrap overflow-hidden">
-        <div className="bg-light my-3 py-3">
-          <h5 className="p-3 text-dark">Editors Picks</h5>
-          <div className="d-flex align-items-center">
-            <i
-              className="bi bi-arrow-left-circle-fill fs-2 ms-2"
-              style={{ cursor: "pointer" }}
-            ></i>
-            <div className="d-flex">
+<div className="bg-light rounded-4 text-dark p-4">
+<h3>Editors Picks</h3>
+<div className="d-flex align-items-center justify-content-between">
+<i onClick={scrollArrowLeft} class="bi bi-arrow-left-circle-fill fs-2 editors-picks-left-arrow" style={{cursor:"pointer"}}></i>
+            <div onWheel={scrollEditorPicks}
+            onMouseDown={dragEditorPicks} className="d-flex overflow-hidden editor-picks-row" style={{width:"85rem", scrollBehavior:"smooth"}}> 
               {editorPicks.map((editorPick) => (
                 <EditorPicks
-                  img={editorPick.img}
-                  paragraph={editorPick.paragraph}
-                  author={editorPick.author}
-                  time={editorPick.time}
+                img={editorPick.img}
+                paragraph={editorPick.paragraph}
+                author={editorPick.author}
+                time={editorPick.time}
                 />
-              ))}
+                ))}
+                </div>
+                <i onClick={scrollArrowRight} class="bi bi-arrow-right-circle-fill fs-2 ms-3 editors-picks-right-arrow" style={{cursor:"pointer"}}></i>
             </div>
-            <i
-              className="bi bi-arrow-right-circle-fill fs-2 ms-4 me-2"
-              style={{ cursor: "pointer" }}
-            ></i>
-          </div>
-        </div>
-      </div>
+                </div>
+
 
       <div className="d-flex flex-wrap row bg-light my-2">
         <h5 className="p-3 text-dark">Posts</h5>
-        <div className=" col-3">
+        <div className="row">
           {posts.map((post) => (
+        <div className=" col-3">
             <Post
-              img={post.img}
-              heading={post.heading}
-              paragraph={post.paragraph}
-              author={post.author}
-              time={post.time}
+            img={post.img}
+            heading={post.heading}
+            paragraph={post.paragraph}
+            author={post.author}
+            time={post.time}
             />
-          ))}
         </div>
+            ))}
+            </div>
       </div>
     </div>
   );

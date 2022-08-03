@@ -11,6 +11,10 @@ body {
   font-family: "san-francisco", Helvetica, sans-serif !important;
   .App {
     transition: all 0.3s;
+    
+  }
+  a{
+    text-decoration: none;
   }
 }
 
@@ -118,6 +122,9 @@ body {
     }
     .Header-logo{
       filter: invert(100%)
+    }
+    a{
+      text-decoration: none
     }
   }
 

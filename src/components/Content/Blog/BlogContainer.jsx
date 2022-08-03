@@ -40,45 +40,36 @@ export default function BlogContainer() {
       </header>
       <div className="nav-scroller border-top ">
         <nav className="nav d-flex justify-content-evenly mt-1">
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            cats
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Technology
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            dogs
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Fashion
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            birds
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Health
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            aquatics
+          <Link className="link-secondary p-2 text- text-decoration-none" to={"/"}>
+            Home
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            amphibians
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Culture
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            rodents
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Sport
           </Link>
-          <span className="text-secondary d-flex align-items-center">|</span>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            food
-          </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            entertainment
-          </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            health
-          </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
-            care
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
+            Travel
           </Link>
           <span className="text-secondary d-flex align-items-center">|</span>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
+          
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
             Editors Picks
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
             popular
           </Link>
-          <Link className="link-secondary p-2 text-capitalize" to={"/"}>
+          <Link className="link-secondary p-2 text-capitalize text-decoration-none" to={"/"}>
             New
           </Link>
         </nav>

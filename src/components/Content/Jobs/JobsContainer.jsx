@@ -67,7 +67,7 @@ id: '56842352'
   return (
     <div>
       <div className="container mb-3 mt-3">
-        <div className="jobs-container-left d-flex rounded-5 p-2 justify-content-between">
+        <div className="jobs-container-left d-flex rounded-5 p-2 justify-content-between bg-light">
           <div className="d-flex flex-column p-4 justify-content-between">
             <h2 className="text-capitalize">
               find your dream job in our business.
@@ -80,7 +80,7 @@ id: '56842352'
               Let's Go!
             </button>
           </div>
-          <div className="jobs-container-right rounded-4 m-1 p-4 d-flex flex-column">
+          <div className="jobs-container-right rounded-4 m-1 p-4 d-flex flex-column bg-warning bg-opacity-50">
             <h4 className="text-capitalize m-2">
               you can choose from a wide range from programming to logistics!
             </h4>
@@ -100,19 +100,19 @@ id: '56842352'
         <div className="mt-3 d-flex justify-content-between">
           <div className="d-flex flex-column w-75">
             <div className=" jobs-menu-filter">
-              <div className="rounded-5 p-4 jobs-menu">
+              <div className="rounded-5 p-4 jobs-menu bg-light">
                 <h5 className="text-dark">Jobs</h5>
                 <div className="d-flex w-50 justify-content-around jobs-menu-items">
-                  <Link to={"/"} className="text-warning text-capitalize">
+                  <Link to={"/"} className="text-dark text-capitalize">
                     All Jobs
                   </Link>
-                  <Link to={"/"} className="text-warning text-capitalize">
+                  <Link to={"/"} className="text-dark text-capitalize">
                     Featured
                   </Link>
-                  <Link to={"/"} className="text-warning text-capitalize">
+                  <Link to={"/"} className="text-dark text-capitalize">
                     Contests
                   </Link>
-                  <Link to={"/"} className="text-warning text-capitalize">
+                  <Link to={"/"} className="text-dark text-capitalize">
                     Remote
                   </Link>
                 </div>
@@ -141,7 +141,7 @@ id: '56842352'
               ))}
             </div>
 
-            <div className="jobs-pagination rounded-5 mt-2 d-flex justify-content-center">
+            <div className="jobs-pagination rounded-5 mt-2 d-flex justify-content-center bg-light">
               <div className="w-75">
                 <div className="d-flex justify-content-center text-dark w-100 justify-content-evenly jobs-pagination-items">
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
@@ -166,7 +166,7 @@ id: '56842352'
               </div>
             </div>
           </div>
-          <div className="rounded-4 p-2 d-flex flex-column justify-content-between jobs-right-filter" style={{"width":"23%","height":"20rem"}}>
+          <div className="rounded-4 p-2 d-flex flex-column justify-content-between bg-light" style={{"width":"23%","height":"20rem"}}>
             <h5 className="text-warning">
               <i className="bi bi-funnel-fill"></i> Filters
             </h5>
