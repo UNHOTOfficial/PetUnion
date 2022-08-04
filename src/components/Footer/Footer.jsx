@@ -116,23 +116,37 @@ export default function Footer() {
           </div>
 
           <div className="col-md-5 offset-md-1 mb-3">
+            <div className="d-flex justify-content-between">
+              
+            
+            <div className="d-flex flex-column">
             <form>
               <h5><strong>Subscribe to our newsletter</strong></h5>
               <p className="text-secondary">Monthly digest of what's new and exciting from us.</p>
               <div className="mb-3">
-                <div>
-    <input type="email" placeholder="Email Address" className="form-control w-50 mb-2 bg-input" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
+                
+    <input type="email" placeholder="Email Address" className="form-control w-75 mb-2 bg-input" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
   </div>
                 <button className="btn btn-warning" type="button">
                   Subscribe
                 </button>
-              </div>
+           
             </form>
+            <Link className="text-muted mt-2" to={"/"}>
+            <div className="d-flex justify-content-start align-items-center">
+            <i className="fa-brands fa-google-play"></i>
+            <i className="fa-brands fa-app-store"></i>
+            <p className="m-0 ms-1">Download Our Apps</p>
+            </div>
+            </Link>
+            </div>
+          <p className="text-muted"><i className="fa-solid fa-arrow-up"></i>TOP</p>
+            </div>
           </div>
         </div>
 
         <div className="d-flex flex-column flex-sm-row justify-content-between p-2 fs-6 my-4 border-top pb-0">
-          <p className="text-secondary">© {changeCopyrightYear()} Company, Inc. All rights reserved.</p>
+          <p className="text-secondary">© {changeCopyrightYear()}, ShopUnion Inc. All rights reserved.</p>
           <ul className="list-unstyled d-flex">
             <li className="ms-3 instagram">
               <a className="link-dark" href="#">

@@ -25,11 +25,13 @@ import HeaderSecondary from "../Header/HeaderSecondary";
 
 
 import UserAgreement from '../Content/PrivacyPolicy/Content/UserAgreement';
+import PromoHeader from "../Header/PromoHeader";
 
 export default function PageConstructor() {
   return (
     <React.Fragment>
       <BrowserRouter>
+      <PromoHeader/>
         <Header />
         <HeaderSecondary/>
         <Routes>

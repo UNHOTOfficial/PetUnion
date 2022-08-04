@@ -28,7 +28,7 @@ export default function Tiles() {
     <div className="container">
       <div className="row justify-content-evenly">
         {tiles.map((tile) => (
-          <div key={tile.key} className="col-3 bg-light rounded-2 border-dark text-dark rounded-5 p-4" style={{width:"20rem"}}>
+          <div key={tile.key} className="col-3 bg-light rounded-2 text-dark rounded-5 p-4 border" style={{width:"20rem"}}>
             <h3 className="text-capitalize">{tile.heading}</h3>
             <div className="row p-2 rounded-5" style={{backgroundColor:"#fff" ,height:"24rem"}}>
               {tile.imgs.map((img) => (

@@ -120,8 +120,8 @@ export default function TopSellers() {
     },
   ];
   return (
-    <div className="container">
-      <div className="bg-light text-dark rounded-5 p-4 align-items-center">
+    <div className="container mt-3">
+      <div className="bg-light text-dark rounded-5 p-4 align-items-center border">
         <h3>Top Sellers</h3>
         <div className="d-flex align-items-center">
           <i

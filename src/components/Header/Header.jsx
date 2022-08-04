@@ -48,7 +48,7 @@ export default function Header() {
             <input
               className="form-control rounded-start border-end-0 rounded-0 bg-input"
               type="search"
-              placeholder="Search"
+              placeholder="Search For Products Or Brands..."
               aria-label="Search"
             ></input>
           <button type="submit" className="btn btn-warning border-start-0 rounded-end rounded-0" id="basic-addon1"><i className="bi bi-search m-0"></i></button>

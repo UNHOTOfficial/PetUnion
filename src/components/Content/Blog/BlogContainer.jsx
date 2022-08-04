@@ -79,7 +79,7 @@ export default function BlogContainer() {
 
       <footer className="bg-light">
         <div className="d-flex justify-content-center">
-          © 2022 Company, Inc. All rights reserved.
+          2022 ShopUnion© Inc. All rights reserved.
         </div>
       </footer>
     </div>
