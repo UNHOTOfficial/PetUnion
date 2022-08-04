@@ -33,16 +33,6 @@ export default function Header() {
         </button>
         <div className="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
           <ul className="navbar-nav mb-2 mb-lg-0 w-75">
-            <li className="nav-item">
-              <a className="nav-link active text-dark" aria-current="page" href="#">
-                Home
-              </a>
-            </li>
-            <li className="nav-item">
-              <a className="nav-link text-dark" href="#">
-                Link
-              </a>
-            </li>
             <li className="nav-items w-75 mx-auto">
           <form className="d-flex" role="search">
             <input

@@ -1,21 +1,21 @@
-Fix Categories in navbar. ✅ -C
-Add sign in and sign up pages. ✅ -C
-Change class to className. ✅ -C
-Add Dark Mode Toggle. ✅ -C
-Create 404 Page. ✅ -C
-Fix Hot deals menu to scroll horizontally. ✅ -C
-Work on Dark Mode In "darkmode" Branch. ✅ -C
-Fix Products Add To Cart Button (Removed) ✅ -C
-Add Dark Mode. ✅ -C
-Make Job Page. ✅ -C
-Fix Console Bugs. ✅ -C
-Make About Page. ✅ -C
-Make Blog Page. ✅ -C
-Make Cooperation Page. ✅ -C
-Work On Blog Page. ✅ -C
-Make Refund Page. ✅ -C
-Make Guarantee Page. ✅ -C
-Make Complication Page. ✅ -C
+Fix Categories in navbar. ✅ 
+Add sign in and sign up pages. ✅ 
+Change class to className. ✅ 
+Add Dark Mode Toggle. ✅ 
+Create 404 Page. ✅ 
+Fix Hot deals menu to scroll horizontally. ✅ 
+Work on Dark Mode In "darkmode" Branch. ✅ 
+Fix Products Add To Cart Button (Removed) ✅ 
+Add Dark Mode. ✅ 
+Make Job Page. ✅ 
+Fix Console Bugs. ✅
+Make About Page. ✅
+Make Blog Page. ✅
+Make Cooperation Page. ✅
+Work On Blog Page. ✅
+Make Refund Page. ✅
+Make Guarantee Page. ✅
+Make Complication Page. ✅
 Make HelpCenter Page. ✅
 Make Support Page. ✅
 Make PrivacyPolicy Page. ✅
@@ -24,9 +24,9 @@ Make HowTo Page. ✅
 Make TermsOfUse Page. ✅
 * Change From PetUnion To Online Shop. ✅
 Fix Hot Deals Menu Drag. ✅
+Fix Header Links. ✅
 
 Add More Tiles To Home.
-Fix Header Links.
 Fix Categories Menu.
 
 Make Dark Mode Color Scheme.
