@@ -5,6 +5,7 @@ export default function New() {
   return (
     <div className='container-fluid mt-3'>
         <div className='bg-light justify-content-center row p-4 rounded-5'>
+          <h3 className='pb-1'>New Sport Collection</h3>
             <div className='d-flex flex-column col-6'>
                 <img className='rounded-2' src={require("./imgs/New.webp")} alt="New"></img>
                 <h4 className='text-capitalize mt-2'>men's shoes collection</h4>
