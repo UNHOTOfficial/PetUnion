@@ -70,7 +70,7 @@ export default function TopSlider() {
         )}
       </div>
       <button
-        className="carousel-control-prev"
+        className="carousel-control-prev justify-content-start ms-3"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="prev"
@@ -79,7 +79,7 @@ export default function TopSlider() {
         <span className="visually-hidden">Previous</span>
       </button>
       <button
-        className="carousel-control-next"
+        className="carousel-control-next justify-content-end me-3"
         type="button"
         data-bs-target="#carouselExampleIndicators"
         data-bs-slide="next"
