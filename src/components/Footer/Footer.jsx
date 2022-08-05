@@ -3,11 +3,15 @@ import { Link } from "react-router-dom";
 import "./Footer.scss";
 
 export default function Footer() {
+
   const changeCopyrightYear = () => {
     const date = new Date();
     const year = date.getFullYear();
     return year;
   };
+  const scrollTop = ()=>{
+    window.scrollTo(0,0);
+  }
 
   return (
     <div className="border-top footer w-100 bg-material border-top border-divider ps-5 pe-5">
@@ -122,7 +126,7 @@ export default function Footer() {
             <div className="d-flex flex-column">
             <form>
               <h5><strong>Subscribe to our newsletter</strong></h5>
-              <p className="text-secondary">Monthly digest of what's new and exciting from us.</p>
+              <p className="text-secondary">Subscribe To Get Special Deals And Coupons.</p>
               <div className="mb-3">
                 
     <input type="email" placeholder="Email Address" className="form-control w-75 mb-2 bg-input" id="exampleInputEmail1" aria-describedby="emailHelp"></input>
@@ -132,7 +136,7 @@ export default function Footer() {
                 </button>
            
             </form>
-            <Link className="text-muted mt-2" to={"/"}>
+            <Link className="text-muted mt-2" to={"/apps"}>
             <div className="d-flex justify-content-start align-items-center">
             <i className="fa-brands fa-google-play"></i>
             <i className="fa-brands fa-app-store"></i>
@@ -140,7 +144,7 @@ export default function Footer() {
             </div>
             </Link>
             </div>
-          <p className="text-muted"><i className="fa-solid fa-arrow-up"></i>TOP</p>
+          <p onClick={scrollTop} className="text-muted" style={{cursor:"pointer"}}><i className="fa-solid fa-arrow-up"></i>TOP</p>
             </div>
           </div>
         </div>

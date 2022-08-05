@@ -5,7 +5,7 @@ import Warning from './Warning'
 
 export default function ComplicationContainer() {
   return (
-    <div className='container d-flex flex-column'>
+    <div className='container d-flex flex-column my-4'>
 <TopCard/>
 <Warning/>
 <Form/>

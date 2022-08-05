@@ -3,7 +3,7 @@ import {Link} from "react-router-dom"
 
 export default function RefundForm() {
   return (
-    <div className='container w-75 rounded-5 bg-light text-dark p-4'>
+    <div className='container w-75 rounded-5 bg-light text-dark p-4 my-4'>
         <form>
   <div className="mb-3">
     <div className='d-flex align-items-flex-start justify-content-between'>

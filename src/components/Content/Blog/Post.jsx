@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Post(props) {
   return (
-    <div className="card m-3 border-dark bg-light" style={{ width: "20rem" }}>
+    <div className="card my-3 border-dark bg-light" style={{ width: "18rem" }}>
       <img src={props.img} className="card-img-top" alt="..."></img>
       <div className="card-body">
         <h5 className="card-title">{props.heading}</h5>

@@ -134,9 +134,10 @@ export default function HeaderSecondary() {
               <Link className="text-decoration-none text-secondary" to={"/"}>
                 <i className="bi bi-box-seam"></i>Delivering To{" "}
                 <img
-                className="m-0"
+                className="m-0 mb-1 ms-1 rounded-3"
                   style={{ width: "1.5rem"}}
                   src={require("./imgs/united-states-of-america.png")}
+                  alt="USA"
                 ></img>
               </Link>
             </li>

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function SendEmail() {
   return (
-<div className="rounded-2 border p-4 bg-light row justify-content-evenly">
+<div className="rounded-2 border p-4 bg-light row justify-content-evenly mt-3">
 <div className="col-5 d-flex flex-column align-items-center">
     <div className="d-flex">
         <img src={require("./imgs/account.png")} alt="Account" style={{width:"3rem"}}></img>

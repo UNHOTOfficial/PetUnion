@@ -2,7 +2,7 @@ import React from "react";
 
 export default function LiveSupport() {
   return (
-    <div className="rounded-2 border p-4 bg-light">
+    <div className="rounded-2 border p-4 bg-light" style={{width:"980px"}}>
       <div className="d-flex align-items-center">
         <img
           className="me-2"

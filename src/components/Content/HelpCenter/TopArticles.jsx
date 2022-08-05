@@ -40,9 +40,9 @@ export default function TopArticles() {
     },
   ];
   return (
-    <div className="d-flex flex-column">
+    <div className="d-flex flex-column mt-3 align-items-center">
       <h1>Top Articles</h1>
-      <div className="row align-items-center">
+      <div className="row align-items-center mt-3">
         {topArticles.map((topArticle) => (
           <div key={topArticle.title} className="col-6 text-dark">
             <p className="fw-bold text-warning m-0">{topArticle.category}</p>

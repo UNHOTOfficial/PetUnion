@@ -80,7 +80,7 @@ id: '56842352'
               Let's Go!
             </button>
           </div>
-          <div className="jobs-container-right rounded-4 m-1 p-4 d-flex flex-column bg-warning bg-opacity-50">
+          <div className="jobs-container-right rounded-4 m-1 p-4 d-flex flex-column bg-warning">
             <h4 className="text-capitalize m-2">
               you can choose from a wide range from programming to logistics!
             </h4>
@@ -157,7 +157,7 @@ id: '56842352'
                     3
                   </p>
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-dark">
-                    4
+                    ...
                   </p>
                   <p className="jobs-pagination-item m-0 pt-2 pb-2 text-warning">
                     Next<i className="bi bi-arrow-right-short"></i>

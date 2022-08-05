@@ -7,7 +7,7 @@ export default function Gurantee() {
   return (
     <div className='container'>
       <TopCard/>
-      <div className='d-flex'>
+      <div className='d-flex my-4'>
       <AboutGuarantee/>
 <SideMenu/>
       </div>

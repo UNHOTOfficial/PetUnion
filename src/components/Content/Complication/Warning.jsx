@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function Warning() {
   return (
-    <div className='bg-light text-dark rounded-5'>
+    <div className='bg-light text-dark rounded-5 my-4'>
         <div className='d-flex flex-column align-items-center'>
 <h3>Warning!</h3>
 <div className='d-flex align-items-center justify-content-evenly'>

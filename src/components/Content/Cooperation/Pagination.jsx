@@ -9,7 +9,8 @@ export default function Pagination() {
         <span className=''>1</span>
         <span className=''>2</span>
         <span className=''>3</span>
-        <span className=''>Next <i className="bi bi-arrow-right"></i></span>
+        <span className=''>...</span>
+        <span className='text-warning'>Next <i className="bi bi-arrow-right"></i></span>
     </div>
   )
 }

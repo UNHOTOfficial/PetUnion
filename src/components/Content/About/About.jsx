@@ -113,7 +113,7 @@ export default function AboutContent() {
                 </h2>
                 <p className="text-dark text-capitalize fs-5">
                   our story begins in the united states of america. a creative
-                  developer and his compute for sure started coding pet union on
+                  developer and his compute for sure started coding ShopUnion on
                   2022. two weeks later, home page was made. that looked cool,
                   he continued making other pages and part as time was going on.
                 </p>
@@ -182,7 +182,7 @@ export default function AboutContent() {
               ></img>
               <div className="d-flex flex-column w-50  justify-content-evenly">
                 <h2 className="text-dark text-capitalize">
-                  exporting pet union!
+                  exporting ShopUnion!
                 </h2>
                 <p className="text-dark text-capitalize fs-5">
                   right after we reached our 30000th order, we exported pet

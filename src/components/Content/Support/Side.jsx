@@ -16,7 +16,7 @@ export default function Side() {
 </div>
 
       </div>
-      <ul className="list-group border rounded-2 bg-light">
+      <ul className="list-group border rounded-2 bg-light mt-3">
         <strong className="ms-3 mt-3 mb-3">Hot Lines</strong>
         <div className="list-group-item border-0 bg-light text-dark">
           <h5>

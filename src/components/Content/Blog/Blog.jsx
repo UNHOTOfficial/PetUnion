@@ -259,7 +259,7 @@ export default function Blog(props) {
 
   return (
     <div className="px-3">
-      <div className="container row justify-content-evenly mt-4 mx-auto">
+      <div className="container row justify-content-evenly mt-5 mx-auto">
         <div className="col-4 border-end">
           <Link to={"/"} className="text-dark">
             <div className="d-flex align-items-center mb-3 justify-content-flex-start">
@@ -312,7 +312,7 @@ export default function Blog(props) {
         </div>
       </div>
 
-<div className="bg-light rounded-4 text-dark p-4">
+<div className="bg-light rounded-4 text-dark p-4 mt-5 mb-5">
 <h3>Editors Picks</h3>
 <div className="d-flex align-items-center justify-content-between">
 <i onClick={scrollArrowLeft} className="bi bi-arrow-left-circle-fill fs-2 editors-picks-left-arrow" style={{cursor:"pointer"}}></i>
@@ -334,7 +334,7 @@ export default function Blog(props) {
                 </div>
 
 
-      <div className="d-flex flex-wrap row bg-light my-2">
+      <div className="bg-light my-2 container p-4 my-4 rounded-4">
         <h5 className="p-3 text-dark">Posts</h5>
         <div className="row">
           {posts.map((post) => (

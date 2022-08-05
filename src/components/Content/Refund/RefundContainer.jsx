@@ -29,11 +29,13 @@ export default function Refund() {
   return (
     <div className="container d-flex flex-column">
       <TopCard />
+      <div className="container mt-4">
       {collapses.map((collapse) => (
         <React.Fragment key={collapse.title}>
         <Collapse title={collapse.title} paragraph={collapse.paragraph}/>
         </React.Fragment>
         ))}
+        </div>
         <RefundForm/>
         </div>
   );
