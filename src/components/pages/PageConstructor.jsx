@@ -27,6 +27,8 @@ import HeaderSecondary from "../Header/HeaderSecondary";
 import UserAgreement from '../Content/PrivacyPolicy/Content/UserAgreement';
 import PromoHeader from "../Header/PromoHeader";
 import Apps from "../Content/Apps/Apps";
+import Products from "../Content/Products/Products";
+import Cart from "../Content/Cart/Cart";
 
 export default function PageConstructor() {
   return (
@@ -54,6 +56,8 @@ export default function PageConstructor() {
           <Route exact path="/reportbug" element={<ReportABug />}></Route>
           <Route exact path="/Account" element={<Account/>}></Route>
           <Route exact path="/apps" element={<Apps/>}></Route>
+          <Route exact path="/products" element={<Products/>}></Route>
+          <Route exact path="/cart" element={<Cart/>}></Route>
           <Route path="*" element={<Page404 />}></Route>
           
 

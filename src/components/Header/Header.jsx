@@ -17,6 +17,7 @@ export default function Header() {
         <Link to={"/"} className="navbar-brand">
           <img className="Header-logo"
             src={require("../Content/imgs/Logo/Logo-Black.png")}
+            alt="Logo"
             style={{ width: "5rem" }}
           ></img>
         </Link>
@@ -50,7 +51,7 @@ export default function Header() {
         <Link to={"/Account"} className="btn btn-outline-dark me-2">Sign In</Link>
         <Link to={"/Account"} className="btn btn-warning me-2">Get Started</Link>
           </div>
-        <button className="btn btn-outline-dark"><i className="bi bi-cart m-0"></i></button>
+        <Link className="btn btn-outline-dark" to={"/cart"}><i className="bi bi-cart m-0"></i></Link>
         <div className="form-check form-switch">
               <input
                 onClick={toggleDarkmode}
