@@ -51,7 +51,7 @@ export default function TopSlider() {
       <div className="carousel-inner">
         {sliders.map((slider) =>
           slider.active === true ? (
-            <div className="carousel-item active">
+            <div key={slider.src} className="carousel-item active">
               <img style={{height:"25rem", objectFit:"cover"}}
                 src={slider.src}
                 className="d-block w-100"
@@ -59,7 +59,7 @@ export default function TopSlider() {
               ></img>
             </div>
           ) : (
-            <div className="carousel-item">
+            <div key={slider.name} className="carousel-item">
               <img style={{height:"25rem", objectFit:"cover"}}
                 src={slider.src}
                 className="d-block w-100"

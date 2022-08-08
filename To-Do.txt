@@ -40,3 +40,4 @@ Make contact "Make An Appointment" button functional.
 Work On Blog Header And Footer.
 Fix Product Component By ID.
 Fix Cart Products.
+Make Sign In Changes.

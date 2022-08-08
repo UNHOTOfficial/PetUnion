@@ -86,19 +86,19 @@ export default function FAQsContent() {
         <div className="container bg-light p-4 rounded-4">
           <div className="d-flex align-items-center">
             <div className="border-bottom py-2">Some Collapse Here.</div>
-            <i class="bi bi-caret-down-fill"></i>
+            <i className="bi bi-caret-down-fill"></i>
           </div>
           <div className="d-flex align-items-center">
             <div className="border-bottom py-2">Some Collapse Here.</div>
-            <i class="bi bi-caret-down-fill"></i>
+            <i className="bi bi-caret-down-fill"></i>
           </div>
           <div className="d-flex align-items-center">
             <div className="border-bottom py-2">Some Collapse Here.</div>
-            <i class="bi bi-caret-down-fill"></i>
+            <i className="bi bi-caret-down-fill"></i>
           </div>
           <div className="d-flex align-items-center">
             <div className="py-2">Some Collapse Here.</div>
-            <i class="bi bi-caret-down-fill"></i>
+            <i className="bi bi-caret-down-fill"></i>
           </div>
         </div>
       </div>

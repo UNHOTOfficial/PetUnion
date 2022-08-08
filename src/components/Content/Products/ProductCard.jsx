@@ -28,7 +28,7 @@ export default function ProductCard(props) {
       </p>
       <p>{props.price}$</p>
       <div className="d-flex align-items-center">
-        <i class="bi bi-star-fill text-warning"></i>
+        <i className="bi bi-star-fill text-warning"></i>
         <small>{props.rate}</small>
       </div>
     </Link>
