@@ -2,9 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductCard(props) {
+  const discountPercent = Math.round(
+    100 - ((props.price - props.discount) * 100) / props.price
+  );
   return (
     <Link
-      className="card p-4 justify-content-evenly text-dark"
+      className="d-flex flex-column border p-4 justify-content-evenly text-dark bg-light border-dark rounded-0 col-3"
       to={props.title}
     >
       <img
@@ -13,7 +16,18 @@ export default function ProductCard(props) {
         alt={props.image}
         style={{ width: "12rem", height: "12rem", objectFit: "contain" }}
       ></img>
-      <h6 className="mt-3">{props.title}</h6>
+      <h6
+        style={{
+          display: "inline-block",
+          textOverflow: "ellipsis",
+          wordWrap: "break-word",
+          overflow: "hidden",
+          maxHeight: "3.5rem",
+        }}
+        className="mt-3"
+      >
+        {props.title}
+      </h6>
       <p
         className="overflow-hidden text-muted mt-2"
         style={{
@@ -26,7 +40,23 @@ export default function ProductCard(props) {
       >
         {props.description}
       </p>
-      <p>{props.price}$</p>
+      <div className="d-flex align-items-center justify-content-between">
+        <p className="m-0 fw-bold">{props.price}$</p>
+        <div className="d-flex flex-column">
+          {props.discount !== 0 ? (
+            <span class="badge text-bg-danger rounded-pill">
+              {discountPercent}%
+            </span>
+          ) : (
+            <></>
+          )}
+          {discountPercent > 30 ? (
+            <span className="text-danger fw-bold">OFFER</span>
+          ) : (
+            <></>
+          )}
+        </div>
+      </div>
       <div className="d-flex align-items-center">
         <i className="bi bi-star-fill text-warning"></i>
         <small>{props.rate}</small>

@@ -31,6 +31,7 @@ import Products from "../Content/Products/Products";
 import Cart from "../Content/Cart/Cart";
 import User from "../Content/Accounts/User";
 import Offers from "../Content/Offers/Offers";
+import Admin from "../Content/Admin/Admin";
 
 export default function PageConstructor() {
   return (
@@ -61,6 +62,7 @@ export default function PageConstructor() {
           <Route exact path="/products" element={<Products/>}></Route>
           <Route exact path="/cart" element={<Cart/>}></Route>
           <Route exact path="/offers" element={<Offers/>}></Route>
+          <Route exact path="/admin" element={<Admin/>}></Route>
           <Route exact path="/user" element={<User/>}></Route> {/**temp**/}
           <Route path="*" element={<Page404 />}></Route>
           
