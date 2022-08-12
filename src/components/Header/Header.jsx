@@ -48,8 +48,8 @@ export default function Header() {
           </ul>
         <div className="d-flex align-items-center w-25 justify-content-evenly">
           <div className="d-flex account-container">
-        <Link to={"/Account"} className="btn btn-outline-dark me-2">Sign In</Link>
-        <Link to={"/Account"} className="btn btn-warning me-2">Get Started</Link>
+        <Link to={"/signin"} className="btn btn-outline-dark me-2">Sign In</Link>
+        <Link to={"/signup"} className="btn btn-warning me-2">Get Started</Link>
           </div>
         <Link className="btn btn-outline-dark" to={"/cart"}><i className="bi bi-cart m-0"></i></Link>
         <div className="form-check form-switch">

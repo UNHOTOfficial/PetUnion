@@ -72,7 +72,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
                   width={72}
                   height={57}
                 />
-                <h1 className="h3 mb-3 fw-normal">Sign In | Sign Up</h1>
+                <h1 className="h3 mb-3 fw-normal">Sign In</h1>
               </div>
               <div className="mb-3 mt-4 d-flex flex-column align-items-start">
                 <input
@@ -97,7 +97,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
               <div className="checkbox mb-4">
                 <p className="text-capitalize text-muted">
                   <small>
-                    please fill out field to begin your fascinating journey, or continue if you already started!
+                    please fill out field to continue your fascinating journey!
                   </small>
                 </p>
                
@@ -114,6 +114,14 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
                   Need Help?
                   <Link className="ms-1" to={"/help"}>
                     Help Center
+                  </Link>
+                </p>
+              </small>
+              <small>
+                <p className="mt-4 mb-0 text-muted text-capitalize">
+                  Don't have an account?
+                  <Link className="ms-1" to={"/signup"}>
+                  Create Yours Now.
                   </Link>
                 </p>
               </small>
@@ -134,7 +142,7 @@ document.querySelector('.Account-input-invalid-mismatch').classList.remove('d-no
         }
 
 
+        break;
     default:
-      break;
   }
 }

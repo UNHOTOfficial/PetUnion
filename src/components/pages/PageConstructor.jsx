@@ -17,7 +17,7 @@ import HowTo from "../Content/HowTo/HowTo";
 import HelpCenter from "../Content/HelpCenter/HelpCenter";
 import ReportABug from "../Content/ReportABug/ReportABug";
 import Page404 from "./Page404";
-import Account from "../Content/Accounts/Account"
+import Signin from "../Content/Accounts/SignIn"
 import '../dark.scss'
 import JobsContainer from "../Content/Jobs/JobsContainer";
 import BlogContainer from "../Content/Blog/BlogContainer";
@@ -32,6 +32,7 @@ import Cart from "../Content/Cart/Cart";
 import User from "../Content/Accounts/User";
 import Offers from "../Content/Offers/Offers";
 import Admin from "../Content/Admin/Admin";
+import SignUp from "../Content/Accounts/SignUp";
 
 export default function PageConstructor() {
   return (
@@ -57,7 +58,8 @@ export default function PageConstructor() {
           <Route exact path="/howto" element={<HowTo />}></Route>
           <Route exact path="/help" element={<HelpCenter />}></Route>
           <Route exact path="/reportbug" element={<ReportABug />}></Route>
-          <Route exact path="/Account" element={<Account/>}></Route>
+          <Route exact path="/signin" element={<Signin/>}></Route>
+          <Route exact path="/signup" element={<SignUp/>}></Route>
           <Route exact path="/apps" element={<Apps/>}></Route>
           <Route exact path="/products" element={<Products/>}></Route>
           <Route exact path="/cart" element={<Cart/>}></Route>
