@@ -17,19 +17,17 @@ import HowTo from "../Content/HowTo/HowTo";
 import HelpCenter from "../Content/HelpCenter/HelpCenter";
 import ReportABug from "../Content/ReportABug/ReportABug";
 import Page404 from "./Page404";
-import Signin from "../Content/Accounts/SignIn"
-import '../dark.scss'
+import Signin from "../Content/Accounts/SignIn";
+import "../dark.scss";
 import JobsContainer from "../Content/Jobs/JobsContainer";
 import BlogContainer from "../Content/Blog/BlogContainer";
 import HeaderSecondary from "../Header/HeaderSecondary";
 
-
-import UserAgreement from '../Content/PrivacyPolicy/Content/UserAgreement';
+import UserAgreement from "../Content/PrivacyPolicy/Content/UserAgreement";
 import PromoHeader from "../Header/PromoHeader";
 import Apps from "../Content/Apps/Apps";
 import Products from "../Content/Products/Products";
 import Cart from "../Content/Cart/Cart";
-import User from "../Content/Accounts/User";
 import Offers from "../Content/Offers/Offers";
 import Admin from "../Content/Admin/Admin";
 import SignUp from "../Content/Accounts/SignUp";
@@ -38,9 +36,9 @@ export default function PageConstructor() {
   return (
     <React.Fragment>
       <BrowserRouter>
-      <PromoHeader/>
+        <PromoHeader />
         <Header />
-        <HeaderSecondary/>
+        <HeaderSecondary />
         <Routes>
           <Route exact path="/" element={<Home />}></Route>
           <Route exact path="/FAQs" element={<FAQs />}></Route>
@@ -58,21 +56,22 @@ export default function PageConstructor() {
           <Route exact path="/howto" element={<HowTo />}></Route>
           <Route exact path="/help" element={<HelpCenter />}></Route>
           <Route exact path="/reportbug" element={<ReportABug />}></Route>
-          <Route exact path="/signin" element={<Signin/>}></Route>
-          <Route exact path="/signup" element={<SignUp/>}></Route>
-          <Route exact path="/apps" element={<Apps/>}></Route>
-          <Route exact path="/products" element={<Products/>}></Route>
-          <Route exact path="/cart" element={<Cart/>}></Route>
-          <Route exact path="/offers" element={<Offers/>}></Route>
-          <Route exact path="/admin" element={<Admin/>}></Route>
-          <Route exact path="/user" element={<User/>}></Route> {/**temp**/}
+          <Route exact path="/signin" element={<Signin />}></Route>
+          <Route exact path="/signup" element={<SignUp />}></Route>
+          <Route exact path="/apps" element={<Apps />}></Route>
+          <Route exact path="/products" element={<Products />}></Route>
+          <Route exact path="/cart" element={<Cart />}></Route>
+          <Route exact path="/offers" element={<Offers />}></Route>
+          <Route exact path="/admin" element={<Admin />}></Route>
           <Route path="*" element={<Page404 />}></Route>
-          
 
           {/* legal */}
-          <Route exact path='legal/agreement' element={<UserAgreement/>}></Route>
+          <Route
+            exact
+            path="legal/agreement"
+            element={<UserAgreement />}
+          ></Route>
           {/* <Route exact path={"/Product/:ProductID"} element={<ProductDetail />}></Route> */}
-
         </Routes>
         <Footer />
       </BrowserRouter>

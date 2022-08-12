@@ -25,6 +25,7 @@ Make TermsOfUse Page. ✅
 * Change From PetUnion To Online Shop. ✅
 Fix Hot Deals Menu Drag. ✅
 Fix Header Links. ✅
+Make footer subscribe button functional. ✅
 
 Add More Tiles To Home.
 Fix Categories Menu.
@@ -32,7 +33,6 @@ Fix Categories Menu.
 Make Dark Mode Color Scheme.
 Make products pages by ids.
 Add social media links. 
-Make footer subscribe button functional.
 Add FAQs collapses.
 Make FAQs search bar functional.
 Make FAQs Categories links.

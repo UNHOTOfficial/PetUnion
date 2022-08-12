@@ -1,10 +1,37 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import axios from "axios";
 
 export default function SignUp() {
+  const postSignUpData = () => {
+    const data = JSON.stringify({
+      firstName: document.getElementById("firstName").value,
+      lastName: document.getElementById("lastName").value,
+      country: document.getElementById("country").value,
+      birthday: document.getElementById("birthday").value,
+      phone: document.getElementById("phone").value,
+      email: document.getElementById("email").value,
+      password: document.getElementById("password").value,
+    });
+
+    axios
+      .post("http://localhost:3001/api/users", data, {
+        headers: { "Content-Type": "application/json" },
+      })
+      .then((res) => {
+        const alert = document.querySelector(".signup-alert");
+        alert.textContent = "Signed Up Successfully.";
+      })
+      .catch((error) => {
+        const alert = document.querySelector(".signup-alert");
+        alert.textContent = error.response.data;
+      });
+  };
+
   return (
     <div
-      className="container-sm p-3 d-flex flex-column align-items-center"
+      className="container-sm p-3 d-flex flex-column align-items-center needs-validation"
+      noValidate
       style={{ maxWidth: "32rem" }}
     >
       <h1 className="fs-4 fw-bold">Create A Shopunion Account</h1>
@@ -22,7 +49,6 @@ export default function SignUp() {
             class="form-control"
             id="firstName"
             placeholder=""
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Valid first name is required.</div>
@@ -36,7 +62,6 @@ export default function SignUp() {
             class="form-control"
             id="lastName"
             placeholder=""
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Valid last name is required.</div>
@@ -46,7 +71,7 @@ export default function SignUp() {
             Country
           </label>
           <select class="form-select" id="country" required="">
-            <option value="">Choose...</option>
+            <option>Choose...</option>
             <option>United States</option>
           </select>
           <div class="invalid-feedback">Please select a valid country.</div>
@@ -58,9 +83,8 @@ export default function SignUp() {
           <input
             type="date"
             class="form-control"
-            id="Birthday"
+            id="birthday"
             placeholder=""
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Valid first name is required.</div>
@@ -90,7 +114,6 @@ export default function SignUp() {
             class="form-control"
             id="password"
             placeholder="Password"
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Password is required.</div>
@@ -104,7 +127,6 @@ export default function SignUp() {
             class="form-control"
             id="password-confirmation"
             placeholder="Password Confirmation"
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Passwords Don't Match.</div>
@@ -115,8 +137,8 @@ export default function SignUp() {
             Country Code
           </label>
           <select class="form-select" id="country" required="">
-            <option value="">Choose...</option>
-            <option>United States</option>
+            <option>Choose...</option>
+            <option>+1</option>
           </select>
           <div class="invalid-feedback">Please select a valid country.</div>
         </div>
@@ -129,7 +151,6 @@ export default function SignUp() {
             class="form-control"
             id="phone"
             placeholder=""
-            value=""
             required=""
           ></input>
           <div class="invalid-feedback">Valid first name is required.</div>
@@ -175,10 +196,17 @@ export default function SignUp() {
             <Link to={"/terms"}>Terms Of Use</Link>.
           </small>
         </div>
-        <button className="btn btn-warning col-sm-6 mx-auto mt-3">
+        <button
+          onClick={postSignUpData}
+          className="btn btn-warning col-sm-6 mx-auto mt-3"
+        >
           Continue
         </button>
       </div>
+      <div
+        class="signup-alert alert text-capitalize mt-3 d-none"
+        role="alert"
+      ></div>
     </div>
   );
 }
