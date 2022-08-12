@@ -7,7 +7,7 @@ export default function ProductCard(props) {
   );
   return (
     <Link
-      className="d-flex flex-column border p-4 justify-content-evenly text-dark bg-light border-dark rounded-0 col-3"
+      className="d-flex flex-column border  p-4 justify-content-evenly text-dark bg-light rounded-0 col-3"
       to={props.title}
     >
       <img
@@ -41,7 +41,10 @@ export default function ProductCard(props) {
         {props.description}
       </p>
       <div className="d-flex align-items-center justify-content-between">
-        <p className="m-0 fw-bold">{props.price}$</p>
+       {discountPercent > 0 ?  <div className="d-flex align-items-center">
+        <span className="fw-bold me-2">{props.price - props.discount}$</span>
+        <small className="m-0" style={{textDecoration:"line-through"}}>{props.price}$</small>
+        </div> : <span className="fw-bold me-2">{props.price}$</span>}
         <div className="d-flex flex-column">
           {props.discount !== 0 ? (
             <span class="badge text-bg-danger rounded-pill">

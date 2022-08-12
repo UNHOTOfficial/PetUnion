@@ -9,9 +9,13 @@ export default function OfferProducts() {
 
   useEffect(() => {
     axios
-      .get("https://fakestoreapi.com/products")
+      .get("http://localhost:3001/api/products")
       .then((res) => {
-        setOfferProducts(res.data);
+        let offerProductsArray = [];
+        res.data.map((discountProducts)=>(
+          discountProducts.discount > 0 ? offerProductsArray.push(discountProducts) : <></>
+          ))
+          setOfferProducts(offerProductsArray)
       })
       .catch((error) => {
         console.log(error);
@@ -24,7 +28,7 @@ export default function OfferProducts() {
         <div className="row">
           {offerProducts.map((offerProduct) => (
             <Link to={`/products/${offerProduct.title}`}
-              className="card col-3 p-3 justify-content-around text-dark"
+              className="d-flex flex-column border col-3 p-3 justify-content-around text-dark"
               style={{ height: "20rem" }}
             >
               <img

@@ -1,6 +1,30 @@
 import React from "react";
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 export default function TopSellers() {
+  const [topsellers, setTopSellers] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/products")
+      .then((res) => {
+        let offerProductsArray = [];
+        res.data.map((discountProducts) =>
+          discountProducts.discount > 0 ? (
+            offerProductsArray.push(discountProducts)
+          ) : (
+            <></>
+          )
+        );
+        setTopSellers(offerProductsArray);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
+
   const scrollTopSellers = () => {
     const scrollHotDeals = document.getElementsByClassName("topsellers-row")[0];
     scrollHotDeals.addEventListener("wheel", (event) => {
@@ -62,63 +86,6 @@ export default function TopSellers() {
     });
   };
 
-  const topSellers = [
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random(),
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-    {
-      img: require("./imgs/case.jpg"),
-      title: "gaming pC",
-      key: Math.random() * 100,
-    },
-  ];
   return (
     <div className="container mt-3">
       <div className="bg-light text-dark rounded-5 p-4 align-items-center border">
@@ -133,18 +100,35 @@ export default function TopSellers() {
             className="d-flex flex-nowrap overflow-hidden topsellers-row user-select-none p-4"
             style={{ scrollBehavior: "smooth" }}
           >
-            {topSellers.map((topSeller) => (
-              <div key={topSeller.key}
+            {topsellers.map((topSeller) => (
+              <div
+                key={topSeller.key}
                 onWheel={scrollTopSellers}
                 onMouseDown={dragTopSellers}
-                className="d-flex flex-column mx-3"
+                className="d-flex flex-column border-end px-3"
               >
                 <img
+                  style={{
+                    width: "10rem",
+                    height: "10rem",
+                    objectFit: "contain",
+                  }}
                   className="rounded-2"
-                  src={topSeller.img}
-                  alt={topSeller.img.replace(/^.*[\\\/]/, "")}
+                  src={topSeller.image}
+                  alt={topSeller.image.replace(/^.*[\\\/]/, "")}
                 ></img>
-                <h5 className="text-capitalize">{topSeller.title}</h5>
+                <p
+                  style={{
+                    display: "inline-block",
+                    textOverflow: "ellipsis",
+                    wordWrap: "break-word",
+                    overflow: "hidden",
+                    maxHeight: "3rem",
+                  }}
+                  className="text-capitalize mt-3"
+                >
+                  {topSeller.title}
+                </p>
               </div>
             ))}
           </div>

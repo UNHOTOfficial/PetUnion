@@ -2,7 +2,6 @@ import React from "react";
 
 export default function TopScrollMenuCard(props) {
   return (
-    <div>
       <div
         className="card border-0 bg-transparent justify-content-evenly border-end p-3"
         style={{ height: "18rem" }}
@@ -38,6 +37,5 @@ export default function TopScrollMenuCard(props) {
           </span>
         </div>
       </div>
-    </div>
   );
 }

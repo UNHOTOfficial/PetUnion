@@ -1,100 +1,27 @@
 import React from "react";
 import HotDealsProduct from "./HotDealsProduct";
 import '../../dark.scss'
+import { useEffect } from "react";
+import { useState } from "react";
+import axios from "axios";
 
 export default function HotDeals() {
-  const products = [
-    {
-      name: "Pet Bed",
-      img: require("../Imgs/Pet-Bed.jpg"),
-      desc: "A very comfortable bed for your loveable pet. very soft and comfy!",
-      price: "50",
-      hasDiscount: true,
-      discount: "10",
-      productId: "25734128",
-    },
-    {
-      name: "Pet Food",
-      img: require("../Imgs/Pet-Food.jpg"),
-      desc: "Contains one (1) 33 lb. bag of PEDIGREE Complete Nutrition Adult Dry Dog Food, Roasted Chicken, Rice & Vegetable Flavor.",
-      price: "23",
-      hasDiscount: true,
-      discount: "5",
-      productId: "88829419",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "6737787",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "6734787",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "6737687",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "6735787",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "67354787",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "68767",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "6786876",
-    },
-    {
-      name: "Pet Mineral",
-      img: require("../Imgs/Pet-Mineral.jpg"),
-      desc: "HIGH-QUALITY HEALTH SUPPLEMENT FOR DOGS: Give your pet the nutritional support that provides four different health benefits.",
-      price: "12",
-      hasDiscount: true,
-      discount: "3",
-      productId: "68763638",
-    },
-  ];
+  const [offerProducts, setOfferProducts] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get("http://localhost:3001/api/products")
+      .then((res) => {
+        let offerProductsArray = [];
+        res.data.map((discountProducts)=>(
+          discountProducts.discount > 0 ? offerProductsArray.push(discountProducts) : <></>
+          ))
+          setOfferProducts(offerProductsArray)
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  }, []);
 
   const scrollHtoDeals = () => {
     const scrollHotDeals = document.getElementsByClassName("HotDealsRow")[0];
@@ -175,12 +102,12 @@ export default function HotDeals() {
             onWheel={scrollHtoDeals}
             onMouseDown={dragHotDeals}
           >
-            {products.map((product) => (
+            {offerProducts.map((product) => (
               <div key={product.productId} className="col-lg p-0 HotDealsItem">
                 <HotDealsProduct
                   ProductId={product.productId}
-                  img={product.img}
-                  name={product.name}
+                  img={product.image}
+                  name={product.title}
                   hasDiscount={product.hasDiscount}
                   discount={product.discount}
                   price={product.price}
