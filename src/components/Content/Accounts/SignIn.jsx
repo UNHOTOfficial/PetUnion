@@ -99,7 +99,7 @@ export default function Account() {
                 <div className="mb-3 mt-4 d-flex flex-column align-items-start">
                   <input
                     onFocus={nextEnter}
-                    type="text"
+                    type="email"
                     className="form-control Account-firstInput bg-input text-dark"
                     id="email"
                     placeholder="Email Or Phone Number"
@@ -118,7 +118,7 @@ export default function Account() {
                 </div>
                 <div className="mb-4 mt-4 d-flex flex-column align-items-start">
                   <input
-                    type="text"
+                    type="password"
                     className="form-control Account-firstInput bg-input text-dark"
                     id="password"
                     placeholder="Password"

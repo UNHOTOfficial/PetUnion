@@ -8,7 +8,7 @@ export default function HotDealsProduct(props) {
     <React.Fragment>
       <Link
         className="card ProductCard ProductItem m-3 ms-2 me-2 user-select-none HotDealProductCard rounded-5  bg-background-secondary border-divider text-dark"
-        to={`/Product/${props.ProductId}`}
+        to={`/Products/${props.id}`}
         style={{ width: "18rem", height:"22rem" }}
       >
         <img

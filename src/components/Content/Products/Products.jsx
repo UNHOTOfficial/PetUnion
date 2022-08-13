@@ -36,6 +36,7 @@ export default function Products() {
                 price={product.price}
                 discount={product.discount}
                 rate={product.rating.rate}
+                id={product._id}
               />
             </React.Fragment>
           ))}

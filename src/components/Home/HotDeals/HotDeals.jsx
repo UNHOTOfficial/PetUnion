@@ -105,7 +105,7 @@ export default function HotDeals() {
             {offerProducts.map((product) => (
               <div key={product.productId} className="col-lg p-0 HotDealsItem">
                 <HotDealsProduct
-                  ProductId={product.productId}
+                  id={product._id}
                   img={product.image}
                   name={product.title}
                   hasDiscount={product.hasDiscount}

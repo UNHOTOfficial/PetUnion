@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
 
-export default function TopScrollMenu() {
+export default function TopScrollMenu(props) {
   const scrollHtoDeals = () => {
     const scrollHotDeals =
       document.getElementsByClassName("topscrollMenuRow")[0];
@@ -91,6 +91,7 @@ export default function TopScrollMenu() {
   }, []);
   return (
     <div className="container-fluid bg-white text-dark">
+      <h3>{props.title}</h3>
       <div className="d-flex align-items-center">
         <i
           onClick={scrollArrowLeft}

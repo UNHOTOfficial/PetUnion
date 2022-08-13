@@ -30,166 +30,166 @@ export default function SignUp() {
 
   return (
     <div
-      className="container-sm p-3 d-flex flex-column align-items-center needs-validation"
+      classNameName="container-sm p-3 d-flex flex-column align-items-center needs-validation"
       noValidate
       style={{ maxWidth: "32rem" }}
     >
-      <h1 className="fs-4 fw-bold">Create A Shopunion Account</h1>
-      <p className="text-capitalize text-center">
+      <h1 classNameName="fs-4 fw-bold">Create A Shopunion Account</h1>
+      <p classNameName="text-capitalize text-center">
         create a new shopunion account to begin your fascinating journey. have
         an account already? <Link to={"/forget-account"}>Find It Here.</Link>
       </p>
-      <div className="row">
-        <div class="col-sm-6">
-          <label for="firstName" class="form-label">
+      <div classNameName="row">
+        <div className="col-sm-6">
+          <label for="firstName" className="form-label">
             First name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="firstName"
             placeholder=""
             required=""
           ></input>
-          <div class="invalid-feedback">Valid first name is required.</div>
+          <div className="invalid-feedback">Valid first name is required.</div>
         </div>
-        <div class="col-sm-6">
-          <label for="lastName" class="form-label">
+        <div className="col-sm-6">
+          <label for="lastName" className="form-label">
             Last name
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="lastName"
             placeholder=""
             required=""
           ></input>
-          <div class="invalid-feedback">Valid last name is required.</div>
+          <div className="invalid-feedback">Valid last name is required.</div>
         </div>
-        <div class="col-md-12 my-3">
-          <label for="country" class="form-label">
+        <div className="col-md-12 my-3">
+          <label for="country" className="form-label">
             Country
           </label>
-          <select class="form-select" id="country" required="">
+          <select className="form-select" id="country" required="">
             <option>Choose...</option>
             <option>United States</option>
           </select>
-          <div class="invalid-feedback">Please select a valid country.</div>
+          <div className="invalid-feedback">Please select a valid country.</div>
         </div>
-        <div class="col-sm-12">
-          <label for="birthday" class="form-label">
+        <div className="col-sm-12">
+          <label for="birthday" className="form-label">
             Birthday
           </label>
           <input
             type="date"
-            class="form-control"
+            className="form-control"
             id="birthday"
             placeholder=""
             required=""
           ></input>
-          <div class="invalid-feedback">Valid first name is required.</div>
+          <div className="invalid-feedback">Valid first name is required.</div>
         </div>
-        <hr className="my-4"></hr>
-        <div class="col-12 mb-3">
-          <label for="username" class="form-label">
+        <hr classNameName="my-4"></hr>
+        <div className="col-12 mb-3">
+          <label for="username" className="form-label">
             Email
           </label>
-          <div class="input-group has-validation">
+          <div className="input-group has-validation">
             <input
               type="text"
-              class="form-control"
+              className="form-control"
               id="email"
               placeholder="Email"
               required=""
             ></input>
-            <div class="invalid-feedback">Your email is required.</div>
+            <div className="invalid-feedback">Your email is required.</div>
           </div>
         </div>
-        <div class="col-sm-6">
-          <label for="password" class="form-label">
+        <div className="col-sm-6">
+          <label for="password" className="form-label">
             Password
           </label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             id="password"
             placeholder="Password"
             required=""
           ></input>
-          <div class="invalid-feedback">Password is required.</div>
+          <div className="invalid-feedback">Password is required.</div>
         </div>
-        <div class="col-sm-6">
-          <label for="lastName" class="form-label">
+        <div className="col-sm-6">
+          <label for="lastName" className="form-label">
             Password Confirmation
           </label>
           <input
             type="password"
-            class="form-control"
+            className="form-control"
             id="password-confirmation"
             placeholder="Password Confirmation"
             required=""
           ></input>
-          <div class="invalid-feedback">Passwords Don't Match.</div>
+          <div className="invalid-feedback">Passwords Don't Match.</div>
         </div>
-        <hr className="my-4"></hr>
-        <div class="col-md-12">
-          <label for="country" class="form-label">
+        <hr classNameName="my-4"></hr>
+        <div className="col-md-12">
+          <label for="country" className="form-label">
             Country Code
           </label>
-          <select class="form-select" id="country" required="">
+          <select className="form-select" id="country" required="">
             <option>Choose...</option>
             <option>+1</option>
           </select>
-          <div class="invalid-feedback">Please select a valid country.</div>
+          <div className="invalid-feedback">Please select a valid country.</div>
         </div>
-        <div class="col-sm-12 my-3">
-          <label for="phone" class="form-label">
+        <div className="col-sm-12 my-3">
+          <label for="phone" className="form-label">
             Phone
           </label>
           <input
             type="text"
-            class="form-control"
+            className="form-control"
             id="phone"
             placeholder=""
             required=""
           ></input>
-          <div class="invalid-feedback">Valid first name is required.</div>
+          <div className="invalid-feedback">Valid first name is required.</div>
         </div>
-        <small className="text-muted text-center">
+        <small classNameName="text-muted text-center">
           Be sure to enter a phone number you can always access. It will be used
           to verify your identity any time you sign in on a new device or web
           browser. Messaging or data rates may apply.
         </small>
-        <div className="d-flex mt-3 justify-content-around">
+        <div classNameName="d-flex mt-3 justify-content-around">
           <span>Verify With:</span>
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDefault1"
               checked
             ></input>
-            <label class="form-check-label" for="flexRadioDefault1">
+            <label className="form-check-label" for="flexRadioDefault1">
               Email
             </label>
           </div>
-          <div class="form-check">
+          <div className="form-check">
             <input
-              class="form-check-input"
+              className="form-check-input"
               type="radio"
               name="flexRadioDefault"
               id="flexRadioDefault2"
             ></input>
-            <label class="form-check-label" for="flexRadioDefault2">
+            <label className="form-check-label" for="flexRadioDefault2">
               Text Message
             </label>
           </div>
         </div>
-        <hr className="my-4"></hr>
+        <hr classNameName="my-4"></hr>
         <p>CAPTCHA SECTION</p>
-        <hr className="my-4"></hr>
-        <div className="col-sm-12">
+        <hr classNameName="my-4"></hr>
+        <div classNameName="col-sm-12">
           <small>
             By Creating An Account, You Accept{" "}
             <Link to={"/privacy-policy"}>Privacy Policy</Link> And{" "}
@@ -198,13 +198,13 @@ export default function SignUp() {
         </div>
         <button
           onClick={postSignUpData}
-          className="btn btn-warning col-sm-6 mx-auto mt-3"
+          classNameName="btn btn-warning col-sm-6 mx-auto mt-3"
         >
           Continue
         </button>
       </div>
       <div
-        class="signup-alert alert text-capitalize mt-3 d-none"
+        className="signup-alert alert text-capitalize mt-3 d-none"
         role="alert"
       ></div>
     </div>

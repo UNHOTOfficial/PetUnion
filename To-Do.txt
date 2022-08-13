@@ -26,18 +26,16 @@ Make TermsOfUse Page. ✅
 Fix Hot Deals Menu Drag. ✅
 Fix Header Links. ✅
 Make footer subscribe button functional. ✅
-
-Add More Tiles To Home.
+Make products pages by ids. ✅
+Fix Product Component By ID. ✅
+Add More Tiles To Home. ✅
 Fix Categories Menu.
-
 Make Dark Mode Color Scheme.
-Make products pages by ids.
 Add social media links. 
 Add FAQs collapses.
 Make FAQs search bar functional.
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Work On Blog Header And Footer.
-Fix Product Component By ID.
 Fix Cart Products.
-Make Sign In Changes.
+Make Sign In Changes. 

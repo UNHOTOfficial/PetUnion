@@ -27,7 +27,7 @@ export default function OfferProducts() {
       <div className="col-9">
         <div className="row">
           {offerProducts.map((offerProduct) => (
-            <Link to={`/products/${offerProduct.title}`}
+            <Link to={`/products/${offerProduct._id}`}
               className="d-flex flex-column border col-3 p-3 justify-content-around text-dark"
               style={{ height: "20rem" }}
             >
