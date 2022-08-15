@@ -7,19 +7,19 @@ export default function Product(props) {
 let discountPercent;
 
   return (
-    <div classNameName="container-fluid my-3">
-      <div classNameName="row align-items-start">
+    <div className="container-fluid my-3">
+      <div className="row align-items-start">
         <img
-          classNameName="col-4 mt-5"
+          className="col-4 mt-5"
           src={props.image}
           alt={props.image}
           style={{ height: "auto", objectFit: "contain" }}
         ></img>
-        <div classNameName="col-5 d-flex flex-column">
+        <div className="col-5 d-flex flex-column">
           <div>
             <h4>{props.title}</h4>
-            <div classNameName="rating-section d-flex">
-              <div classNameName="d-flex">
+            <div className="rating-section d-flex">
+              <div className="d-flex">
                 <i className="bi bi-star"></i>
                 <i className="bi bi-star"></i>
                 <i className="bi bi-star"></i>
@@ -30,11 +30,11 @@ let discountPercent;
             </div>
           </div>
           <hr></hr>
-          <div classNameName="price-section">
+          <div className="price-section">
             {props.hasDiscount === true ? (
-              <div classNameName="d-flex flex-column">
-                <div classNameName="d-flex">
-                  <span classNameName="text-danger">
+              <div className="d-flex flex-column">
+                <div className="d-flex">
+                  <span className="text-danger">
                     {discountPercent = Math.round(
                       100 - ((props.price - props.discount) * 100) / props.price
                     )}
@@ -50,33 +50,33 @@ let discountPercent;
                 </span>
               </div>
             ) : (
-              <div classNameName="d-flex">
+              <div className="d-flex">
                 <span>{props.price}</span>
               </div>
             )}
           </div>
           <hr></hr>
-          <div classNameName="info-section">
-            <span classNameName="fw-bold">About This Product</span>
+          <div className="info-section">
+            <span className="fw-bold">About This Product</span>
             <p>{props.description}</p>
           </div>
-          <div classNameName="product-related bg-light text-dark rounded-3 border"></div>
+          <div className="product-related bg-light text-dark rounded-3 border"></div>
         </div>
-        <div classNameName="col-3" style={{height:"38rem"}}>
-          <div classNameName="bg-light rounded-3 border p-3 d-flex flex-column h-100 justify-content-evenly">
-            <div classNameName="d-flex align-items-center justify-content-evenly">
-            <h5 classNameName="fw-bold">{price}$</h5>
-            <span classNameName="badge text-bg-danger">{discountPercent}%</span>
+        <div className="col-3" style={{height:"38rem"}}>
+          <div className="bg-light rounded-3 border p-3 d-flex flex-column h-100 justify-content-evenly">
+            <div className="d-flex align-items-center justify-content-evenly">
+            <h5 className="fw-bold">{price}$</h5>
+            <span className="badge text-bg-danger">{discountPercent}%</span>
             </div>
-            <span classNameName="text-center">
-              $155.78 delivery <span classNameName="fw-bold">August 29 - September 14</span>.{" "}
+            <span className="text-center">
+              $155.78 delivery <span className="fw-bold">August 29 - September 14</span>.{" "}
               <Link to="/FAqs">Details</Link>
             </span>
             <small>
-              <i className="bi bi-geo-fill text-danger"></i>Delivery To: <span classNameName="fw-bold">"Country"</span>
+              <i className="bi bi-geo-fill text-danger"></i>Delivery To: <span className="fw-bold">"Country"</span>
             </small>
             <span>Only "Quantity" Left In Stock.</span>
-            <div classNameName="d-flex align-items-center justify-content-around">
+            <div className="d-flex align-items-center justify-content-around">
               <span>Quantity:</span>
               <select
                 className="form-select form-select-sm w-25"
@@ -90,8 +90,8 @@ let discountPercent;
                 <option value="4">4</option>
               </select>
             </div>
-            <button classNameName="btn btn-warning rounded-4">Add To Cart</button>
-            <button classNameName="btn btn-outline-warning rounded-4">
+            <button className="btn btn-warning rounded-4">Add To Cart</button>
+            <button className="btn btn-outline-warning rounded-4">
               Buy Now
             </button>
             <span>
@@ -101,7 +101,7 @@ let discountPercent;
             <span>Sold By: "Seller"</span>
             <span>Return Policy:</span>
             <span>Warranty Policy:</span>
-            <div classNameName="d-flex flex-column">
+            <div className="d-flex flex-column">
               <h6>Add An Accessory</h6>
               <div className="form-check">
                 <input

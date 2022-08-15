@@ -30,16 +30,16 @@ export default function SignUp() {
 
   return (
     <div
-      classNameName="container-sm p-3 d-flex flex-column align-items-center needs-validation"
+      className="container-sm p-3 d-flex flex-column align-items-center needs-validation"
       noValidate
       style={{ maxWidth: "32rem" }}
     >
-      <h1 classNameName="fs-4 fw-bold">Create A Shopunion Account</h1>
-      <p classNameName="text-capitalize text-center">
+      <h1 className="fs-4 fw-bold">Create A Shopunion Account</h1>
+      <p className="text-capitalize text-center">
         create a new shopunion account to begin your fascinating journey. have
         an account already? <Link to={"/forget-account"}>Find It Here.</Link>
       </p>
-      <div classNameName="row">
+      <div className="row">
         <div className="col-sm-6">
           <label for="firstName" className="form-label">
             First name
@@ -89,7 +89,7 @@ export default function SignUp() {
           ></input>
           <div className="invalid-feedback">Valid first name is required.</div>
         </div>
-        <hr classNameName="my-4"></hr>
+        <hr className="my-4"></hr>
         <div className="col-12 mb-3">
           <label for="username" className="form-label">
             Email
@@ -131,7 +131,7 @@ export default function SignUp() {
           ></input>
           <div className="invalid-feedback">Passwords Don't Match.</div>
         </div>
-        <hr classNameName="my-4"></hr>
+        <hr className="my-4"></hr>
         <div className="col-md-12">
           <label for="country" className="form-label">
             Country Code
@@ -155,12 +155,12 @@ export default function SignUp() {
           ></input>
           <div className="invalid-feedback">Valid first name is required.</div>
         </div>
-        <small classNameName="text-muted text-center">
+        <small className="text-muted text-center">
           Be sure to enter a phone number you can always access. It will be used
           to verify your identity any time you sign in on a new device or web
           browser. Messaging or data rates may apply.
         </small>
-        <div classNameName="d-flex mt-3 justify-content-around">
+        <div className="d-flex mt-3 justify-content-around">
           <span>Verify With:</span>
           <div className="form-check">
             <input
@@ -186,10 +186,10 @@ export default function SignUp() {
             </label>
           </div>
         </div>
-        <hr classNameName="my-4"></hr>
+        <hr className="my-4"></hr>
         <p>CAPTCHA SECTION</p>
-        <hr classNameName="my-4"></hr>
-        <div classNameName="col-sm-12">
+        <hr className="my-4"></hr>
+        <div className="col-sm-12">
           <small>
             By Creating An Account, You Accept{" "}
             <Link to={"/privacy-policy"}>Privacy Policy</Link> And{" "}
@@ -198,7 +198,7 @@ export default function SignUp() {
         </div>
         <button
           onClick={postSignUpData}
-          classNameName="btn btn-warning col-sm-6 mx-auto mt-3"
+          className="btn btn-warning col-sm-6 mx-auto mt-3"
         >
           Continue
         </button>

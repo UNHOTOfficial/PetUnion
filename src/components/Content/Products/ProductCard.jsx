@@ -7,11 +7,11 @@ export default function ProductCard(props) {
   );
   return (
     <Link
-      classNameName="d-flex flex-column border  p-4 justify-content-evenly text-dark bg-light rounded-0 col-3"
+      className="d-flex flex-column border  p-4 justify-content-evenly text-dark bg-light rounded-0 col-3"
       to={props.id}
     >
       <img
-        classNameName="mx-auto"
+        className="mx-auto"
         src={props.image}
         alt={props.image}
         style={{ width: "12rem", height: "12rem", objectFit: "contain" }}
@@ -24,12 +24,12 @@ export default function ProductCard(props) {
           overflow: "hidden",
           maxHeight: "3.5rem",
         }}
-        classNameName="mt-3"
+        className="mt-3"
       >
         {props.title}
       </h6>
       <p
-        classNameName="overflow-hidden text-muted mt-2"
+        className="overflow-hidden text-muted mt-2"
         style={{
           display: "inline-block",
           textOverflow: "ellipsis",
@@ -40,12 +40,12 @@ export default function ProductCard(props) {
       >
         {props.description}
       </p>
-      <div classNameName="d-flex align-items-center justify-content-between">
-       {discountPercent > 0 ?  <div classNameName="d-flex align-items-center">
-        <span classNameName="fw-bold me-2">{props.price - props.discount}$</span>
-        <small classNameName="m-0" style={{textDecoration:"line-through"}}>{props.price}$</small>
-        </div> : <span classNameName="fw-bold me-2">{props.price}$</span>}
-        <div classNameName="d-flex flex-column">
+      <div className="d-flex align-items-center justify-content-between">
+       {discountPercent > 0 ?  <div className="d-flex align-items-center">
+        <span className="fw-bold me-2">{props.price - props.discount}$</span>
+        <small className="m-0" style={{textDecoration:"line-through"}}>{props.price}$</small>
+        </div> : <span className="fw-bold me-2">{props.price}$</span>}
+        <div className="d-flex flex-column">
           {props.discount !== 0 ? (
             <span className="badge text-bg-danger rounded-pill">
               {discountPercent}%
@@ -54,14 +54,14 @@ export default function ProductCard(props) {
             <></>
           )}
           {discountPercent > 30 ? (
-            <span classNameName="text-danger fw-bold">OFFER</span>
+            <span className="text-danger fw-bold">OFFER</span>
           ) : (
             <></>
           )}
         </div>
       </div>
-      <div classNameName="d-flex align-items-center">
-        <i classNameName="bi bi-star-fill text-warning"></i>
+      <div className="d-flex align-items-center">
+        <i className="bi bi-star-fill text-warning"></i>
         <small>{props.rate}</small>
       </div>
     </Link>
