@@ -2,7 +2,7 @@ import React from "react";
 import SideMenu from "../../SideMenu";
 import Categories from "./Categories";
 import OfferProducts from "./OfferProducts";
-import TopScrollMenu from "./TopScrollMenu";
+import TopScrollMenu from "../../TopScrollMenu";
 
 export default function Offers() {
 
