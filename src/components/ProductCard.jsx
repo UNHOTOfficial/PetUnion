@@ -9,7 +9,7 @@ export default function ProductCard(props) {
       style={{ minHeight: "500px" }}
     >
       <div className="rounded-3" style={{ backgroundColor: "#fff" }}>
-        <Link to={props.id}>
+        <Link to={`/products/${props.id}`}>
           <img
             className="mx-auto"
             src={props.image}

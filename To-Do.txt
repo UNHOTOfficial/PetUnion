@@ -22,13 +22,15 @@ Make PrivacyPolicy Page. ✅
 Make ReportABug Page. ✅
 Make HowTo Page. ✅
 Make TermsOfUse Page. ✅
-* Change From PetUnion To Online Shop. ✅
+Change From PetUnion To Online Shop. ✅
 Fix Hot Deals Menu Drag. ✅
 Fix Header Links. ✅
 Make footer subscribe button functional. ✅
 Make products pages by ids. ✅
 Fix Product Component By ID. ✅
 Add More Tiles To Home. ✅
+Make Sign In Changes. ✅
+
 Fix Categories Menu.
 Make Dark Mode Color Scheme.
 Add social media links. 
@@ -38,4 +40,21 @@ Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Work On Blog Header And Footer.
 Fix Cart Products.
-Make Sign In Changes. 
+
+Sign In & Sign Up Forms Real-Time Validations.
+Mail Confirmation On Sign Ups.
+Captcha On Sign Up And Sign In Forms.
+Make Users Dashboard.
+Make Header Search.
+Add Products To Cart.
+Add Side Menus.
+Make Popular Products Page.
+Make Packs Page Or Remove It If Necessary.
+Work On Blog.
+Add Some Images In Slider That Make sense.
+Make Application More Componential.
+
+Make Responsive.
+Security Challenges.
+
+Deploy!
