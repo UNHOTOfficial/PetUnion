@@ -1,5 +1,5 @@
 import React from "react";
-import TopScrollMenu from "../Offers/TopScrollMenu";
+import TopScrollMenu from "../../TopScrollMenu";
 import { Link } from "react-router-dom";
 
 export default function Product(props) {

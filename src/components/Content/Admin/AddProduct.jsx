@@ -11,6 +11,7 @@ export default function AddProduct() {
       hasDiscount: Boolean(document.getElementById("hasDiscount").value),
       discount: document.getElementById("discount").value,
       category: document.getElementById("category").value,
+      quantity: document.getElementById("quantity").value,
       rating: {
         rate: document.getElementById("rate").value,
         count: document.getElementById("count").value,
@@ -99,6 +100,14 @@ export default function AddProduct() {
             id="category"
             className="form-control w-75 ms-auto me-3"
             placeholder="Category"
+          ></input>
+        </div>
+        <div className="d-flex align-items-center">
+          <label className="form-label">Quantity:</label>
+          <input
+            id="quantity"
+            className="form-control w-75 ms-auto me-3"
+            placeholder="Quantity"
           ></input>
         </div>
       </div>

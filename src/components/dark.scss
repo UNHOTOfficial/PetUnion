@@ -11,10 +11,13 @@ body {
   font-family: "san-francisco", Helvetica, sans-serif !important;
   .App {
     transition: all 0.3s;
-    
   }
-  a{
+  a {
     text-decoration: none;
+  }
+  .cardProduct:hover {
+    filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.3));
+    transition: all;
   }
 }
 
@@ -40,7 +43,6 @@ body {
 
   $hr-color: $divider;
 
-  
   $blue: #0d6efd;
   $indigo: #6610f2;
   $purple: #6f42c1;
@@ -86,9 +88,9 @@ body {
     "link": $link,
     "background-secondary": $background-secondary,
     "material": $material,
-    'input': $input,
-    'divider': $divider,
-    'text': $text,
+    "input": $input,
+    "divider": $divider,
+    "text": $text,
   );
 
   /* redefine theme color variables */
@@ -108,7 +110,7 @@ body {
   $input-focus-bg: $input;
 
   .App {
-    body{
+    body {
       transition: all 0.5s;
       font-family: "san-francisco", Helvetica, sans-serif;
     }
@@ -120,11 +122,15 @@ body {
       box-shadow: 0 0 0.5rem #fff;
       transition: all 0.3s;
     }
-    .Header-logo{
-      filter: invert(100%)
+    .Header-logo {
+      filter: invert(100%);
     }
-    a{
-      text-decoration: none
+    a {
+      text-decoration: none;
+    }
+    .cardProduct:hover {
+      filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.3));
+      transition: all;
     }
   }
 
