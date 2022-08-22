@@ -1,8 +1,23 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js";
+import { useState } from "react";
 
 export default function TopSlider() {
+
+  // const [sliders, setSliders] = useState();
+
+  // useEffect(()=>{
+  //   axios
+  //   .get('http://localhost:3001/api/configs')
+  //   .then((response) => {
+  //     setLogo(response.data[0].sliders);
+  //   })
+  //   .catch((error) => {
+  //     console.log(error.message);
+  //   });
+  // },[])
+
   const sliders = [
     {
       name: "Slider1",

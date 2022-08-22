@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 export default function Product(props) {
   let price;
-let discountPercent;
+  let discountPercent;
 
   return (
     <div className="container-fluid my-3">
@@ -35,25 +35,43 @@ let discountPercent;
               <div className="d-flex flex-column">
                 <div className="d-flex">
                   <span className="text-danger">
-                    {discountPercent = Math.round(
-                      100 - ((props.price - props.discount) * 100) / props.price
-                    )}
+                    {
+                      (discountPercent = Math.round(
+                        100 -
+                          ((props.price - props.discount) * 100) / props.price
+                      ))
+                    }
                     %
                   </span>
-                  <span>{(price = props.price - props.discount)}</span>
+                  <span>
+                    $
+                    {Math.floor((price = props.price - props.discount) * 100) /
+                      100}
+                  </span>
                 </div>
                 <span>
                   Last Price:
                   <span style={{ textDecoration: "line-through" }}>
-                    {props.price}$
+                    {Math.floor(props.price * 100) / 100}$
                   </span>
                 </span>
               </div>
             ) : (
-              <div className="d-flex">
-                <span>{props.price}</span>
+              <div className="d-flex w-25 justify-content-between">
+                <span>{Math.floor(props.price * 100) / 100}</span>
               </div>
             )}
+          </div>
+          <hr></hr>
+          <div className="d-flex flex-column">
+            {Object.entries(props.specifications).map((specification) => (
+              <div className="d-flex  justify-content-between">
+                <span className="fw-bold text-capitalize">
+                  {specification[0]}
+                </span>
+                <span>{specification[1]}</span>
+              </div>
+            ))}
           </div>
           <hr></hr>
           <div className="info-section">
@@ -62,18 +80,20 @@ let discountPercent;
           </div>
           <div className="product-related bg-light text-dark rounded-3 border"></div>
         </div>
-        <div className="col-3" style={{height:"38rem"}}>
+        <div className="col-3" style={{ height: "38rem" }}>
           <div className="bg-light rounded-3 border p-3 d-flex flex-column h-100 justify-content-evenly">
             <div className="d-flex align-items-center justify-content-evenly">
-            <h5 className="fw-bold">{price}$</h5>
-            <span className="badge text-bg-danger">{discountPercent}%</span>
+              <h5 className="fw-bold">{Math.floor(price)}$</h5>
+              <span className="badge text-bg-danger">{discountPercent}%</span>
             </div>
             <span className="text-center">
-              $155.78 delivery <span className="fw-bold">August 29 - September 14</span>.{" "}
+              $155.78 delivery
+              <span className="fw-bold">August 29 - September 14</span>.
               <Link to="/FAqs">Details</Link>
             </span>
             <small>
-              <i className="bi bi-geo-fill text-danger"></i>Delivery To: <span className="fw-bold">"Country"</span>
+              <i className="bi bi-geo-fill text-danger"></i>Delivery To:
+              <span className="fw-bold">"Country"</span>
             </small>
             <span>Only "Quantity" Left In Stock.</span>
             <div className="d-flex align-items-center justify-content-around">
@@ -124,7 +144,7 @@ let discountPercent;
                 <label className="form-check-label" for="flexCheckChecked">
                   Eset Premium
                 </label>
-              </div>{" "}
+              </div>
               <div className="form-check">
                 <input
                   className="form-check-input"
@@ -135,7 +155,7 @@ let discountPercent;
                 <label className="form-check-label" for="flexCheckChecked">
                   Windows 11 Home Edition
                 </label>
-              </div>{" "}
+              </div>
               <div className="form-check">
                 <input
                   className="form-check-input"

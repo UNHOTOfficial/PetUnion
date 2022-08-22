@@ -1,8 +1,22 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss"
 
 export default function Header() {
+
+const [logo, setLogo] = useState();
+
+useEffect(()=>{
+  axios
+  .get('http://localhost:3001/api/configs')
+  .then((response) => {
+    setLogo(response.data[0].logo);
+  })
+  .catch((error) => {
+    console.log(error.message);
+  });
+},[])
 
   const toggleDarkmode = () => {
     const darkmodeToggle = document.querySelector(
@@ -16,7 +30,7 @@ export default function Header() {
       <div className="container-fluid">
         <Link to={"/"} className="navbar-brand">
           <img className="Header-logo"
-            src={require("../Content/imgs/Logo/Logo-Black.png")}
+            src={logo}
             alt="Logo"
             style={{ width: "5rem" }}
           ></img>

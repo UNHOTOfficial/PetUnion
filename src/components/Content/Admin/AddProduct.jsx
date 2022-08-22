@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 
 export default function AddProduct() {
+  const spe = document.getElementById("specifications").value;
   const sendToDB = () => {
     const json = JSON.stringify({
       image: document.getElementById("image").value,
@@ -16,8 +17,9 @@ export default function AddProduct() {
         rate: document.getElementById("rate").value,
         count: document.getElementById("count").value,
       },
+      specifications: spe,
     });
-
+    console.log(json);
     axios
       .post("http://localhost:3001/api/products", json, {
         headers: { "Content-Type": "application/json" },
@@ -30,12 +32,11 @@ export default function AddProduct() {
         console.log(err);
       });
 
-      const printResponse = (ResponseMessage) => {
-        const response = document.querySelector(".response");
-        response.classList.remove("d-none");
-        response.textContent = ResponseMessage;
-
-      };
+    const printResponse = (ResponseMessage) => {
+      const response = document.querySelector(".response");
+      response.classList.remove("d-none");
+      response.textContent = ResponseMessage;
+    };
   };
   return (
     <div
@@ -43,7 +44,10 @@ export default function AddProduct() {
       style={{ height: "40rem" }}
     >
       <h3 className="response d-none">{}</h3>
-      <div className="d-flex flex-column border rounded-3 p-2 justify-content-evenly" style={{height:"30rem"}}>
+      <div
+        className="d-flex flex-column border rounded-3 p-2 justify-content-evenly"
+        style={{ height: "30rem" }}
+      >
         <h5 className="text-center mb-2">Product Specifications</h5>
         <div className="d-flex align-items-center">
           <label className="form-label">Image:</label>
@@ -109,6 +113,15 @@ export default function AddProduct() {
             className="form-control w-75 ms-auto me-3"
             placeholder="Quantity"
           ></input>
+        </div>
+        <div className="d-flex align-items-center">
+          <label className="form-label">Specifications:</label>
+          <textarea
+            id="specifications"
+            className="form-control w-75 ms-auto me-3"
+            placeholder={`"A":"B\n"C":"D"`}
+            style={{ resize: "none" }}
+          ></textarea>
         </div>
       </div>
       <div className="border rounded-3 d-flex p-2 mt-2 d-flex flex-column">

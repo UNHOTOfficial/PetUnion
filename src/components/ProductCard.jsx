@@ -58,8 +58,10 @@ export default function ProductCard(props) {
       ) : (
         <div className="d-flex justify-content-between">
           <div>
-            <span>${props.price}</span>
-            <s className="text-muted ms-2">${props.price - props.discount}</s>
+            <span>${Math.floor(props.price * 100) / 100}</span>
+            <s className="text-muted ms-2">
+              ${Math.floor(props.price - props.discount * 100) / 100}
+            </s>
           </div>
           <div className="d-flex flex-column">
             <span className="badge text-bg-danger rounded-pill">
@@ -86,9 +88,9 @@ export default function ProductCard(props) {
         <></>
       )}
       <div className="d-flex">
-        <i style={{cursor:"pointer"}} class="bi bi-cart-plus"></i>
-        <i style={{cursor:"pointer"}} class="bi bi-heart"></i>
-        <i style={{cursor:"pointer"}} class="bi bi-bookmark"></i>
+        <i style={{ cursor: "pointer" }} class="bi bi-cart-plus"></i>
+        <i style={{ cursor: "pointer" }} class="bi bi-heart"></i>
+        <i style={{ cursor: "pointer" }} class="bi bi-bookmark"></i>
       </div>
     </div>
   );
