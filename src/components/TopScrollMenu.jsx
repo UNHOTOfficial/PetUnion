@@ -1,5 +1,5 @@
 import React from "react";
-import TopScrollMenuCard from "../components/Content/Offers/TopScrollMenuCard";
+import ProductCard from "../components/ProductCard";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
@@ -104,12 +104,14 @@ export default function TopScrollMenu(props) {
           className="d-flex overflow-hidden topscrollMenuRow"
           style={{ scrollBehavior: "smooth" }}
         >
-          {offerProducts.map((item) => (
-            <TopScrollMenuCard
-              img={item.image}
-              title={item.title}
-              price={item.price}
-              discount={item.discount}
+          {offerProducts.map((offerProduct) => (
+            <ProductCard
+            status="scrollMenu"
+            id={offerProduct._id}
+              image={offerProduct.image}
+              title={offerProduct.title}
+              price={offerProduct.price}
+              discount={offerProduct.discount}
             />
           ))}
         </div>
