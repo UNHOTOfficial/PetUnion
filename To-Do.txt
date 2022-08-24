@@ -1,60 +1,79 @@
-Fix Categories in navbar. ✅ 
-Add sign in and sign up pages. ✅ 
-Change class to className. ✅ 
-Add Dark Mode Toggle. ✅ 
-Create 404 Page. ✅ 
-Fix Hot deals menu to scroll horizontally. ✅ 
-Work on Dark Mode In "darkmode" Branch. ✅ 
-Fix Products Add To Cart Button (Removed) ✅ 
-Add Dark Mode. ✅ 
-Make Job Page. ✅ 
-Fix Console Bugs. ✅
-Make About Page. ✅
-Make Blog Page. ✅
-Make Cooperation Page. ✅
-Work On Blog Page. ✅
-Make Refund Page. ✅
-Make Guarantee Page. ✅
-Make Complication Page. ✅
-Make HelpCenter Page. ✅
-Make Support Page. ✅
-Make PrivacyPolicy Page. ✅
-Make ReportABug Page. ✅
-Make HowTo Page. ✅
-Make TermsOfUse Page. ✅
-Change From PetUnion To Online Shop. ✅
-Fix Hot Deals Menu Drag. ✅
-Fix Header Links. ✅
-Make footer subscribe button functional. ✅
-Make products pages by ids. ✅
-Fix Product Component By ID. ✅
-Add More Tiles To Home. ✅
-Make Sign In Changes. ✅
+•─────⋅☾ ✅ Done! ☽⋅─────•
+Fix Categories in navbar. 
+Add sign in and sign up pages. 
+Change class to className. 
+Add Dark Mode Toggle. 
+Create 404 Page. 
+Fix Hot deals menu to scroll horizontally. 
+Work on Dark Mode In "darkmode" Branch. 
+Fix Products Add To Cart Button (Removed) 
+Add Dark Mode. 
+Make Job Page. 
+Fix Console Bugs. 
+Make About Page. 
+Make Blog Page. 
+Make Cooperation Page. 
+Work On Blog Page. 
+Make Refund Page. 
+Make Guarantee Page. 
+Make Complication Page. 
+Make HelpCenter Page. 
+Make Support Page. 
+Make PrivacyPolicy Page. 
+Make ReportABug Page. 
+Make HowTo Page. 
+Make TermsOfUse Page. 
+Change From PetUnion To Online Shop. 
+Fix Hot Deals Menu Drag. 
+Fix Header Links. 
+Make footer subscribe button functional. 
+Make products pages by ids. 
+Fix Product Component By ID. 
+Add More Tiles To Home. 
+Make Sign In Changes. 
 
-Fix Categories Menu.
+•─────⋅☾ 🌑 Dark Mode ☽⋅─────•
 Make Dark Mode Color Scheme.
-Add social media links. 
-Add FAQs collapses.
-Make FAQs search bar functional.
+
+
+•─────⋅☾ 🔒 Auth ☽⋅─────•
+Mail Confirmation On Sign Ups.
+Captcha On Sign Up And Sign In Forms.
+
+
+•─────⋅☾ 👤 Users ☽⋅─────•
+Fix Cart Products.
+Make Users Dashboard.
+Add Products To Cart.
+
+
+•─────⋅☾ 🌈 Ui/Ux ☽⋅─────•
+Sign In & Sign Up Forms Real-Time Validations.
+Add Some Images In Slider That Make sense.
+
+
+•─────⋅☾ ⚙️ Development ☽⋅─────•
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
 Work On Blog Header And Footer.
-Fix Cart Products.
-
-Sign In & Sign Up Forms Real-Time Validations.
-Mail Confirmation On Sign Ups.
-Captcha On Sign Up And Sign In Forms.
-Make Users Dashboard.
-Make Header Search.
-Add Products To Cart.
+Make FAQs search bar functional.
+Add FAQs collapses.
+Work On Blog.
+Make Header Search Functional.
+Add social media links. 
 Add Side Menus.
 Make Popular Products Page.
 Make Packs Page Or Remove It If Necessary.
-Work On Blog.
-Add Some Images In Slider That Make sense.
 Make Application More Componential.
-
+Fix Categories Menu.
 Make Responsive.
+
+
+•─────⋅☾ 🚨 Security ☽⋅─────•
 Security Challenges.
 
-Deploy!
+
+•─────⋅☾ 🔰 Deployment ☽⋅─────•
+Buy Domain.
+Buy Host.
+Make Build.
