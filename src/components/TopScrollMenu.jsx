@@ -68,7 +68,7 @@ export default function TopScrollMenu(props) {
   };
 
   const [offerProducts, setOfferProducts] = useState([]);
-
+  const [isLoaded, setIsLoaded] = useState(false);
   useEffect(() => {
     axios
       .get("http://localhost:3001/api/products")
@@ -84,43 +84,49 @@ export default function TopScrollMenu(props) {
         setOfferProducts(
           offerProductsArray.sort((a, b) => 0.5 - Math.random())
         );
+        setIsLoaded(true);
       })
       .catch((error) => {
         console.log(error);
       });
   }, []);
-  return (
-    <div className="container-fluid bg-white text-dark">
-      <h3>{props.title}</h3>
-      <div className="d-flex align-items-center">
-        <i
-          onClick={scrollArrowLeft}
-          className="bi bi-arrow-left-circle-fill fs-3 text-dark tophotdeals-arrow-left"
-          style={{ cursor: "pointer" }}
-        ></i>
-        <div
-          onWheel={scrollHtoDeals}
-          onMouseDown={dragHotDeals}
-          className="d-flex overflow-hidden topscrollMenuRow"
-          style={{ scrollBehavior: "smooth" }}
-        >
-          {offerProducts.map((offerProduct) => (
-            <ProductCard
-            status="scrollMenu"
-            id={offerProduct._id}
-              image={offerProduct.image}
-              title={offerProduct.title}
-              price={offerProduct.price}
-              discount={offerProduct.discount}
-            />
-          ))}
+
+  if (isLoaded === true) {
+    return (
+      <div className="container-fluid bg-white text-dark">
+        <h3>{props.title}</h3>
+        <div className="d-flex align-items-center">
+          <i
+            onClick={scrollArrowLeft}
+            className="bi bi-arrow-left-circle-fill fs-3 text-dark tophotdeals-arrow-left"
+            style={{ cursor: "pointer" }}
+          ></i>
+          <div
+            onWheel={scrollHtoDeals}
+            onMouseDown={dragHotDeals}
+            className="d-flex overflow-hidden topscrollMenuRow"
+            style={{ scrollBehavior: "smooth" }}
+          >
+            {offerProducts.map((offerProduct) => (
+              <ProductCard
+                status="scrollMenu"
+                id={offerProduct._id}
+                image={offerProduct.image}
+                title={offerProduct.title}
+                price={offerProduct.price}
+                discount={offerProduct.discount}
+              />
+            ))}
+          </div>
+          <i
+            onClick={scrollArrowRight}
+            className="bi bi-arrow-right-circle-fill fs-3 text-dark tophotdeals-arrow-right ms-3"
+            style={{ cursor: "pointer" }}
+          ></i>
         </div>
-        <i
-          onClick={scrollArrowRight}
-          className="bi bi-arrow-right-circle-fill fs-3 text-dark tophotdeals-arrow-right ms-3"
-          style={{ cursor: "pointer" }}
-        ></i>
       </div>
-    </div>
-  );
+    );
+  } else {
+    return <div class="spinner-border mx-auto" role="status"></div>;
+  }
 }

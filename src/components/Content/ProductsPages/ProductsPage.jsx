@@ -9,14 +9,14 @@ export default function ProductsPage() {
   let { id } = useParams();
 
   const [product, setProduct] = useState({});
-  const [isLoaded, setIsLoaded] = useState(false)
+  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     axios
       .get(`http://localhost:3001/api/products/${id}`)
       .then((response) => {
         setProduct(response.data);
-        setIsLoaded(true)
+        setIsLoaded(true);
       })
       .catch((error) => {
         console.log(error.message);
@@ -24,21 +24,20 @@ export default function ProductsPage() {
   }, [id]);
 
   if (isLoaded === true) {
-  return (
-    <Product
-      image={product.image}
-      title={product.title}
-      rate={product.rate}
-      count={product.count}
-      hasDiscount={product.hasDiscount}
-      price={product.price}
-      discount={product.discount}
-      description={product.description}
-      specifications={product.specifications}
-    />
-  
+    return (
+      <Product
+        image={product.image}
+        title={product.title}
+        rate={product.rating.rate}
+        count={product.rating.count}
+        hasDiscount={product.hasDiscount}
+        price={product.price}
+        discount={product.discount}
+        description={product.description}
+        specifications={product.specifications}
+      />
     );
-  }else{
-    return("Loading...")
+  } else {
+    return <div class="spinner-border mx-auto" role="status"></div>;
   }
 }

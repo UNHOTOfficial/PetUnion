@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import RatingStars from "./RatingStars";
 
 export default function ProductCard(props) {
   let cardStatus = props.status;
@@ -117,27 +118,8 @@ export default function ProductCard(props) {
               {props.category}
             </small>
           </div>
-          <div className="d-flex">
-            <div className="d-flex">
-              <span>
-                <i class="text-warning bi bi-star-fill"></i>
-              </span>
-              <span>
-                <i class="text-warning bi bi-star-fill"></i>
-              </span>
-              <span>
-                <i class="text-warning bi bi-star-fill"></i>
-              </span>
-              <span>
-                <i class="text-warning bi bi-star"></i>
-              </span>
-              <span>
-                <i class="text-warning bi bi-star"></i>
-              </span>
-            </div>
-            <small className="ms-1 mt-1">{props.count}</small>
-          </div>
-
+         
+<RatingStars/>
           {props.discount === false ? (
             <span>${props.price}</span>
           ) : (

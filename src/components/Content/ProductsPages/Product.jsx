@@ -1,6 +1,8 @@
 import React from "react";
 import TopScrollMenu from "../../TopScrollMenu";
 import { Link } from "react-router-dom";
+import RatingStars from "../../RatingStars";
+import Comments from "../../Comments";
 
 export default function Product(props) {
   let price;
@@ -19,13 +21,7 @@ export default function Product(props) {
           <div>
             <h4>{props.title}</h4>
             <div className="rating-section d-flex">
-              <div className="d-flex">
-                <i className="bi bi-star"></i>
-                <i className="bi bi-star"></i>
-                <i className="bi bi-star"></i>
-                <i className="bi bi-star"></i>
-                <i className="bi bi-star"></i>
-              </div>
+              <RatingStars rate={props.rate} />
               <span>{props.count} Ratings</span>
             </div>
           </div>
@@ -33,8 +29,13 @@ export default function Product(props) {
           <div className="price-section">
             {props.hasDiscount === true ? (
               <div className="d-flex flex-column">
-                <div className="d-flex">
-                  <span className="text-danger">
+                <div className="d-flex align-items-center">
+                  <span className="fs-5 fw-bold me-2">
+                    $
+                    {Math.floor((price = props.price - props.discount) * 100) /
+                      100}
+                  </span>
+                  <span className="badge text-bg-danger">
                     {
                       (discountPercent = Math.round(
                         100 -
@@ -43,13 +44,8 @@ export default function Product(props) {
                     }
                     %
                   </span>
-                  <span>
-                    $
-                    {Math.floor((price = props.price - props.discount) * 100) /
-                      100}
-                  </span>
                 </div>
-                <span>
+                <span className="text-muted">
                   Last Price:
                   <span style={{ textDecoration: "line-through" }}>
                     {Math.floor(props.price * 100) / 100}$
@@ -171,6 +167,15 @@ export default function Product(props) {
           </div>
         </div>
         <TopScrollMenu title="Related Products" />
+        <Comments
+          rate="2"
+          heading="Very Nice!"
+          date="8/24/2022"
+          fullName="John Doe"
+          description="Very nice products. strongly recommend it"
+          generalRate={props.rate}
+          count={props.count}
+        />
       </div>
     </div>
   );
