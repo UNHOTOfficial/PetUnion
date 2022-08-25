@@ -37,7 +37,6 @@ Make Dark Mode Color Scheme.
 
 
 •─────⋅☾ 🔒 Auth ☽⋅─────•
-Mail Confirmation On Sign Ups.
 Captcha On Sign Up And Sign In Forms.
 
 

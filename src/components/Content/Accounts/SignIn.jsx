@@ -1,7 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Account.scss";
 import StepOne from "./StepOne";
 import StepTwoEmail from "./StepTwoEmail";
@@ -9,6 +9,7 @@ import StepTwoPhone from "./StepTwoPhone";
 export default function Account() {
   const [step, setstep] = useState(1);
   let [inputType, setInputType] = useState("");
+  const navigate = useNavigate();
 
   const nextStep = () => {
     setstep(step + 1);
@@ -71,7 +72,10 @@ export default function Account() {
         headers: { "Content-Type": "application/json" },
       })
       .then((res) => {
-        console.log(res);
+        localStorage.setItem("AuthKey", res.data.AuthKey);
+        localStorage.setItem("Email", JSON.parse(signInData).email);
+        navigate("/");
+        window.location.reload();
       })
       .catch((error) => {
         console.log(error);
