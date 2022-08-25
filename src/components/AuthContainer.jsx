@@ -14,15 +14,15 @@ export default function AuthContainer(props) {
   if (props.isLoggedIn) {
     return (
       <div class="dropdown">
-        <button
-          class="btn btn-secondary dropdown-toggle"
+        <span
+          class="dropdown-toggle"
           type="button"
           data-bs-toggle="dropdown"
           aria-expanded="false"
         >
           <i class="bi bi-person p-1 m-0 fs-5"></i>
           <span>{props.name}</span>
-        </button>
+        </span>
         <ul class="dropdown-menu">
           <li>
             <button onClick={handleProfile} class="dropdown-item" type="button">

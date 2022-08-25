@@ -54,9 +54,11 @@ export default function ProductCard(props) {
           ) : (
             <div className="d-flex justify-content-between">
               <div>
-                <span>${Math.floor(props.price * 100) / 100}</span>
+                <span>
+                  ${Math.floor((props.price - props.discount) * 100) / 100}
+                </span>
                 <s className="text-muted ms-2">
-                  ${Math.floor(props.price - props.discount * 100) / 100}
+                  ${Math.floor(props.price * 100) / 100}
                 </s>
               </div>
               <div className="d-flex flex-column">
@@ -100,7 +102,7 @@ export default function ProductCard(props) {
             </Link>
           </div>
           <div className="d-flex flex-column">
-            <Link className="text-dark" to={props.id}>
+            <Link className="text-dark" to={`/products/${props.id}`}>
               <span
                 style={{
                   overflow: "hidden",
@@ -118,16 +120,18 @@ export default function ProductCard(props) {
               {props.category}
             </small>
           </div>
-         
-<RatingStars/>
+
+          <RatingStars />
           {props.discount === false ? (
             <span>${props.price}</span>
           ) : (
             <div className="d-flex justify-content-between">
               <div>
-                <span>${Math.floor(props.price * 100) / 100}</span>
+                <span>
+                  ${Math.floor((props.price - props.discount)*100)/100}
+                </span>
                 <s className="text-muted ms-2">
-                  ${Math.floor(props.price - props.discount * 100) / 100}
+                  ${Math.floor(props.price * 100) / 100}
                 </s>
               </div>
               <div className="d-flex flex-column">

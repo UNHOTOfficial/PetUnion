@@ -1,19 +1,34 @@
 import React from "react";
 import { useEffect } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import {
+  BrowserRouter,
+  Link,
+  Route,
+  Router,
+  useNavigate,
+  useParams,
+} from "react-router-dom";
 import axios from "axios";
 import { useState } from "react";
-import DashboradContent from "./DashboradContent";
+import ProfileContent from "./ProfileContent";
 
 export default function Profile() {
+  let { content } = useParams();
+
+  if (content === undefined) {
+    content = "overview";
+  }
+
   const navigate = useNavigate();
   const email = localStorage.getItem("Email");
   const [userData, setUserData] = useState();
   const [isLoaded, setIsLoaded] = useState(false);
+
   useEffect(() => {
     if (localStorage.getItem("AuthKey") === null) {
       navigate("/signin");
     }
+
     axios
       .get(`http://localhost:3001/api/users/${email}`)
       .then((res) => {
@@ -24,14 +39,22 @@ export default function Profile() {
         console.log(error);
       });
   }, []);
+
   const handleSignout = () => {
     localStorage.removeItem("AuthKey");
     navigate("/");
     window.location.reload();
   };
+
   const handleActiveList = () => {
-    const listItem = document.activeElement.classList.add("active");
+    const activeListItem = document.activeElement;
+    const listItems = document.querySelectorAll(".list-group-item");
+    for (let index = 0; index < listItems.length; index++) {
+      listItems[index].classList.remove("active");
+    }
+    activeListItem.classList.add("active");
   };
+
   if (isLoaded === true) {
     return (
       <div className="container row mx-auto">
@@ -54,6 +77,14 @@ export default function Profile() {
             </Link>
           </div>
           <div class="list-group list-group-flush">
+            <Link
+              onClick={handleActiveList}
+              to={"/profile"}
+              className="list-group-item list-group-item-action user-select-none py-3 active"
+              role="button"
+            >
+              <i class="bi bi-bag"></i> Overview
+            </Link>
             <Link
               onClick={handleActiveList}
               to={"/profile/orders"}
@@ -111,7 +142,29 @@ export default function Profile() {
             </li>
           </div>
         </div>
-        <DashboradContent />
+        <ProfileContent
+          content={content}
+          firstName={userData.firstName}
+          lastName={userData.lastName}
+          birthday={userData.birthday}
+          country={userData.country}
+          email={userData.email}
+          password={
+            <div>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+              <i class="bi bi-dot m-0"></i>
+            </div>
+          }
+          phone={userData.phone}
+          isEmailVerified={userData.isEmailVerified}
+          isPhoneVerified={userData.isPhoneVerified}
+        />
       </div>
     );
   } else {

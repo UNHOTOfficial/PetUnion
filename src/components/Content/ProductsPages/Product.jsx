@@ -1,8 +1,9 @@
 import React from "react";
-import TopScrollMenu from "../../TopScrollMenu";
+import TopScrollMenu from "../../ScrollMenu";
 import { Link } from "react-router-dom";
 import RatingStars from "../../RatingStars";
 import Comments from "../../Comments";
+import BreadCrumb from "../../BreadCrumb";
 
 export default function Product(props) {
   let price;
@@ -10,6 +11,7 @@ export default function Product(props) {
 
   return (
     <div className="container-fluid my-3">
+      <BreadCrumb pageName={props.title} category={props.category} type={props.type}/>
       <div className="row align-items-start">
         <img
           className="col-4 mt-5"

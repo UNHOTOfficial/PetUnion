@@ -26,6 +26,7 @@ export default function ProductsPage() {
   if (isLoaded === true) {
     return (
       <Product
+        id={product._id}
         image={product.image}
         title={product.title}
         rate={product.rating.rate}
@@ -35,6 +36,8 @@ export default function ProductsPage() {
         discount={product.discount}
         description={product.description}
         specifications={product.specifications}
+        category={product.category.main}
+        type={product.category.type}
       />
     );
   } else {

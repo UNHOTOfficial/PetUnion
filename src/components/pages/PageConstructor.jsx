@@ -66,6 +66,7 @@ export default function PageConstructor() {
           <Route exact path="/offers" element={<Offers />}></Route>
           <Route exact path="/admin" element={<Admin />}></Route>
           <Route exact path="/profile" element={<Profile />}></Route>
+          <Route exact path="/profile/:content" element={<Profile/>}></Route>
           <Route exact  path="/products/:id" element={<ProductsPage />}></Route>
           <Route path="*" element={<Page404 />}></Route>
 

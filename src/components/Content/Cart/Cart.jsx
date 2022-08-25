@@ -3,6 +3,8 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import TopScrollMenu from "../../ScrollMenu";
+import TopSccrollMenu from "../../ScrollMenu";
 
 export default function Cart() {
   const [cart, setCart] = useState([]);
@@ -10,21 +12,23 @@ export default function Cart() {
 
   useEffect(() => {
     axios
-      .get("https://fakestoreapi.com/carts/1")
-      .then((response) => {
-        setCart(response.data.products);
+      .get(`http://localhost:3001/api/products`)
+      .then((res) => {
+        setProducts(res.data);
+        setCart(res.data);
       })
       .catch((error) => {
         console.log(error);
       });
-    axios.get("https://fakestoreapi.com/products").then((response) => {
-      setProducts(response.data);
-    });
   }, []);
   return (
     <div className="container justify-content-around my-3">
       <div className="d-flex">
-        <div className="rounded-3 bg-light border p-5 w-75 me-3">
+        <div className="rounded-3 bg-light border p-3 w-75 me-3">
+          <div className="d-flex flex-column">
+            <span className="fw-bold fs-5">Cart</span>
+            <small className="text-muted">{cart.length} Products</small>
+          </div>
           {/* <div className="d-flex flex-column align-items-center">
             <img
               src={require("./imgs/shopping-cart.png")}
@@ -45,25 +49,97 @@ export default function Cart() {
               </Link>
             </div>
           </div> */}
-          {cart.map((cartProduct) => (
-            <div className="row">
-              <div className="d-flex col-12 border-bottom rounded-0 bg-transparent align-items-center justify-content-between">
-                <p className="m-0 p-3">{cartProduct.productId}</p>
-                <div className="d-flex justify-content-end">
-                  <span className="btn btn-outline-warning border-end-0">
-                    <i className="bi bi-plus m-0"></i>
-                  </span>
-                  <input
-                    className="form-control"
-                    style={{ width: "20%" }}
-                  ></input>
-                  <span className="btn btn-outline-warning border-start-0">
-                    <i className="bi bi-dash m-0"></i>
-                  </span>
+          <div className="">
+            {cart.map((cartProduct) => (
+              <div className="d-flex row  border-bottom rounded-0 bg-transparent align-items-center justify-content-between py-2">
+                <Link className="col-3" to={`/products/${cartProduct._id}`}>
+                  <img
+                    src={cartProduct.image}
+                    alt={cartProduct.image.replace(/^.*[\\\/]/)}
+                    style={{
+                      width: "12rem",
+                      height: "12rem",
+                      objectFit: "contain",
+                    }}
+                  ></img>
+                </Link>
+                <div className="col-7 d-flex flex-column">
+                  <Link
+                    className="m-0 text-dark mb-2 fw-bold fs-5"
+                    to={`/products/${cartProduct._id}`}
+                    style={{
+                      overflow: "hidden",
+                      textOverflow: "ellipsis",
+                      display: "-webkit-box",
+                      WebkitLineClamp: "1",
+                      lineClamp: "1",
+                      WebkitBoxOrient: "vertical",
+                      maxHeight: "2.5rem",
+                    }}
+                  >
+                    {cartProduct.title}
+                  </Link>
+
+                  {Object.entries(cartProduct.specifications).map(
+                    (specification) => (
+                      <div className="d-flex justify-content-between">
+                        <span className="text-capitalize fw-bold">
+                          {specification[0]}
+                        </span>
+                        <span>{specification[1]}</span>
+                      </div>
+                    )
+                  )}
+                </div>
+                <div className="col-2 d-flex flex-column align-items-center">
+                  {cartProduct.hasDiscount === true ? (
+                    <div className="row">
+                      <span className="text-danger col-2">
+                        {Math.round(
+                          100 -
+                            ((cartProduct.price - cartProduct.discount) * 100) /
+                              cartProduct.price
+                        )}
+                        %
+                      </span>
+
+                      <span className="fw-bold col-6">
+                        $
+                        {Math.floor(
+                          (cartProduct.price - cartProduct.discount) * 100
+                        ) / 100}
+                      </span>
+
+                      <span className="text-decoration-line-through text-muted col-6">
+                        ${Math.floor(cartProduct.price * 100) / 100}
+                      </span>
+                    </div>
+                  ) : (
+                    <span>{Math.floor(cartProduct.price * 100) / 100}</span>
+                  )}
+
+                  <div className="d-flex justify-content-center align-items-center">
+                    <span className="btn btn-outline-warning border-end-0 rounded-0 rounded-start">
+                      <i className="bi bi-plus m-0"></i>
+                    </span>
+                    <input
+                      className="form-control rounded-0 px-0"
+                      style={{ width: "50%" }}
+                      readOnly
+                      value={cartProduct.quantity}
+                    ></input>
+                    <span className="btn btn-outline-warning border-start-0 rounded-0 rounded-end">
+                      <i className="bi bi-dash m-0"></i>
+                    </span>
+                    <i
+                      class="bi bi-trash3 text-danger fs-5"
+                      role={"button"}
+                    ></i>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
         <Link
           className="border rounded-3 d-flex flex-column bg-light border text-dark p-3 w-25"
@@ -87,45 +163,7 @@ export default function Cart() {
           </p>
         </Link>
       </div>
-      <div className="rounded-3 border bg-light d-flex flex-column p-4 mt-3">
-        <h3>Recent Views</h3>
-        <div className="d-flex align-items-center">
-          <i className="bi bi-arrow-left-circle-fill fs-3"></i>
-          <div className="d-flex overflow-hidden">
-            {products.map((product) => (
-              <div
-                className="card border-0 border-end bg-transparent justify-content-evenly px-2"
-                key={product.id}
-              >
-                <img
-                  className="mx-auto"
-                  src={product.image}
-                  alt={product.image.replace(/^.*[\\\/]/, "")}
-                  style={{
-                    width: "12rem",
-                    height: "12rem",
-                    objectFit: "contain",
-                  }}
-                ></img>
-                <h6
-                  className="mt-4"
-                  style={{
-                    display: "inline-block",
-                    textOverflow: "ellipsis",
-                    wordWrap: "break-word",
-                    overflow: "hidden",
-                    maxHeight: "3.5rem",
-                  }}
-                >
-                  {product.title}
-                </h6>
-                <p>{product.price}$</p>
-              </div>
-            ))}
-          </div>
-          <i className="bi bi-arrow-right-circle-fill fs-3 ms-3"></i>
-        </div>
-      </div>
+      <TopScrollMenu title="recent views" />
     </div>
   );
 }

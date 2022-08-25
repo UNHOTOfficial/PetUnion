@@ -66,7 +66,8 @@ Make Packs Page Or Remove It If Necessary.
 Make Application More Componential.
 Fix Categories Menu.
 Make Responsive.
-
+Fix Scroll Menu Products.
+Fix Cart Products.
 
 •─────⋅☾ 🚨 Security ☽⋅─────•
 Security Challenges.
