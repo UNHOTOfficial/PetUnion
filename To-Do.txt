@@ -31,6 +31,8 @@ Make products pages by ids.
 Fix Product Component By ID. 
 Add More Tiles To Home. 
 Make Sign In Changes. 
+Fix Cart Products.
+Make Users Dashboard.
 
 •─────⋅☾ 🌑 Dark Mode ☽⋅─────•
 Make Dark Mode Color Scheme.
@@ -41,8 +43,7 @@ Captcha On Sign Up And Sign In Forms.
 
 
 •─────⋅☾ 👤 Users ☽⋅─────•
-Fix Cart Products.
-Make Users Dashboard.
+Complete Users Profile.
 Add Products To Cart.
 
 
@@ -54,11 +55,11 @@ Add Some Images In Slider That Make sense.
 •─────⋅☾ ⚙️ Development ☽⋅─────•
 Make FAQs Categories links.
 Make contact "Make An Appointment" button functional.
-Work On Blog Header And Footer.
-Make FAQs search bar functional.
-Add FAQs collapses.
-Work On Blog.
 Make Header Search Functional.
+Make FAQs search bar functional.
+Work On Blog Header And Footer.
+Work On Blog.
+Add FAQs collapses.
 Add social media links. 
 Add Side Menus.
 Make Popular Products Page.
@@ -67,7 +68,7 @@ Make Application More Componential.
 Fix Categories Menu.
 Make Responsive.
 Fix Scroll Menu Products.
-Fix Cart Products.
+Develope Cart From Database.
 
 •─────⋅☾ 🚨 Security ☽⋅─────•
 Security Challenges.

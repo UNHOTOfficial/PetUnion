@@ -38,7 +38,7 @@ export default function OfferProducts() {
           hasDiscount={offerProduct.hasDiscount}
           price={offerProduct.price}
           discount={offerProduct.discount}
-          category={offerProduct.category}
+          category={offerProduct.category?.main}
           quantity={offerProduct.quantity}
         />
       ))}
