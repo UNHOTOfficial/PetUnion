@@ -62,7 +62,7 @@ export default function Profile() {
           <div className="d-flex justify-content-between align-items-center border-bottom border-2 p-3">
             <div className="d-flex">
               <img
-                className="me-2"
+                className="userAvatar me-2"
                 src="https://cdn-icons-png.flaticon.com/512/1946/1946429.png"
                 alt="User"
                 style={{ width: "3rem", height: "3rem" }}

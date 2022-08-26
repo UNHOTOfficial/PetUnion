@@ -3,10 +3,12 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import AuthContainer from "../AuthContainer";
 import "./Header.scss";
+import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [logo, setLogo] = useState();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios
@@ -60,13 +62,21 @@ export default function Header() {
             <li className="nav-items w-75 mx-auto">
               <form className="d-flex" role="search">
                 <input
+                  id="search-input"
                   className="form-control rounded-start border-end-0 rounded-0 bg-input"
                   type="search"
                   placeholder="Search For Products Or Brands..."
                   aria-label="Search"
                 ></input>
                 <button
-                  type="submit"
+                  onClick={() => {
+                    navigate(
+                      `/search/${
+                        document.getElementById("search-input").value
+                      }`
+                    );
+                  }}
+                  type="button"
                   className="btn btn-warning border-start-0 rounded-end rounded-0"
                   id="basic-addon1"
                 >

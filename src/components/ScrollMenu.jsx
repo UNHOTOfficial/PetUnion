@@ -3,6 +3,7 @@ import ProductCard from "./ProductCard";
 import { useEffect } from "react";
 import { useState } from "react";
 import axios from "axios";
+import ProductCardLoading from "./ProductCardLoading";
 
 export default function TopScrollMenu(props) {
   const scrollHtoDeals = () => {
@@ -127,6 +128,6 @@ export default function TopScrollMenu(props) {
       </div>
     );
   } else {
-    return <div class="spinner-border mx-auto" role="status"></div>;
+    return <ProductCardLoading/>;
   }
 }

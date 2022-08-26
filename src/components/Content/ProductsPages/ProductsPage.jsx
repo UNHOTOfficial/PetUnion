@@ -3,6 +3,7 @@ import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
 import { useParams } from "react-router-dom";
+import ProductCardLoading from "../../ProductCardLoading";
 import Product from "./Product";
 
 export default function ProductsPage() {
@@ -41,6 +42,6 @@ export default function ProductsPage() {
       />
     );
   } else {
-    return <div class="spinner-border mx-auto" role="status"></div>;
+    return <ProductCardLoading type="ProductPage" />;
   }
 }

@@ -128,7 +128,7 @@ export default function ProductCard(props) {
             <div className="d-flex justify-content-between">
               <div>
                 <span>
-                  ${Math.floor((props.price - props.discount)*100)/100}
+                  ${Math.floor((props.price - props.discount) * 100) / 100}
                 </span>
                 <s className="text-muted ms-2">
                   ${Math.floor(props.price * 100) / 100}
